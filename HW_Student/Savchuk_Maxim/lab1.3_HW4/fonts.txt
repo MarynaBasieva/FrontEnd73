@@ -1,0 +1,15 @@
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-size-35xl: 54px;
+  --font-size-mini: 15px;
+  --font-size-base: 16px;
+  --font-size-21xl: 40px;
+  --font-size-lgi: 19px;
+  --font-size-smi: 13px;
+  
+  https://fonts.google.com/specimen/Roboto
+  
+  400 bold700 black900 or italit 900 black
