@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form</title>
+</head>
+
+<body style="align-items: center;">
+    <form>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <br>
+        <label>Вибір розміру:</label>
+        <br>
+        <input type="checkbox" id="size1" name="size" value="S">
+        <label for="size1">S</label>
+
+        <input type="checkbox" id="size2" name="size" value="M">
+        <label for="size2">M</label>
+
+        <input type="checkbox" id="size3" name="size" value="L" checked>
+        <label for="size3">L</label>
+
+        <input type="checkbox" id="size4" name="size" value="XL">
+        <label for="size4">XL</label>
+
+        <input type="checkbox" id="size5" name="size" value="XXL">
+        <label for="size5">XXL</label>
+
+        <input type="checkbox" id="size6" name="size" value="XXXL">
+        <label for="size6">XXXL</label>
+
+        <input type="checkbox" id="size7" name="size" value="4XL">
+        <label for="size7">4XL</label>
+
+        <input type="checkbox" id="size8" name="size" value="5XL">
+        <label for="size8">5XL</label>
+        <br>
+
+        <label for="message">Повідомлення (максимум 200 символів):</label>
+        <br>
+        <textarea id="message" name="message" maxlength="200"></textarea>
+        <br>
+
+        <input type="submit" value="відправити">
+    </form>
+
+</body>
+</html>
