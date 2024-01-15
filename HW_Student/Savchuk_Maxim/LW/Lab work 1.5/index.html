@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.5</title>
+</head>
+<body>
+<!-- Вставка відео з YouTube -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Il9nwPlMZm4?si=ipr8156xHWrAuI8u" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Вставка картки Google Maps -->
+<iframe width="600" height="450" style="border:0;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.702480234587!2d28.405128!3d49.2283291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zВАШ_ГОРОД!5e0!3m2!1sru!2sru!4v1620275869724!5m2!1sru!2sru"></iframe>
+
+<hr style="margin-block-end: 10em;">
+<!-- Форма -->
+<form action="#обработчик.php" method="post">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" maxlength="20" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="service">Оберіть послугу:</label>
+    <select id="service" name="service">
+        <option value="landing">Розробка лендінга</option>
+        <option value="corporate">Розробка корпоративного сайту</option>
+        <option value="ecommerce">Розробка интернет-магазину</option>
+    </select>
+
+    <button type="submit">Відправити</button>
+</form>
+
+</body>
+</html>
