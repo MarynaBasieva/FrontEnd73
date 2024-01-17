@@ -1,5 +1,0 @@
-jQuery(document).ready(function($){let tmp=$("[data-remodal-id='modal-course-schedule']").find("input[name=delay]").val();let promise=new Promise((res,rej)=>{if(tmp){res()}})
-promise.then(res=>{let delay=parseInt(tmp)*1000;setTimeout(function(){$("[data-remodal-id='modal-course-schedule']").remodal().open()},delay)}).catch(err=>console.log(err))
-if($("[data-remodal-id='modal-course-before-exit']")){let count=0;$(document).mouseleave(function(e){if(e.clientY<10&&count==0&&$("[data-remodal-id='modal-course-before-exit']").remodal()!==undefined){$("[data-remodal-id='modal-course-before-exit']").remodal().open()}
-count++})}})
-;
