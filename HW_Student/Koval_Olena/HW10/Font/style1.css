@@ -1,0 +1,30 @@
+
+
+
+/*font-family: 'open_sansbold';
+font-family: 'open_sansbold_italic';
+font-family: 'open_sans_condensedbold';
+font-family: 'open_sanscondensed_light';
+font-family: 'open_sansCnLtIt';
+font-family: 'open_sansextrabold';
+font-family: 'open_sansextrabold_italic';
+font-family: 'open_sansitalic';
+font-family: 'open_sanslight';
+font-family: 'open_sanslight_italic';
+font-family: 'open_sansbold';
+font-family: 'open_sansbold_italic';*/
+*{
+    padding: 0;margin: 0;
+}
+
+.head{width: 100%;
+background-color: aqua; background-size: cover;}
+.head h2{
+    text-align: center; text-decoration:underline;
+   font-family:'open_sansextrabold' ; text-transform: uppercase;
+}
+.head p{font-family: 'open_sansitalic';
+text-indent: 15px;text-align: justify;
+}
+
+
