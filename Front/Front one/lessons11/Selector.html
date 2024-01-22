@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #Fonblock{
+        background-color: #14b1aa;
+        padding: 10px;
+    }
+    h1{
+        color: #0D08B1;
+        font-size: 40px;
+    }
+    .box{
+        background-color: #00dbff;
+        margin-bottom: 20px;
+    }
+    .box h2{
+        color: #ccc;
+    }
+    h2{
+        color: blueviolet;
+    }
+    .media-box h2{
+        color: brown;
+    }
+    #Fonblock .media-box h2{
+        color: #333;
+    }
+    body #Fonblock .media-box h2{
+        color: #1e8130;
+    }
+    h2,
+    p{
+        font-size: 30px;
+    }
+    .heading{
+       font-size: 18px;
+       color: #000; 
+    }
+    /*CW11*/
+    #Fonblock .box{
+        background-color: #0D08B1;
+    }
+    #Fonblock .first-box{
+        background-color: #1e8130;
+    }
+       .box p{
+        font-size: 15px;
+       } 
+       .first-box p{
+        font-size: 14px;
+       }
+      
+       .last-box p{
+        font-size: 30px;
+       }
+       
+    /*CW11*/
+</style>
+<body>
+    <section id="Fonblock">
+        <h1>Hello my world</h1>
+
+        <div class="box first-box media-box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam, 
+                earum dolorem distinctio eveniet fugiat nobis hic maiores inventore 
+                dicta voluptas quos, voluptatibus architecto facere! Quisquam nemo 
+                sapiente doloribus veniam?
+            </p>
+        </div>
+
+        <div class="box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam, 
+                earum dolorem distinctio eveniet fugiat nobis hic maiores inventore 
+                dicta voluptas quos, voluptatibus architecto facere! Quisquam nemo 
+                sapiente doloribus veniam?
+            </p>
+        </div>
+
+        <div class="box last-box">
+            <h2 class="heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam, 
+                earum dolorem distinctio eveniet fugiat nobis hic maiores inventore 
+                dicta voluptas quos, voluptatibus architecto facere! Quisquam nemo 
+                sapiente doloribus veniam?
+            </p>
+        </div>
+    </section>
+</body>
+</html>
