@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Чтобы учесть случай, когда содержимое меньше высоты экрана */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Выравниваем содержимое по горизонтали по центру */
+            flex: 1; /* Растягиваем .container на всю доступную высоту */
+        }
+
+        .Main-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            flex: 1; /* Растягиваем .Main-section на всю доступную высоту */
+        }
+
+        .Main-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .number p {
+            font-size: 7em;
+            margin: 0;
+
+        }
+
+        .description p {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+        .BackHome {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        /* Стили для кнопок */
+        .BackHome a, .buttonBlog a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border: 1px solid #2980b9;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .BackHome a:hover, .buttonBlog a:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <header>
+        <!-- Your header content goes here -->
+    </header>
+
+    <main class="Main-section">
+        <figure>
+            <img width="auto" height="50%" src="img/programer.gif" alt="worker" class="worker"/>
+        </figure>
+
+        <div>
+            <div class="number">
+                <p>404</p>
+            </div>
+            <div class="description">
+                <p>Сторінку не знайдено</p>
+            </div>
+            <div class="buttons">
+                <div class="BackHome">
+                    <a href="https://mainacademy.ua/">Повернутися на головну</a>
+                    <div class="buttonBlog">
+                        <a href="https://mainacademy.ua/ua/blog-ua/">блог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+</body>
+</html>
