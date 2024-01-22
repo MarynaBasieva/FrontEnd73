@@ -1,0 +1,49 @@
+.text {
+  color: #00008b;
+  font-size: 150px;
+  margin: 20px 20px;
+  text-align: center;
+  font-size: 70px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ff69b4;
+  color: #dceb06;
+  width: 50%;
+}
+
+.but {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffd700;
+  color: #fff;
+  width: 50%;
+}
+
+.wrong {
+  font-size: 30px;
+  text-align: center;
+  color: #696969;
+}
+.p1 {
+  text-align: center;
+  text-transform: none;
+  color: #696969;
+  font-size: 18px;
+}
+
+.blog {
+  text-decoration: none;
+}
+
+.blog:hover {
+  text-decoration: underline;
+  color: #31ca20;
+}

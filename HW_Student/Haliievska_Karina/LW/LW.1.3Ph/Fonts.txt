@@ -1,0 +1,6 @@
+Vidaloka regular
+BacktoBlackDemo
+FontAwesome
+OpenSans
+Ionicons
+OpenSans Semibold
