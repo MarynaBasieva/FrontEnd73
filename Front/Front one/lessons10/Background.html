@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .box{
+    padding: 200px 0;
+    margin-bottom: 50px;
+  }
+ .box h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+  }
+  .bacground_color{
+    background-color: #000C5C;
+  }
+  .bacground_image{
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+  }
+  .bacground_image2{
+    background: #000 url('img/banner_two.jpeg') no-repeat;
+  }
+  .bacground_repeat{
+    background: url('img/banner_two.jpeg') repeat;
+  }
+  .bacground_position_repeat{
+    /*background:#000 url('img/banner_two.jpeg') no-repeat center bottom;*/
+    background:#000 url('img/banner_two.jpeg') no-repeat;
+    background-position: center bottom;
+  }
+  .bacground_cover{
+    background: url('img/banner_two.jpeg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .bacground_contain{
+    background: url('img/banner_two.jpeg') no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .bacground_attachmen{
+    background: url('img/banner.png') no-repeat;
+    background-attachment: fixed;
+  }
+  .bacground_full{
+    background: url('img/start.webp'), url('img/start.webp'), url('img/start.webp');
+    background-repeat: no-repeat;
+    background-size: 40%,40%,10%;
+    background-position: left,right,center;
+  }
+  .bacground_full_position{
+    background:#000 url('img/banner_two.jpeg') no-repeat center bottom / cover;
+  }
+</style>
+<body>
+    <section class="parentBackground">
+
+        <div class="bacground_color box">
+            <h2>background color</h2>
+        </div>
+
+        <div class="bacground_image box">
+            <h2>background image</h2>
+        </div>
+
+        <div class="bacground_image2 box">
+            <h2>background image2</h2>
+        </div>
+
+        <div class="bacground_repeat box">
+            <h2>background repeat</h2>
+        </div>
+
+        <div class="bacground_position_repeat box">
+            <h2>background position repeat</h2>
+        </div>
+
+        <div class="bacground_cover box">
+            <h2>background cover</h2>
+        </div>
+
+        <div class="bacground_contain box">
+            <h2>background contain</h2>
+        </div>
+
+        <div class="bacground_attachmen box">
+            <h2>background attachmen</h2>
+        </div>
+
+        <div class="bacground_full box">
+            <h2>background full</h2>
+        </div>
+
+        <div class="bacground_full_position box">
+            <h2>background full position</h2>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;}
+    
+    .box{
+        width: 50%;
+    }
+    .nav{
+        background: #F5F5F5;
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;display: list-item;
+text-align: 
+    }
+   .number{font-size: 70px;color:#1F3851;text-align: center; 
+    background-color: bisque;
+    }
+   .info box{
+    background-position: center; background-color:
+   }
+   .page{
+    text-align: center;color:#777; font-size: 18px;text-transform: uppercase; background-color: aqua;}
+
+ .button1{width: 14.955em;
+    height: 2.6775em;
+   text-align: center;
+    font-family: Inter;
+    font-size: 0.9375rem;
+        font-weight: 400;
+    line-height: 1.42875rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-radius: 0.3125rem;
+    background-color: green;
+    }
+    .head {
+        text-decoration: none;}
+    .head:hover{background-color:bisque;}    
+       
+     
+
+.button2{width: 9.01rem;height: 1.25rem;;
+        display: flex;
+        margin: 30px;
+width: 10.62625rem;
+height: 2.6775rem;
+padding: 0.6875rem 0.8rem 0.74rem 0.8125rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 0.3125rem;
+            background-color: green;} 
+.blog {
+    text-decoration: none;}
+.blog:hover{color: black; text-decoration: underline;}    
+footer{
+    background-color:blue;
+}
+.footnub a{color: #F5F5F5;
+}
