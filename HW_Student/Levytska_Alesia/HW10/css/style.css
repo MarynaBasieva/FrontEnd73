@@ -1,0 +1,58 @@
+.box{
+    padding: 300px 0;
+    margin-bottom: 50px;
+  }
+ .elem_parent_1{
+    width: 50%;
+    float: left;
+ }
+ .elem_parent_2{
+    width: 50%;
+    float: left;
+ }
+   .elem1{
+    color: blue;
+text-align: center;
+font-size: 70px;
+line-height: 5px;
+   } 
+   .elem2{
+    color:gray;
+text-align: center;
+   } 
+   .elem3{
+    color:gray;
+text-align: center;
+/*з великоі чи всі великі?*/
+text-transform: uppercase;
+font-size: 18px;
+   } 
+   .elem4{
+    color:black;
+text-align: center;
+font-size: 20px;
+line-height: 25px;
+background-color: rgb(71, 204, 100);
+border: solid 1px;
+width: 300px;
+   } 
+   .elem4 a{  text-decoration: none;}
+   .elem4:hover a{
+    text-decoration: underline;
+}
+   .elem5{
+    color:black;
+text-align: center;
+font-size: 20px;
+line-height: 25px;
+background-color: rgb(71, 204, 100);
+border: solid 1px;
+width: 200px;
+   } 
+   .elem5 a{
+    text-decoration: none;
+}
+   .elem5:hover a{
+    text-decoration: underline;
+   }
+    
