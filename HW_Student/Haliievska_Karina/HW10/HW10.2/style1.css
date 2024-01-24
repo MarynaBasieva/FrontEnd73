@@ -1,0 +1,12 @@
+.Bgstyle {
+  background-image: url(img/Fl.jpg);
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 300px 0;
+}
+
+.Bgstyle h1 {
+  color: pink;
+  font-size: 40px;
+}

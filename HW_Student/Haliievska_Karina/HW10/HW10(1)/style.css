@@ -1,0 +1,12 @@
+.bgStyle {
+  background-image: url(img/816B7627.jpg-1900px.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  padding: 300px 0;
+}
+.bgStyle_title {
+  color: white;
+  font-size: 40px;
+  padding: 300px 0;
+}

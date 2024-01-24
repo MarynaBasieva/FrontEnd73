@@ -1,0 +1,19 @@
+.styleB {
+  background-image: url(img/Fl.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  padding: 300px 0;
+  font-family: "viper_squadronregular";
+}
+
+.styleB h1 {
+  color: pink;
+  font-size: 30px;
+  padding: 300px 0;
+}
+/* font-family: "viper_squadronregular";
+font-family: "viper_squadron_solidregular";
+font-family: "viper_squadronitalic";
+font-family: "viper_squadron_soliditalic";
+*/
