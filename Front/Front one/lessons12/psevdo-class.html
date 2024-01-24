@@ -5,7 +5,108 @@
 <title>psevdo-class</title>
 </head>
 <style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.nthchild{
+		font-size: 30px;
+		color: #ccc;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+	.nthchild .nthChildItem:first-child{ /*first-child*/
+		color: aqua;
+	}
+	.nthchild .nthChildItem:last-child{ /*last-child*/
+		color: bisque;
+	}
+	.nthchild .nthChildItem:nth-child(2){ /*nth-child(2)*/
+		color:#1a9a71;
+	}
+	.nthchild .nthChildItem:nth-child(3){ /*nth-child(3)*/
+		color: rgb(16, 21, 177);
+	}
+	.nthchild .nthChildItem:nth-child(4){ /*nth-child(4)*/
+		color: rgb(132, 162, 40);
+	}
+	/*table style*/
+		.table{
+			margin-top: 20px;
+			border-collapse: collapse;
+		}
+		.table tr td{
+			border: solid 1px #ccc;
+			padding: 10px;
+		}
+		.table tr:nth-child(odd){
+			background: #7c7c7c;
+			cursor: pointer;
+		}
+		.table tr:nth-child(even){
+			background: #77E9ED;
+		}
+		.table tr:nth-child(odd):hover{
+			background: #1a9a71;
+		}
+	/*table style*/
 
+		ul.psevdoBeforeAfter{
+			margin: 20px 0;
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+			list-style: none;
+			margin-left: 20px;
+		}
+		ul.psevdoBeforeAfter li{
+			position: relative;
+			padding-left: 18px;
+		}
+		ul.psevdoBeforeAfter li:before{
+			content: '';
+			width: 10px;
+			height: 10px;
+			background: #7c7c7c;
+			position: absolute;
+			top: 8px;
+			left: 0;
+		}
+		ul.psevdoBeforeAfter li:after{
+			content: '+';
+			padding-left: 14px;
+		}
+		ul.psevdoBeforeAfter li:nth-child(1):before{
+			background: #1a9a71;
+		}
+		ul.psevdoBeforeAfter li:hover:before{
+			background: #b31999;
+		}
+		.tel{
+			font-size: 20px;
+			color: #333;
+			text-decoration: none;
+			position: relative;
+			padding-left: 25px;
+		}
+		.tel:before{
+			content: '';
+			background: url("img/before.jpeg") no-repeat;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			left: 6px;
+			top: 5px;
+		}
+		.tel:after{
+			content: '';
+			background: url("img/after.jpeg") no-repeat;
+			width: 15px;
+			height: 16px;
+			position: absolute;
+			top: 2px;
+			right: -20px;
+		}
 </style>
 <body>
 	<div class="nthchild">
@@ -41,8 +142,6 @@
 			<td>Column4</td>
 		</tr>
 	</table>
-	
-	<div class="box"></div>
 	
 	<ul class="psevdoBeforeAfter">
 		<li>psevdo class1</li>
