@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BTN</title>
+  </head>
+  <style>
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      position: relative;
+      text-decoration: none;
+      font-size: 0px;
+    }
+    .btn::before {
+      content: "Дізнатися більше";
+      width: 180px;
+      display: block;
+      border: 2px solid black;
+      box-sizing: border-box;
+      position: absolute;
+      color: black;
+      padding: 10px 10px 10px 10px;
+      font-size: 20px;
+      background-color: cadetblue;
+      border-radius: 7px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 17px;
+    }
+    .btn:hover::before {
+      background-color: aqua;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <p>
+          lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+          dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem
+          ipsum dolar
+        </p>
+        <a href="#" class="btn">more btn</a>
+      </div>
+    </main>
+  </body>
+</html>
