@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .abode {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin-bottom: 50px;
+        font-size: 24px;
+      }
+
+      h2 {
+        border-bottom: 4px solid black;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        position: relative;
+      }
+      .abode h2::before {
+        content: "";
+        border-bottom: 5px solid black;
+        width: 600px;
+        position: absolute;
+        top: 57px;
+      }
+      .abode .pfoto:nth-child(2)::before {
+        border-bottom: 5px solid rgb(255, 157, 0);
+      }
+      .abode .pfoto:nth-child(3)::before {
+        border-bottom: 5px solid hwb(349 6% 21%);
+      }
+
+      .abode .pfoto:last-child:before {
+        border-bottom: 5px solid rgb(0, 255, 102);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="abode">
+        <h1>Мої навики</h1>
+        <h2 class="pfoto">Adobe Photoshop</h2>
+        <h2 class="pfoto">Adobe Photoshop</h2>
+        <h2 class="pfoto">Adobe Photoshop</h2>
+      </div>
+    </main>
+  </body>
+</html>

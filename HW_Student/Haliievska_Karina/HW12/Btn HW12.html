@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BTN</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /*text-align: center;*/
+
+    .btn::after {
+      content: " Дізнатись більше  \2705";
+      padding-left: 23px;
+      padding-top: 5px;
+      color: #ffefd5;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px 15px 20px;
+      margin: auto;
+      font-size: 25px;
+      border: solid 4px;
+      border-radius: 30px;
+      border-color: #008080;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: #696969;
+      color: #696969;
+      text-indent: -120px;
+      overflow: hidden;
+    }
+    .btn:hover {
+      background: #ffebcd;
+      color: #696969;
+    }
+    .btn:hover::after {
+      color: #696969;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <p>
+          lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+          dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem
+          ipsum dolar
+        </p>
+        <a href="#" class="btn">more btn</a>
+      </div>
+    </main>
+  </body>
+</html>
