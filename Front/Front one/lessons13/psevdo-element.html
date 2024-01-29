@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psevdo element</title>
+</head>
+<style>
+   .link{
+     display: block;
+   }
+   a:link{
+    text-decoration: none;
+    color: #333;
+   }
+   /*a:visited{
+    color: yellow;
+   }*/
+   a:hover{
+    text-decoration: underline;
+   }
+   a:active{
+    color: aqua;
+   }
+
+   /*form style*/
+      .form{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .form input{
+        outline: none;
+        display: block;
+        border: solid #000 1px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        padding:5px 7px;
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .form textarea{
+        outline: none;
+        display: block;
+        border: solid #000 1px;
+        width: 100%;
+        height: 150px;
+        box-sizing: border-box;
+        padding:5px 7px;
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 20px;
+        resize: none;
+      }
+      .form  input::placeholder,
+      .form  textarea::placeholder{
+        color: #000;
+      }
+      .form  input:focus,
+      .form  textarea:focus{
+        border: solid 1px #ccc;
+        transition: all 0.4s ease;
+      }
+      .form  input:focus::placeholder,
+      .form  textarea:focus::placeholder{
+        color: #ccc;
+      }
+      .form button{
+            cursor: pointer;
+            display: block;
+            font-size: 17px;
+            width: 150px;
+            height: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            border: none;
+            background: #000;
+            color: #fff;
+            transition: all 0.4s ease;
+      }
+      .form button:hover{
+            background: #3352c4;
+        }
+   /*form style*/
+</style>
+<body>
+    <a href="#" class="link">Link 1</a>
+    <a href="#" class="link">Link 2</a>
+    <a href="#" class="link">Link 3</a>
+    <a href="#" class="link">Link 4</a>
+    <a href="#" class="link">Link 5</a>
+
+    <form class="form">
+        <input type="text" placeholder="Your Name" />
+        <input type="tel" placeholder="Your Phone" />
+        <input type="email" placeholder="Your E-mail" />
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+    </form>
+</body>
+</html>

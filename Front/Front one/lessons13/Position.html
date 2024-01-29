@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion</title>
+</head>
+<style>
+    *{
+        padding: 0;/*обнуляємо відступи*/
+        margin: 0;
+    }
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        height: 1000px; 
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background: #080169;
+        border: #000 solid 10px;
+        margin: 0 auto 30px;
+    }
+    .child-box{
+        width:80px;
+        height: 80px;
+        background: #000;
+    }
+    .child-box-static{
+        position: static;/*статичне положення тегів, для адаптивної верстки*/
+    }
+    .box_fixed,
+    .box_absolute{
+        position: relative;
+    }
+    .child-box-absolute{
+        position: absolute;
+        left: 20px;
+        bottom: 20px; /* -20px */
+    }
+    .child-box-relative{
+        position: relative;
+        top: -25px;
+        left: 20px;
+    }
+    .child-box-fixed{
+        position: fixed;
+        bottom: 50%;
+        right: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box_static box">
+            <div class="child-box-static child-box"></div>
+        </div>
+
+        <div class="box_absolute box">
+            <div class="child-box-absolute child-box"></div>
+        </div>
+
+        <div class="box_relative box">
+            <div class="child-box-relative child-box"></div>
+        </div>
+
+        <div class="box_fixed box">
+            <div class="child-box-fixed child-box"></div>
+        </div>
+    </div>
+</body>
+</html>

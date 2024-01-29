@@ -11,27 +11,26 @@
     }
 
     .btn {
-      position: relative;
       text-decoration: none;
       font-size: 0px;
-    }
-    .btn::before {
-      content: "Дізнатися більше";
-      width: 180px;
-      display: block;
-      border: 2px solid black;
-      box-sizing: border-box;
-      position: absolute;
-      color: black;
-      padding: 10px 10px 10px 10px;
-      font-size: 20px;
       background-color: cadetblue;
       border-radius: 7px;
       font-weight: bold;
       text-align: center;
       line-height: 17px;
+      display: block;
+      border: 2px solid black;
+      box-sizing: border-box;
+      width: 180px;
+      color: black;
+      padding: 10px 10px 10px 10px;
     }
-    .btn:hover::before {
+    .btn::before {
+      content: "Дізнатися більше";
+      font-size: 20px;
+     
+    }
+    .btn:hover {
       background-color: aqua;
       text-decoration: underline;
     }
