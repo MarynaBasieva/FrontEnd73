@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LW</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .line_mine {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .phot .adob_ch1 {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch1::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 5px;
+      background: #66ea0e;
+    }
+
+    .phot .adob_ch2 {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 65%;
+      height: 5px;
+      background: #4e0bb9;
+    }
+
+    .phot .adob_ch3 {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 42%;
+      height: 5px;
+      background: #b94e0b;
+    }
+    .phot {
+      margin-bottom: 15px;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="main">
+        <div class="line_main">
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch1"></div>
+          </div>
+
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch2"></div>
+          </div>
+
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch3"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
