@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Border</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.parent_border{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.border{
+		width: 200px;
+		height: 200px;
+		box-sizing: border-box;
+		margin: 20px;
+	}
+	.border1{
+		border-color: #000;
+		border-width: 5px;
+		border-style: solid;
+	}
+	.border2{
+		border: dotted 5px red;
+	}
+	.border3{
+		border-bottom: 5px solid #b126dd;
+		border-left: #022fc2 5px solid;
+		border-right: solid #486f0d 5px;
+		border-top: 5px solid #871113;
+	}
+	.border4{
+		border: dashed 5px #000;
+	}
+	.bg{
+		background:#D7EDB8;
+		padding: 60px 0;
+	}
+	.container{
+	 max-width: 600px;
+	 margin: 0 auto;
+	}
+	.bg h2{
+		border-bottom: solid 2px #000;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		position: relative;
+	}
+	.bg h2::before{
+		content: '';
+		position: absolute;
+		background-color: #000;
+		height: 15px;
+		width: 100px;
+		border-radius: 5px;
+		padding: 20 0 0 0;
+		top: 40px;
+		left: 0;
+	}
+
+
+</style>
+<body>
+	<div class="parent_border">
+		<div class="border border1"></div>
+		<div class="border border2"></div>
+		<div class="border border3"></div>
+		<div class="border border4"></div>
+	</div>
+
+	<div class="bg">
+		<div class="container">
+			<h2>Heading lorem ipsum</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur impedit molestias 
+				beatae veniam, magni dolorem ut exercitationem voluptates iusto provident odio earum nesciunt 
+				recusandae nostrum praesentium eius laborum illum.
+			</p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

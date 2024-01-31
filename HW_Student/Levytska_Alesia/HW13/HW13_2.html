@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form _HW13_1
+    </title>
+</head>
+<style>
+   
+   .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 1000px;
+   }
+   .left{
+    position: fixed;
+    bottom: 50%;
+    left: 570px;
+    width: 40px;
+    height: 100px;
+    background: green;
+   }
+      .form{
+        width: 300px;
+        height: 400px;
+        background: gray;
+        border: 2px solid black;
+      
+        position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       
+      }
+      .form input{
+        outline: none;/* убрать рамку*/
+        display: block;
+        border: solid #000 1px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        padding:5px 7px;
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .form textarea{
+        outline: none;
+        display: block;
+        border: solid #000 1px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        padding:5px 7px;
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 20px;
+        resize: none;
+      }
+      .form  input::placeholder,/* чтоб в поле писался цвет подсказки что вводить green*/
+      .form  textarea::placeholder{
+        color:green;
+      }
+      .form  input:focus,/*при нажатии рамка становится blue*/
+      .form  textarea:focus{
+        border: solid 1px blue;
+        transition: all 0.4s ease;
+      }
+      
+      .form button{
+            cursor: pointer;
+            display: block;
+            font-size: 17px;
+            width: 150px;
+            height: 40px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            background: green;
+            color: #fff;
+            transition: all 0.4s ease;
+      }
+      .form button:hover{
+            background: #3352c4;
+        }
+   
+</style>
+<body>
+<div class="container">
+<div form class="form">
+        <input type="text" placeholder="Ваше Ім'я *" />
+        <input type="tel" placeholder="Ваш телефон*" />
+        <textarea placeholder="Бажана дата прийому"></textarea>
+        <button>Надіслати</button>
+    </form>
+</div>
+<div class="left">
+<a href=''>Зворотній дзвінок</a>
+</div>
+</div>
+</body>
+</html>
