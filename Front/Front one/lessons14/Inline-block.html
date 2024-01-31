@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline block</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .block span{
+      display: block;
+    }
+    .block div,
+    .block span{
+        background: #3a0ca5;
+    }
+    .block div,
+    .block span,
+    .inline_block div{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        background: #3a0ca5;
+    }
+    .inline{
+        border: 2px dotted #000;
+    }
+    .inline div{
+        background: #136e71;
+        border: 1px solid #000;
+        font-size: 30px;
+         display: inline;
+    }
+    .inline_block div{
+        display: inline-block;
+    }
+    .display_none{
+        display: none;
+    }
+    .visibility_hidden{
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="parent">
+        <h2>Block</h2>
+        <div class="block">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+
+        <h2>Inline</h2>
+        <div class="inline">
+            <div>Some inline text</div>
+            <div>Some inline text</div>
+            <div>Some inline text</div>
+        </div>
+
+        <h2>inline block</h2>
+        <div class="inline_block">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <h2>Visibility</h2>
+        <div class="block">
+            <div></div>
+            <div class="display_none">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, non voluptatum id, atque amet dolorum hic doloribus aut reprehenderit unde aperiam nobis eius delectus corporis rerum fuga ratione eum voluptatem!
+            </div>
+            <div></div>
+            <div></div>
+            <div class="visibility_hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto non facilis accusamus eos assumenda debitis voluptatum! A reprehenderit distinctio laudantium dolores maxime ratione officia dolorum. Culpa incidunt nemo alias nobis?</div>
+            <div></div>
+            <div></div>
+        </div>
+       
+    </div>
+</body>
+</html>
