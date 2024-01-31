@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            color: rgba(128, 128, 128, 0.99);
+        }
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 65%;
+            padding: 5px;
+            background-color: #20B2AA;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group #date {
+            text-align: end;
+            color: rgba(128, 128, 128, 0.99);
+        }
+
+        .divp {
+            position: absolute;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+            top: 2%;
+            left: -1.3rem;
+            background-color: #ddd;
+            border: none;
+            font-size: medium;
+            border-radius: 7px;
+            background-color: #20B2AA;
+            color: #fff;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+            <form><button type="" class="divp">Зворотний дзвінок</button></form>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ім'я *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон *" required>
+                </div>
+                <div class="form-group">
+                    <label>Бажана дата прийому</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">НАДІСЛАТИ</button>
+                </div>
+            </form>
+        
+        
+    </div>
+</body>
+</html>

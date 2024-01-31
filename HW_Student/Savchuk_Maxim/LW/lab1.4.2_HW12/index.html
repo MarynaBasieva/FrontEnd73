@@ -1,68 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LW</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-<style>
-*{
-    max-width: 800px;
-}
+    .line_mine {
+      max-width: 750px;
+      margin: 0 auto;
+    }
 
-.skills{
-    padding: 40px;
-}
+    h1 {
+        padding: 20px 0px 20px 0px;
+    }
 
-.hgh2 {
-    font-size: 18px;
-    border-bottom: solid 2px #a9a9a9 ;
-    padding-bottom: 15px;
-}
+    .phot .adob_ch1 {
+      position: relative;
+      width: 90%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch1::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 5px;
+      background: purple;
+    }
 
-.hgh2::before {
-    content: "";
-    background-color: #008B8B;
-    position: absolute;
-    margin-top: 68.5px;
-    height: 3px;
-    width: 10%;
-}
+    .phot .adob_ch2 {
+      position: relative;
+      width: 90%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 65%;
+      height: 5px;
+      background: purple;
+    }
 
-.first-h2::before {
-    width: 560px;
-}
-
-.second-h2::before {
-    width: 690px;
-}
-
-.third-h2::before {
-    width: 480px;
-}
-
-
-</style>
-
-<body>
+    .phot .adob_ch3 {
+      position: relative;
+      width: 90%;
+      height: 5px;
+      background: #91cdcc;
+    }
+    .phot .adob_ch3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 42%;
+      height: 5px;
+      background: purple;
+    }
+    .phot {
+      margin-bottom: 15px;
+    }
+  </style>
+  <body>
     <main>
-        <div class="skills">
-            <h1>Мої навички</h1>
+      <div class="main">
+        <div class="line_main">
+            <hgroup class="skill">
+                <h1>My skill</h1>
+            </hgroup>
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch1"></div>
+          </div>
 
-            <div class="hgh2 first-h2">
-                <h2>Adobe Photoshop</h2>
-            </div>
-                
-            <div class="hgh2 second-h2">
-                <h2>Adobe Photoshop</h2>
-            </div>
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch2"></div>
+          </div>
 
-            <div class="hgh2 third-h2">
-                <h2>Adobe Photoshop</h2>
-            </div>
-
+          <div class="phot">
+            <h2>Abobe Photoshop</h2>
+            <div class="adob_ch3"></div>
+          </div>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
