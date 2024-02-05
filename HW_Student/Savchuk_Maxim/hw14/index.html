@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>	
+    <script type="text/javascript" src="js/customs.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1170px;
+        font-family: 'Mulish', sans-serif;
+    }
+    h2{
+        font-size: 14px;
+    }
+
+    .btnh2{
+        display: flex;
+        height: 45px;
+        width: 150px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        margin: 30px auto;
+    }
+    
+    .btnh2:hover {
+        background-color: #45a049;
+    }
+
+    .formnone1 {
+        height: auto;
+        width: auto;
+        background-image: url(https://img.freepik.com/free-vector/paper-style-light-blue-wavy-background_23-2149112996.jpg);    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
+        border-radius: 25px;
+        max-width: 400px;
+    }
+
+    .close{
+        text-align: end;
+        margin: 25px;
+    }
+
+    .formheader {
+        padding: 20px 0 0;
+        margin-bottom: 30px;
+    }
+    .formheader h2 {
+        font-size: 30px;
+    }
+
+    .formheader p {
+        font-size: 14px;
+    }
+
+    form input {
+        height: 45px;
+        box-sizing: border-box;
+    }
+
+    .NameSurname{
+        display: inline-flex;
+        width: 100%;
+        
+    }
+
+    .NameInput, .SurnameInput {
+        position: relative;
+        width: 50%;
+        margin: 0px 30px 10px 30px;
+        
+    }
+
+    .NameSurname input{
+        width: 100%;
+    }
+
+    .NameInput::before {
+        content: 'Name';
+        position: absolute;
+        top: -20px;
+    }
+
+    .SurnameInput::before {
+        content: 'Surname';
+        position: absolute;
+        top: -20px;
+    }
+
+    .EmailInput {
+        position: relative;
+        margin: 30px 30px 10px 30px;
+    }
+
+    .EmailInput input {
+        width: 100%;
+    }
+
+    .EmailInput::before {
+        content: 'E-mail';
+        position: absolute;
+        top: -20px
+    }
+    .TextArea1 {
+        margin: 30px 30px 10px 30px;
+        position: relative;
+    }
+
+    .TextArea1 textarea {
+        resize: none;
+        width: 100%;
+        height: 65px;
+
+    }
+
+    .TextArea1::before {
+        content: 'Write your question below';
+        position: absolute;
+        top: -20px;
+    }
+
+    .btnSend{
+        margin: 20px 0;
+        height: 35px;
+        width: 100px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btnSend:hover{
+        background-color: #45a049;
+    }
+
+    .formnone {
+        position: fixed;
+
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <div class="btnh2">
+            <h2>Звязатися з нами</h2>
+        </div> 
+
+        <div class="formnone">
+            <form action="#" method="post" class="formnone1">
+                <div class="close">
+                    <p>X</p>
+                </div>
+                <div class="formheader">
+                    <h2>Contact us</h2>
+                    <p>We will get back to you asap!</p>
+                </div>
+
+                <div class="NameSurname">
+                    <div class="NameInput">
+                        <input type="text" name="input1" placeholder="Ім'я" />
+                    </div>
+
+                    <div class="SurnameInput">
+                        <input type="text" name="input2" placeholder="Прізвище" />
+                    </div>
+                </div>
+                
+                <div class="EmailInput">
+                    <input type="email" name="user_email" placeholder="Ел. пошта" />
+                </div>
+
+                <div class="TextArea1">
+                    <textarea placeholder="Напишіть своє запитання тут..."></textarea>
+                </div>
+
+                    <button class="btnSend" type="button" name="button1">
+                        Send
+                    </button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
