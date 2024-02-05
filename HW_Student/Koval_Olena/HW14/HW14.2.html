@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+    }
+    .box-image {
+      width: 700px;
+      position: relative;
+    }
+    .box-image:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: all 0.3 ease;
+      opacity: 0;
+    }
+    .box-image:hover:before {
+      opacity: 1;
+    }
+    .position_block_img {
+      border: 3px black solid;
+      padding: 3px;
+      font-size: 30px;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: rgb(5, 65, 61);
+      font-weight: bold;
+      border-radius: 7px;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(5, 65, 61);
+    }
+  </style>
+  <body>
+    <sectio class="box">
+      <div class="container">
+        <div class="box-image">
+          <img src="./img/tree.webp" alt="tree" />
+          <div class="position_block_img">
+            <div class="text_img">Ми за збереження природи</div>
+            <a href="#">Приєднуйся</a>
+          </div>
+        </div>
+      </div>
+    </sectio>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/customs.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+    body {
+      background: url(img/lawyer.jpg) no-repeat center/cover;
+    }
+    header {
+      background-color: #4f4f4f;
+      max-height: 50px;
+      position: relative;
+    }
+
+    .email {
+      display: block;
+      width: 800px;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 15px;
+      left: 100px;
+    }
+    .email a {
+      color: #ffbf00;
+      text-decoration: none;
+      padding: 20px;
+    }
+
+    .nav {
+      display: block;
+      width: 1500px;
+      position: absolute;
+      top: 5px;
+      left: 1000px;
+    }
+    .nav ul li {
+      display: inline;
+      font-size: 30px;
+      padding: 10px;
+      color: #ffbf00;
+      list-style: none;
+      margin-top: 20px;
+    }
+    .box {
+      width: 500px;
+      height: 250px;
+      text-align: center;
+      color: #ffbf00;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .box-tel {
+      width: 400px;
+      background: #ffbf00;
+      border-radius: 20px;
+      font-size: 40px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      margin: 40px;
+    }
+
+    .qwehin {
+      width: 400px;
+      color: black;
+      background-color: #ffbf00;
+      font-size: 20px;
+      text-align: center;
+      position: fixed;
+      right: 0px;
+      bottom: 150px;
+      font-size: 50px;
+      border-radius: 30px;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+    .qwehin:hover {
+      cursor: pointer;
+      background: white;
+    }
+    .box-head {
+      position: absolute;
+      top: 150px;
+      left: 10%;
+    }
+
+    .parent_modal {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+    }
+    .wrapp_modal {
+      width: 600px;
+      background: #ffbf00;
+      padding: 15px 20px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+    .wrapp_modal h2,
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .form .input {
+      color: black;
+      width: 100%;
+      height: 40px;
+      display: block;
+      outline: none;
+      border: solid 1px black;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+    .textarea {
+      color: black;
+      width: 100%;
+      height: 40px;
+      display: block;
+      outline: none;
+      font-size: 15px;
+      border: solid 1px black;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      resize: none;
+    }
+    .form .input::placeholder,
+    .form .textarea::placeholder {
+      color: #000;
+    }
+    .form .input:focus::placeholder,
+    .form .textarea:focus::placeholder {
+      color: #ccc;
+    }
+    .form .input:focus,
+    .form .textarea:focus {
+      border: #ccc solid 1px;
+    }
+    .button {
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      padding: 10px 0;
+      background: #4f4f4f;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      margin-right: 500px;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      color: black;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #333;
+    }
+  </style>
+  <body>
+    <div>
+      <header>
+        <div class="header">
+          <figure class="logo">
+            <a href="#"> <img src="./img/logo4.png" alt="logo" /></a>
+          </figure>
+          <div class="email">
+            <a href="tel:+380973859292">(097 385 92 92)</a>
+            <a href="mailto:forsk@ukr.net">forsk@ukr.net</a>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li>Послуги</li>
+              <li>Про нас</li>
+              <li>Відгуки</li>
+              <li>Контакти</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="box-head">
+            <div class="box">
+              <h1>Адвокат Коваль Сергій Миколайович</h1>
+              <h2>
+                5 хвилин і моєю командою адвокатів - ваша проблема знайде
+                вирішення!
+              </h2>
+            </div>
+            <div class="box-tel">+380 (97) 385 92 92</div>
+          </div>
+          <div class="qwehin">Напишіть нам</div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+
+      <div class="parent_modal">
+        <div class="wrapp_modal">
+          <div class="close">x</div>
+          <div class="form_modal">
+            <h2>Отримайте консультацію!</h2>
+            <h3>Найближчим часом спеціаліст звяжеться з Вами</h3>
+            <form class="form">
+              <input class="input" type="text" placeholder="ПІБ" />
+              <input class="input" type=" tel" placeholder="Телефон" />
+              <textarea class="textarea" placeholder="Ваше питання"></textarea>
+              <button class="button">Відправити</button>
+              *Натискаючи на кнопку ви погоджуєтесь з нашою політикою
+              конфіденційності
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
