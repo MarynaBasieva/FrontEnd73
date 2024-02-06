@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*general style*/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,
+        body{
+            height: 100%;
+        }
+        .for_page{
+            min-height: 100%;
+            position: relative;
+        }
+        .page{
+            padding-bottom: 219px;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+        img{
+            max-width: 100%;
+            width: auto;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #333;
+            font-size: 14px;
+        }
+        .container{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+    /*general style*/
+
+    /*Header*/
+       .header{
+        background: #fff;
+        padding-top: 20px;
+       }
+       .logo{
+         display: block;
+         width: 150px;
+       }
+       .slogan{
+          font-size: 20px;
+          margin-left: 50px;
+          padding-top: 20px;
+       }
+       .contact_header a{
+            display: block;
+            text-decoration: none;
+            color: #242222;
+            transition: all 0.3s ease;
+       }
+       .contact_header a:hover{
+            color: aqua;
+        }
+    /*Header*/
+
+    /*Nav*/
+        .nav{
+            background: #001662;
+        }
+        .nav ul.sub-menu li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+        .nav ul.sub-menu > li > a{
+            color: #fff;
+            font-size: 15px;
+            padding: 20px 30px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .nav ul.sub-menu > li > a:hover{
+            background: #067672;
+        }
+        .nav ul.sub-menu li ul.sub-menu{
+            width: 300px;
+            background: #067672;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .nav ul.sub-menu li ul.sub-menu li,
+        .nav ul.sub-menu li ul.sub-menu li a{
+            display: block;
+        }
+        .nav ul.sub-menu li:hover ul.sub-menu{
+            opacity: 1;
+            visibility: visible;
+        }
+    /*Nav*/
+
+    /*Banner*/
+        .banner{
+            background: url("img/baner.png") no-repeat;
+            padding: 300px 0;
+            background-size: cover;
+            background-position:  center center;
+        }
+        .banner_text{
+            color: #fff;
+            padding: 30px;
+            background: rgba(0,0,0,0.7);
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .banner_text div:first-child{
+            margin-bottom: 40px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .banner_text div:last-child{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    /*Banner*/
+
+    /*About*/
+        .about{
+            padding: 60px 0;
+        }
+        .text-about h1{
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .text-about p{
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #ccc;
+        }
+    /*About*/
+
+    /*Footer*/
+       .footer{
+        color: #fff;
+        padding: 100px 0;
+        width: 100%;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+       }
+     /*Footer*/
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <a href="/" class="logo fl">
+                        <img src="img/logo.png" alt="Site" title="Site" />
+                    </a>
+
+                    <div class="slogan fl">Академія Front End</div>
+
+                    <div class="contact_header fr">
+                        <a href="tel:+380988887788">(098) 888 77 88</a>
+                        <a href="tel:+380988888888">(098) 888 88 88</a>
+                        <a href="mailto:student@gmail.com">student@gmail.com</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <nav class="nav">
+                    <div class="container">
+                        <ul class="sub-menu">
+                            <li class="item-menu">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">Service</a>
+                                <ul class="sub-menu">
+                                    <li class="item-menu">
+                                        <a href="#">Servise 1</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a href="#">Servise 2</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a href="#">Servise 3</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a href="#">Servise 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">Price</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">Contats</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="banner" id="banner">
+                <div class="container">
+                    <div class="banner_text">
+                        <div>академія популярних професій</div>
+                        <div>
+                            <p>Вивчаємо з нуля</p>
+                            <p>Вивчаємо з нуля</p>
+                            <p>Вивчаємо з нуля</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                        <div class="text-about">
+                            <h1>Lorem ipsum dolar</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                                ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                                 Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                            ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                            Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                            ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                            Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                            ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                            Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                            ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                            Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio quasi similique 
+                            ex eum nemo, explicabo earum temporibus minima perspiciatis officiis dignissimos!
+                                Sapiente culpa praesentium sed eligendi facere debitis laborum!</p>
+                        </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                Footer
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
