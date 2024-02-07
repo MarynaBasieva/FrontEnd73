@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+</head>
+<style>
+    *{
+      padding: 0;
+      margin: 0;   
+    }
+    h1{
+        text-shadow: 2px 2px;
+    }
+    h2{
+       text-shadow: 5px 5px blue; 
+    }
+    h3{
+       text-shadow: 2px 2px 5px blue;  
+    }
+    /*перше значення х(ліво на право), у (вверх-низ), розмиваємо колір, колір*/
+    .met{
+        text-shadow: 0px 0px 3px blue;
+    }
+    .met2{
+        text-shadow: 0px 0px 3px red, 0px 0px 5px #000fff; 
+    }
+    .met3{
+        text-shadow: 1px 1px 3px #000, 0px 0px 25px, 0 0 5px darkblue; 
+    }
+    .met4{
+        text-shadow: -1px 0px  green, 0px 1px blue, 1px 0 red, 0 1px yellow; 
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>text shadow</h1>
+        <h2>text shadow</h2>
+        <h3>text shadow</h3>
+        <h2 class="met">Text shadow</h2>
+        <h2 class="met2">Text shadow</h2>
+        <h2 class="met3">Text shadow</h2>
+        <h2 class="met4">Text shadow</h2>
+        <h2>Box shadow</h2>
+        <div class="box box-shadow"></div>
+        <div class="box2 box-shadow"></div>
+        <div class="box3 box-shadow"></div>
+        <div class="box4 box-shadow"></div>
+    </div>
+</body>
+</html>

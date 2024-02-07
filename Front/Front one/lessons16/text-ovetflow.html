@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .clip{
+        border: 1px solid #000;
+        padding: 5px;
+        width: 300px;
+        text-overflow: ellipsis;/*додає три точки*/
+        white-space: nowrap;/*забороняє перенос строки*/
+        overflow: hidden;/*обрізає все що заважає*/
+    }
+    .word-wrap{
+        border: 1px solid #000;
+        padding: 5px;
+        width: 200px;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    .word-break{
+        border: 1px solid #000;
+        padding: 5px;
+        width: 200px;
+        font-size: 18px;
+        word-wrap:break-all;
+    }
+</style>
+<body>
+    <main class="main">
+        <div class="clip">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magnam consequuntur reiciendis nam adipisci quia sunt quis dolore hic suscipit 
+            dolor! Quasi possimus commodi fugiat ipsum, ad aliquid cumque! Aliquid, dolor.
+        </div>
+
+        <div class="word-wrap">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam consequuntur reiciendis nam adipisci quia sunt quis dolore hic suscipit </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="word-break">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam consequuntur reiciendis nam adipisci quia sunt quis dolore hic suscipit </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   img{
+    max-width: 100%;
+    width: auto;
+   }
+   .parent{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+   }
+   .box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+   }
+   .box1{
+    background: rgba(44, 114, 255,0.7);
+    z-index: 3;
+    left: 40px;
+    top: 40px;
+   }
+   .box2{
+    background: rgba(27, 204, 115, 0.7);
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+   }
+   .box3{
+    background: rgba(156, 17, 161, 0.7);
+    z-index: 1;
+    left: 0;
+    top: 0;
+   }
+   .img_parent{
+    max-width: 800px;
+    margin: 100px auto 0;
+   }
+   .img{
+    position: relative;
+    max-width: 600px;
+   }
+   .img::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #98a907;
+    border-radius: 100px;
+    top: 80px;
+    right: -12px;
+    z-index: -1;
+   }
+</style>
+<body>
+   <!-- <div class="parent">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>-->
+
+    <div class="img_parent">
+        <div class="img">
+            <img src="img/img.png" alt="img" />
+        </div>
+    </div>
+</body>
+</html>
