@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* General style*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    .for_page {
+      min-height: 100%;
+      position: relative;
+    }
+    .page {
+      padding-bottom: 218px;
+    }
+    .fl {
+      float: left;
+    }
+    .fr {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+    body {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: black;
+      font-size: 14px;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+    /* General style*/
+
+    /*Header*/
+    .header {
+      background-color: #4f4f4f;
+      padding-top: 20px;
+    }
+    .logo {
+      display: block;
+      width: 150px;
+    }
+    .slogan {
+      font-size: 25px;
+      margin-left: 50px;
+      padding-top: 5px;
+      color: #ffbf00;
+    }
+    .contact_header a {
+      display: block;
+      text-decoration: none;
+      color: #ffbf00;
+      transition: all 0.3s ease;
+    }
+    .contact_header a:hover {
+      cursor: ;
+    }
+    /*Header*/
+
+    /*NAV*/
+    .nav {
+      background-color: #636363;
+    }
+    .nav ul.sub-menu li {
+      list-style-type: none;
+      display: inline-block;
+      position: relative;
+    }
+    .nav ul.sub-menu > li > a {
+      color: #ffbf00;
+      font-size: 15px;
+      padding: 20px 30px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .nav ul.sub-menu > li > a:hover {
+      background-color: white;
+    }
+    .nav ul.sub-menu li ul.sub-menu {
+      width: auto;
+      background: #636363;
+      opacity: 0;
+      position: absolute;
+    }
+    .nav ul.sub-menu li ul.sub-menu li,
+    .nav ul.sub-menu li ul.sub-menu li a {
+      display: block;
+    }
+    .nav ul.sub-menu li:hover ul.sub-menu {
+      opacity: 1;
+      visibility: visible;
+      background-color: #636363;
+    } /*NAV*/
+
+    /*Banner*/
+
+    .banner {
+      background: url(./img/lawyer.jpg);
+      padding: 300px 0;
+      background-size: cover;
+      background-position: center center;
+    }
+    .banner_text {
+      color: #ffbf00;
+      padding: 30px;
+      max-width: 600px;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 150px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .box-tel {
+      padding: 30px;
+      max-width: 600px;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 150px;
+      color: black;
+      background-color: #ffbf00;
+      text-align: center;
+
+      border-radius: 30px;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    /*Banner*/
+
+    /*About*/
+    .about {
+      padding: 60px 0;
+    }
+    .text-about {
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 20px;
+      background-color: #636363;
+      color: #ffbf00;
+    }
+    .text-about p {
+      margin-top: 20px;
+    }
+    .text-about p:nth-child(5) {
+      padding-left: 400px;
+    }
+
+    /*Footer*/
+
+    .footer {
+      color: #ffbf00;
+      padding: 100px 0;
+      width: 100%;
+      background: #4f4f4f;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  </style>
+  <body>
+    <div class="for_page">
+      <div class="page">
+        <header class="header">
+          <div class="container">
+            <a href="#" class="logo fl">
+              <img src="img/logo4.png" alt="logo"
+            /></a>
+
+            <div class="slogan fl">
+              Закон, який живе у нас, називається совість
+            </div>
+
+            <div class="contact_header fr">
+              <a href="tel:+380973859292">(097)385 92 92</a>
+              <a href="mailto:forsk@ukr.net">forsk@ukr.net</a>
+              <a href="https://maps.app.goo.gl/Nps5MgxUX9Gn8ccA9"
+                >Mісцезнаходження</a
+              >
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <nav class="nav">
+            <ul class="sub-menu">
+              <li class="item-menu">
+                <a href="#">Реєстрація підприємств</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Ліквідація підприємств</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Ведення справ</a>
+                <ul class="sub-menu">
+                  <li class="item-menu">
+                    <a href="#">Кримінальних</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Цивільних</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Адміністративних</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Господарських</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Стягнення боргів</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Адвокат по ДТП</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Адвокат по сімейним справам</a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Послуга "бізнес адвокат"</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="banner" id="banner">
+          <div class="container">
+            <div class="banner_text">
+              <h1>Адвокат Коваль Сергій Миколайович</h1>
+              <p>
+                5 хвилин і моєю командою адвокатів - ваша проблема знайде
+                вирішення!
+              </p>
+            </div>
+
+            <div class="box-tel">+380 (97) 385 92 92</div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="text-about">
+              <p>
+                Радий, що Ви зайшли на мій сайт, я, як адвокат, здійснюю
+                діяльність у м. Кременчуці із захисту, представництва та надання
+                всіх необхідних видів юридичної допомоги всім, хто звернувся.
+              </p>
+
+              <p>
+                Моя головна мета – допомогти Вам реалізувати Ваші права та
+                законні інтереси, не допустити їх порушення, а також у разі їх
+                порушення, сприяти у їх відновленні.
+              </p>
+
+              <p>
+                Я допоможу Вам вирішити проблему і досягти бажаного Вам
+                результату. Маю 24-річний досвід надання правової допомоги та
+                юридичного обслуговування громадянам, організаціям та
+                підприємствам. Спеціалізуюся у сферах цивільного, трудового,
+                кримінального, сімейного, податкового та адміністративного
+                права.
+              </p>
+
+              <p>
+                У своїй діяльності я застосовую індивідуальний підхід до кожного
+                Клієнта та надаю йому повну та об'єктивну інформацію для
+                прийняття вірних рішень, при цьому гарантую клієнтам повну
+                конфіденційність та збереження адвокатської таємниці.
+              </p>
+
+              <p>Адвокат Коваль Сергій Миколайович м. Кременчук</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">Footer</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantyan</title>
+</head>
+<style>
+   /*general*/ *{
+        padding: 0;
+        margin: 0;
+    }
+    html,body{
+        height: 100%;
+    }
+    .for_page{
+        min-height: 100%;
+        position: relative;
+    }
+    .page{
+        padding-bottom: 200px;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .clear{
+        clear: both;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+    }
+    body{
+        color: black;
+        font-size: 14px;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    /*general*/
+    /* header*/
+    .header{
+       background: white;
+       padding-top: 20px;
+
+    }
+    .logo{
+        display: block;
+        width: 150px;
+    }
+    .slogan{
+        font-size: 20px;
+        margin-left: 50px;
+        padding-top: 30px;
+    }
+    .contact_header a{
+        display: block;
+        text-decoration: none;
+        color: blue;
+        transition: all 0.3s ease;
+    }
+    .contact_header a:hover{
+        color: aqua;
+    }
+    /*Header*/
+    /*nav*/
+    .nav{
+        background: rgb(47, 47, 49);
+    }
+    .nav ul.sub-menu li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+    .nav ul.sub-menu > li >a{
+        color: white;
+        font-size: 15px;
+        padding: 20px 30px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .nav ul.sub-menu > li > a:hover{
+        background: rgb(90, 90, 105);
+    }
+    .nav ul.sub-menu li ul.sub-menu{
+width: 300px;
+background:rgb(90, 90, 105);
+position: absolute;
+opacity: 0;
+visibility: hidden;
+    }
+    .nav ul.sub-menu li ul.sub-menu li,
+    .nav ul.sub-menu li ul.sub-menu li a{
+        display: block;
+    }
+    .nav ul.sub-menu li:hover ul.sub-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    /*banner*/
+    .banner{
+        background: url(pics/ukraine.avif) no-repeat;
+        padding: 300px 0;
+        background-size: cover;
+        background-position: center center;
+    }
+    .banner_text{
+        color: antiquewhite;
+        padding: 30px;
+        background: rgba(80, 77, 77, 0.7);
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    .banner_text div:first-child{
+        margin-bottom: 40px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .banner_text div:last-child{
+        font-size: 20px;
+       line-height: 24px;
+    }
+    /*Banner*/
+    /*about*/
+    .about{
+        padding: 60px 0;
+    }
+    .text-about h1{
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .text-about p{
+       color: black;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    /*footer*/
+    .footer{
+        color: bisque;
+        padding: 100px 0;
+        width: 100%;
+        background: rgb(15, 14, 14);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+</style>
+<body>
+  <div class="for_page">
+  <div class="page">
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo fl">
+                <img src="pics/logo.png" alt="Aeroclub" title="Aeroclub"/>
+            </a>
+            <div class="slogan fl"><p>'Жити я не боюсь, у всьому мені призначено запам'ятатись і залишитися'</p>
+            <p>К. Оборін</p> </div>
+            <div class="contact_header fr">
+                <a href="tel:+380503169999">(063)3169678</a>
+                <a href="tel:+380735569999">(073)5567666</a>
+                <a href="mailto:student@mail.com">ob_constt@mail.com</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <nav class="nav">
+        <div class="container">
+            <ul class="sub-menu">
+                <li class="item-menu">
+                    <a href="/">Про мене</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/">Аероклуб</a>
+                </li>
+                 <li class="item-menu">
+                    <a href="/">Поезія</a>
+                    <ul class="sub-menu">
+                        <li class="item-menu">
+                            <a href="/">Афганістан</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="/">Кохання</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="/">Війна</a>
+                        </li>
+                    </ul>
+                </li>
+                 <li class="item-menu">
+                    <a href="/">Війна</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/">Сім'я</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="banner_text">
+                <div>Теперішні реалії</div>
+                <div>
+                    <p>2022</p>
+                    <p>2023</p>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="text-about">
+                <h1> ОБОРИН КОНСТАНТИН ВИКТОРОВИЧ</h1>
+                <p> Родился 1 сентября 1962 года в г.Потсдам (Германия) в семье военнослужащего. В 1968 году поступил в первый класс Межлиманской средней школы Беляевского района Одесская области, а затем, когда в 1972 году отца перевели служить в г.Алма-Ату, продолжил учебу и закончил СШ 86 в городе Алма-Ата (Казахстан) и в 1979 году и поступил в Новосибирское высшее военно-политическое училище (1 рота курсантов, затем 5 рота - факультет 'ВДВ и СпецНаз'), после окончания с 1983 года служил в Одесском военном округе. В мае 1985 года был направлен в Республику Афганистан в полк Особого Назначения (ГРУ, г.Кабул), в декабре 1985 года был назначен в 66-ю МСБр (г.Джелалабад). С мая 1985 по апрель 1987 года принимал участие в 17 боевых операциях против бандформирований душманов в составе разведывательных подразделений, в боях был дважды ранен.</p>
+            <p>После возвращения на Родину и лечения в госпитале, с июня 1987 по октябрь 1990 года служил в полку Гражданской Обороны ОдВО, в составе которого в октябре 1987 года принимал участие в ликвидации последствий аварии на Чернобыльской АЭС. С 1993 года - начальник отдела сбора и обработки информации разведотдела ОдВО. Уволен из рядов ВС Украины в 1995 году по состоянию здоровья, подполковник запаса, инвалид войны 2 группы, награжден 14 правительственными наградами, в том числе: орден 'Красная Звезда', орден 'Св. Ильи Муромца' 2ст., орден 'Св. Михаила', 2 медали 'За отвагу', медаль ДРА 'За мужество', Почётный знак Президента Украины 'За заслуги' 3ст., знак ЦК ВЛКСМ 'За воинскую доблесть'.
+                С 1996 года занимался предпринимательской деятельностью, являлся президентом аэроклуба 'Одесса', который с 1998 по 2001 год признавался лучшим парашютным клубом Украины. Как исполнительный директор 'Союза ветеранов войны и спецподразделений Украины' активно проводил общественную работу среди инвалидов и ветеранов, помогаел материально поддерживать семьи погибших в Афганистане и в других локальных конфликтах.</p>
+        <p> Под куполом парашюта 15 апреля 2000 года в составе Первой Полярной парашютной экспедиции Украины десантировался на вершину планеты и установил флаг города-героя Одесса на Северном Полюсе. Мастер парашютного спорта, трижды рекордсмен Украины, Президент Федерации парашютного спорта Одесской области, выполнил более 2200 парашютных прыжков. Активно занимаюсь хоккеем с шайбой - защищаю ворота команды 'Солнечная Долина' (г. Одесса) и сборной команды Одесской области. В 2003 году вышел в свет первый сборник стихов, а в 2007 году - второе издание книги 'Когда в осколки солнце превратится...', в которой опубликованы произведения различных жанров, в том числе и афганский цикл стихов. Воспитывю пятерых детей. Старший сын - Виктор Оборин, офицер-разведчик, достойно продолжает офицерскую династию Обориных, - служит начальником разведки парашютно-десантного батальона в 25 бригаде ВДВ.</p>
+    </div>
+    </div>
+    </section>
+  </div>
+  <footer class="footer">
+
+  </footer>
+  </div>  
+</body>
+</html>
