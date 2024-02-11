@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Position modal</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/customs.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+    .btn_form {
+      width: 275px;
+      height: auto;
+      text-align: center;
+      padding: 14px 0;
+      background: #c3cb85;
+      color: #623c3c;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .bt_area:hover,
+    .btn_form:hover {
+      background: #8ed31f;
+    }
+    .par_mod {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      top: 0;
+      left: 0;
+    }
+    .hide_mod {
+      width: 400px;
+      background: #a39090;
+      padding: 25px 35px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+    .hide_mod h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .form .in_put {
+      color: #000;
+      width: 100%;
+      height: 40px;
+      display: block;
+      outline: none;
+      border: #000 solid 1px;
+      font-size: 15px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+    .textarea {
+      color: #000;
+      width: 100%;
+      height: 150px;
+      display: block;
+      outline: none;
+      border: #000 solid 1px;
+      font-size: 15px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      resize: none;
+    }
+    .form .in_put::placeholder,
+    .form .textarea::placeholder {
+      color: #000;
+    }
+    .form .in_put:focus::placeholder,
+    .form .textarea:focus::placeholder {
+      color: #ccc;
+    }
+    .form .in_put:focus,
+    .form .textarea:focus {
+      border: #ccc solid 1px;
+    }
+    .bt_area {
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      padding: 10px 0;
+      background: #0d65a0;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      color: #0413b3;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #841e1e;
+    }
+  </style>
+  <body>
+    <section class="logo">
+      <img src="img/Flover.jpg" alt="Flover" title="Квіти" class="img_1" />
+
+      <div class="btn_form">Зворотній зв'язок</div>
+    </section>
+
+    <footer class="foot">footer</footer>
+
+    <div class="par_mod"></div>
+    <div class="hide_mod"></div>
+    <div class="close">X</div>
+    <div class="form_mod"></div>
+    <h2>Заголовок форми</h2>
+    <form class="form">
+      <in_put type="text" class="in_put" placeholder="Ім'я" />
+      <in_put type="text" class="in_put" placeholder="Прізвище" />
+      <in_put type="text" class="in_put" placeholder="Телефон" />
+      <textarea class="textarea" placeholder="Поле для заповнення"></textarea>
+      <button class="bt_area">Надіслати</button>
+    </form>
+  </body>
+</html>

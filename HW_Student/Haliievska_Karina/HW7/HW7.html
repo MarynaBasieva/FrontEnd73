@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HW7_form</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <p style="color: blue"><label>Форма замовлення</label></p>
+      <p><input type="text" name="name" placeholder="Ім'я*" required /></p>
+      <p>
+        <input type="tel" name="phone" placeholder="Телефон*" required />
+      </p>
+
+      <p>
+        <b><label>Оберіть розмір:</label></b>
+      </p>
+      <input type="checkbox" name="XXXS" />
+      XXXS
+      <input type="checkbox" name="XXS" />
+      XXS
+      <input type="checkbox" name="XS" checked />
+      XS
+      <input type="checkbox" name="S" />
+      S
+      <input type="checkbox" name="M" />
+      M
+      <input type="checkbox" name="L" />
+      L
+      <input type="checkbox" name="XL" />
+      XL
+      <input type="checkbox" name="XXL" />
+      XXL
+
+      <p>
+        <textarea
+          name="textarea"
+          cols="30"
+          rows="10"
+          maxlength="150"
+          style="resize: none"
+        ></textarea>
+      </p>
+
+      <p>
+        <input
+          type="submit"
+          name="button"
+          value="Надіслати"
+          style="border-color: rgb(10, 63, 63); color: rgb(160, 19, 19)"
+        />
+      </p>
+    </form>
+  </body>
 </html>
