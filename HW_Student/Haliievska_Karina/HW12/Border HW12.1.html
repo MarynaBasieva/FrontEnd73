@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Border</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .bg {
+      background: #d7edb8;
+      padding: 60px 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .bg h2 {
+      border-bottom: solid 2px #000;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+    }
+
+    .bg h2::before {
+      content: "";
+      width: 55px;
+      height: 12px;
+      border-radius: 6px;
+      background: #000;
+      position: absolute;
+      top: 41px;
+      left: 0px;
+    }
+  </style>
+  <body>
+    <div class="bg">
+      <div class="container">
+        <h2>Heading lorem ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          consequatur impedit molestias beatae veniam, magni dolorem ut
+          exercitationem voluptates iusto provident odio earum nesciunt
+          recusandae nostrum praesentium eius laborum illum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
