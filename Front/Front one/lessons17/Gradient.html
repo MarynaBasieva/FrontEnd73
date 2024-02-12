@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+<style>
+    body{
+        background: #ccc;;
+    }
+    .grad{
+        padding: 200px 0;
+        margin-bottom: 30px;
+    }
+    .grad_linear1{
+        background: linear-gradient(to right, #cceaef, #01789E);
+    }
+    .grad_linear2{
+        background: linear-gradient(to bottom, #cceaef, #01789E);
+    }
+    .grad_linear3{
+        background: linear-gradient(90deg,#cceaef, #01789E);
+    }
+    .grad_linear4{
+        background: linear-gradient(#cceaef, #01789E,#cecfed);
+    }
+    .grad_linear5{
+        background: linear-gradient(to right, red,orange,yellow,green,indigo,violet);
+    }
+    .grad_linear6{
+        background: linear-gradient(to right, rgba(206,207,237,0), rgba(63,95,209,1));
+    }
+    .grad_linear7{
+        background: linear-gradient(red,green 100%, yellow 20%);
+    }
+    .radial{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .radial1{
+        background: radial-gradient(yellow,red,green);
+    }
+    .radial2{
+        background: radial-gradient(red 5%,yellow 15%, green 60%);
+    }
+    .radial3{
+        background: radial-gradient(circle, red, yellow, green);
+    }
+    .radial4{
+        background: radial-gradient(closest-side at 60% 55%, red, yellow, green);
+    }
+    .radial5{
+        background: radial-gradient(farthest-side at 60% 55%, red, yellow, green);
+    }
+    .radial6{
+        background: radial-gradient(closest-corner at 60% 55%, red, yellow, green);
+    }
+    .radial7{
+        background: radial-gradient(red, yellow 10%, green 15%);
+    }
+    
+</style>
+<body>
+    <h2>Лінейний Градієнт</h2>
+    <div class="grad_linear1 grad"></div>
+    <div class="grad_linear2 grad"></div>
+    <div class="grad_linear3 grad"></div>
+    <div class="grad_linear4 grad"></div>
+    <div class="grad_linear5 grad"></div>
+    <div class="grad_linear6 grad"></div>
+    <div class="grad_linear7 grad"></div>
+
+
+    <h2>Радіальний Градієнт</h2>
+    <div class="radial1 radial"></div>
+    <div class="radial2 radial"></div>
+    <div class="radial3 radial"></div>
+
+    <h2>Використання ключевих слів із різного розміра радіального градієнта</h2>
+    <div class="radial4 radial"></div>
+    <div class="radial5 radial"></div>
+    <div class="radial6 radial"></div>
+    <div class="radial7 radial"></div>
+</body>
+</html>
