@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Animation</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .spite{
+        background: url(img/spritesheet.png) no-repeat;
+        width: 123px;
+        height: 271px;
+        background-position:-0px -0px;
+    }
+    .spite:hover{
+        width: 123px;
+        height: 271px;  
+        background-position: -123px -0px;
+    }
+
+    .capguy{
+        height: 325px;
+        width: 184px;
+        background: url(img/capguy-walk.png) no-repeat;
+        margin: 0 auto;
+        -webkit-animation: capguy 1s steps(8) infinite;
+        -moz-animation: capguy 1s steps(8) infinite;
+        -o-animation: capguy 1s steps(8) infinite;
+        animation: capguy 1s steps(8) infinite;
+    }
+
+    /*capguy*/
+        -webkit-@keyframes capguy {
+            from{
+              background-position: 0;
+            }
+            to{
+                background-position: -1472px;
+            }
+        }
+
+        -moz-@keyframes capguy {
+            from{
+              background-position: 0;
+            }
+            to{
+                background-position: -1472px;
+            }
+        }
+
+        -o-@keyframes capguy {
+            from{
+              background-position: 0;
+            }
+            to{
+                background-position: -1472px;
+            }
+        }
+        @keyframes capguy {
+            from{
+              background-position: 0;
+            }
+            to{
+                background-position: -1472px;
+            }
+        }
+
+    /*capguy*/
+</style>
+<body>
+    <div class="spite"></div>
+    <div class="capguy"></div>
+</body>
+</html>

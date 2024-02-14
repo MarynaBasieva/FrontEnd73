@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    /*
+      ease - вказує ефект переходу сповільненим початком, а потім швидким закінченням
+      linear - вказує ефект переходу з однаковою швидкістью від початку до кінця
+      ease-in - воно вказує ефект переходу з повільним  стартом
+      ease-out - воно вказує ефект переходу з повільним кінцем
+      ease-in-out - воно вказує ефект переходу з повільним початком  і кінцем
+    */
+    .transition{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        background: #137595;
+    }
+    .transition1{
+        transition: width 2s;
+    }
+    .transition1:hover{
+        width: 300px;
+    }
+    .transition2{
+        transition: width 2s, height 4s;
+    }
+    .transition2:hover{
+        width: 300px;
+        height: 300px;
+    }
+    .anim{
+        width: 100px;
+        height: 100px;
+        background: #088f4c;
+        margin-bottom: 40px;
+        transition: width 2s;
+    }
+    .anim:hover{
+        width: 300px;
+    }
+    .ease{
+       transition-timing-function: ease; 
+    }
+    .linear{
+       transition-timing-function: linear; 
+    }
+    .ease-in{
+       transition-timing-function: ease-in; 
+    }
+    .ease-out{
+       transition-timing-function: ease-out; 
+    }
+    .ease-in-out{
+       transition-timing-function: ease-in-out; 
+    }
+</style>
+<body>
+    <div class="transition1 transition"></div>
+    <div class="transition2 transition"></div>
+    <div class="ease anim"></div>
+    <div class="linear anim"></div>
+    <div class="ease-in anim"></div>
+    <div class="ease-out anim"></div>
+    <div class="ease-in-out anim"></div>
+</body>
+</html>

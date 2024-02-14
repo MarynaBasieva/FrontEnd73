@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation box</title>
+</head>
+<style>
+    /*
+    animation-itaration-count - скільки разів повина відбутися анімація
+    animation-derection - вказує на відтворення анімації вперед і назад в циклі
+    animation-timing-function - розпізнає першу швидкість функції 
+    animation-fill-mode - задає стиль для цільового елемента якщо анімація в 
+    даний момент не запускаєтся до початку і завершення
+    animation-delay - вказує скільки часу повино займати завершення анімації цикла
+    animation-name - вказує ім'я анімації
+    animation-play-state - вказує запущена чи анімація  або завершена
+    animation - значення в якому розписати все вище сказано
+    */
+
+    .right{
+        position: relative;
+    }
+    .moving{
+        width: 100px;
+        height: 50px;
+        position: relative;
+        background: #0DA0D4;
+        animation: moving 7s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    .square{
+        width: 100px;
+        height: 50px;
+        position: relative;
+        background: #F0FF4C;
+        -webkit-animation:square  7s infinite;
+        -moz-animation:square  7s infinite;
+        -o-animation:square  7s infinite;
+        animation:square  7s infinite;
+    }
+
+    @keyframes moving {
+        from{
+            left: 0;
+            background: yellow;
+        }  
+        50%{
+            left: 400px;
+            background-color: aqua;
+        }
+        to{
+            left: 0;
+            background: yellow;
+        }
+    }
+
+    @keyframes square {
+         0%{
+            left: 0;
+            top: 0;
+            background: blue;
+         }
+         50%{
+            top: 200px;
+            left: 400px;
+            background-color: black;
+         }
+         100%{
+            top: 0;
+            left: 0;
+            background: blue;
+         }
+        
+    }
+</style>
+<body>
+  <div class="right">
+      <div class="moving"></div>
+      <div class="square"></div>
+  </div>
+</body>
+</html>

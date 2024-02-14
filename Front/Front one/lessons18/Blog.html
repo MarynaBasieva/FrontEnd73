@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog position fix float</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    /*footer bottom*/
+        html,
+        body{
+            height: 100%;
+        }
+        .for_page{
+            position: relative;
+            min-height: 100%;
+        }
+        .page{
+            padding-bottom: 200px;
+        }
+        .header{
+            padding: 100px 0;
+            background: #ccc;
+        }
+        .footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: 100px 0;
+            background: #333;
+        }
+    .parent .box{
+       box-sizing: border-box;
+       background: #fff;
+       padding: 20px; 
+       width: 33.333%;
+    }
+    .box a{
+        display: block;
+    }
+    img{
+       max-width: 100%; 
+       width:auto;
+    }
+    .parent .box h2{
+        font-size: 23px;
+        padding: 15px 0;
+        max-height: 43px;
+        min-height: 43px;
+        overflow: hidden;
+        }
+    .parent .box .text{
+        font-size: 14px;
+        text-align: justify;
+        line-height: 21px;
+        margin-bottom: 20px;
+        min-height: 44px;
+        max-height: 44px;
+        overflow: hidden;
+    }
+    .btn_box{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        padding: 7px 0;
+        text-align: center;
+        height: 40px;
+        color: #fff;
+        background: #000;
+        line-height: 35px;
+        transition: all 0.4s ease;
+    }
+    .btn_box:hover{
+        background: #ccc;
+    }
+    .box:hover .btn_box{
+        background: #4b7509;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .clear{
+        clear: both;
+    }
+    .blog_post{
+        position: relative;
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+    }
+    .blog_post img{
+        transition: all ease 0.6s;
+    }
+    .blog_post:hover img{
+        transform: scale(1.2);
+    }
+    .btn_box_more{
+        display: block;
+        box-sizing: border-box;
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        border: solid #fff 2px;
+        background: #00075A;
+        text-decoration: none;
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translate(-50%);
+        transition: all 1s ease-in-out;
+    }
+    .blog_post:hover .btn_box_more{
+       bottom: 30px;
+    }
+    .link2 a,
+    .link a{
+      text-decoration: none;
+      display: inline-block;
+      transition: all ease 1s;
+      width: 25px;
+      margin-right: 5px;
+    }
+    .link2,
+    .link{
+        position: relative;
+        padding-left: 26px;
+    }
+    .link2 a:hover,
+    .link a:hover{
+        transform: scale(1.2);
+    }
+    .head_social{
+        transform: rotate(269deg);
+        position: absolute;
+        left: -22px;
+    }
+    .box a{
+        display: block;
+        position: relative;
+    }
+    .box a:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all ease 1s;
+    }
+    .box a:hover:before{
+        opacity: 1;
+        visibility: visible;
+    }
+  
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+
+            <header class="header"></header>
+   
+                <section class="main">
+                    <div class="container">
+                        <div class="parent">
+                        
+                            <article class="box fl">
+                                <div class="blog_post">
+                                    <img src="img/panda.gif" alt="panda" />
+                                    <a href="#" class="btn_box_more">Детальніше</a>
+                                </div>                       
+                                    
+                                <h2>Little panda Little panda Little panda Little panda
+                                    Little panda Little panda Little panda Little panda
+                                </h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                            
+                            </article>
+
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda Little panda Little panda Little panda
+                                    Little panda Little panda Little panda Little panda
+                                </h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda Little panda Little panda Little panda
+                                    Little panda Little panda Little panda Little panda
+                                </h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda Little panda Little panda Little panda
+                                    Little panda Little panda Little panda Little panda
+                                </h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+
+                            <article class="box fl">
+                                <a href="#">
+                                    <img src="img/panda.gif" alt="panda" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">More</a>
+                            </article>
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                  <div class="container">
+                    <div class="link">
+                        <h2 class="head_social">Social</h2>
+                        <a href="#" class="link_item1 link_item">
+                            <img src="img/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="#" class="link_item2 link_item">
+                            <img src="img/twiter.svg" alt="twitter" />
+                        </a>
+                        <a href="#" class="link_item3 link_item">
+                            <img src="img/youtube.svg" alt="youtube" />
+                        </a>
+                    </div>
+                </div>
+                </section>
+
+                <section>
+                    <div class="container">
+                    <div class="link2">
+                        <h2 class="head_social2">Social</h2>
+                        <a href="#" class="link_item_svg1 link_item">
+                            <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50754 24.4915H8.02654L8.02954 12.4335L12.1335 12.4315L12.5735 8.27551H8.02654L8.03254 6.19551C8.03254 5.11251 8.10654 4.53251 9.66154 4.53251H12.5345V0.374512H8.41554C4.42254 0.374512 3.50354 2.43851 3.50354 5.82851L3.50754 8.27551L0.477539 8.27751V12.4335H3.50754V24.4915Z" fill="#2699BC"/>
+                            </svg>
+                                
+                        </a>
+                        <a href="#" class="link_item_svg2 link_item">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.826 0.997742C22.87 1.56474 21.81 1.97574 20.683 2.19874C19.78 1.23574 18.495 0.635742 17.072 0.635742C14.34 0.635742 12.124 2.85174 12.124 5.58274C12.124 5.96974 12.168 6.34874 12.252 6.70974C8.14002 6.50374 4.49502 4.53374 2.05502 1.53974C1.62802 2.26974 1.38602 3.11974 1.38602 4.02774C1.38602 5.74374 2.26002 7.25874 3.58602 8.14474C2.77502 8.11774 2.01302 7.89474 1.34502 7.52374V7.58574C1.34502 9.98274 3.05102 11.9827 5.31302 12.4377C4.89802 12.5507 4.46202 12.6117 4.01002 12.6117C3.68902 12.6117 3.38102 12.5797 3.07802 12.5227C3.70802 14.4877 5.53402 15.9187 7.69902 15.9587C6.00702 17.2857 3.87202 18.0767 1.55402 18.0767C1.15402 18.0767 0.762023 18.0527 0.374023 18.0077C2.56302 19.4107 5.16402 20.2307 7.95802 20.2307C17.058 20.2307 22.035 12.6907 22.035 6.15274C22.035 5.93874 22.031 5.72474 22.02 5.51174C22.989 4.81674 23.829 3.94574 24.492 2.95374C23.604 3.34774 22.652 3.61374 21.651 3.73374C22.673 3.12174 23.457 2.15074 23.826 0.997742Z" fill="#2699BC"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="link_item_svg3 link_item">
+                            <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.32373 13.6991V5.05506L16.8597 9.37706L9.32373 13.6991ZM21.1347 1.17806C15.6437 0.809061 9.13473 0.708061 3.54273 1.17806C1.80573 1.37206 0.616727 3.48606 0.487727 5.09106C0.213727 8.46306 0.213727 10.3811 0.487727 13.7531C0.618727 15.3581 1.77773 17.4841 3.54473 17.7071C9.20173 18.0781 15.6777 18.1291 21.1367 17.7071C22.8447 17.4101 24.0617 15.3581 24.1927 13.7531C24.4677 10.3811 24.4677 8.25306 24.1927 4.88006C24.0597 3.27406 23.1007 1.25006 21.1347 1.17806Z" fill="#2699BC"/>
+                            </svg>
+                                
+                        </a>
+                    </div>
+                 </div>
+                </section>
+    </div>
+    <footer class="footer"></footer>
+</div>
+</body>
+</html>
