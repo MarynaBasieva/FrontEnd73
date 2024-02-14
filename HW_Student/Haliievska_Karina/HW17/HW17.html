@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        font-size: 35px;
+        margin: 27px;
+      }
+      .text_sw {
+        text-shadow: 17px 17px 1px #363f34;
+      }
+
+      .text_sw1 {
+        text-shadow: 17px 17px 3px #363f34;
+      }
+      .text_sw2 {
+        text-shadow: -6px -8px 3px #2014a3, 5px 5px 3px #b91923;
+      }
+      .text_sw3 {
+        color: transparent;
+        background: #6e6b13;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(193, 175, 138, 0.5);
+      }
+
+      .text_sw4 {
+        color: #d9d9d9;
+        background: #e8e8e8;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      .text_sw5 {
+        color: #37cd93;
+        background: #ffffff;
+        text-shadow: 2px 2px 0 #6f829a, 2px -2px 0 #6f829a, -2px 2px 0 #6f829a,
+          -2px -2px 0 #6f829a, 2px 0px 0 #6f829a, 0px 2px 0 #6f829a,
+          -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text_sw">Текст с тенью.</div>
+    <div class="text_sw1">Текст с тенью + размытие.</div>
+    <div class="text_sw2">Текст с двумя тенями.</div>
+    <div class="text_sw3">Вдавленый текст.</div>
+    <div class="text_sw4">Обьемный текст.</div>
+    <div class="text_sw5">Контур.</div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
