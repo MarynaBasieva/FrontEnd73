@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+    .text1 {
+      text-shadow: 23px 23px gray;
+      padding: 30px;
+    }
+    .text2 {
+      text-shadow: 23px 23px 3px grey;
+      padding: 30px;
+    }
+    .text3 {
+      text-shadow: -5px -10px 5px rgb(13, 13, 218),
+        -5px 10px 5px rgb(205, 17, 17);
+      padding: 30px;
+    }
+    .text4 {
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+      color: rgb(162, 108, 37);
+      padding: 30px;
+    }
+    .text5 {
+      text-shadow: 1px 1px 0px rgb(162, 108, 37), 2px 2px 0px rgb(162, 108, 37);
+      padding: 30px;
+      color: rgb(162, 108, 37);
+    }
+    .text6 {
+      color: rgb(162, 108, 37);
+      text-shadow: -1px -1px 0px black, 1px -1px 0px black;
+      padding: 30px;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      box-shadow: inset 16px 16px 15px blue, inset 10px 11px 15px blue,
+        inset -3px -14px 15px red, inset -17px 0px 15px red;
+      -webkit-box-shadow: inset 16px 16px 15px blue, inset 10px 11px 15px blue,
+        inset -3px -14px 15px red, inset -17px 0px 15px red;
+      -moz-box-shadow: inset 16px 16px 15px blue, inset 10px 11px 15px blue,
+        inset -3px -14px 15px red, inset -17px 0px 15px red;
+      -o-box-shadow: inset 16px 16px 15px blue, inset 10px 11px 15px blue,
+        inset -3px -14px 15px red, inset -17px 0px 15px red;
+      padding: 30px;
+      margin: 20px;
+    }
+    .gradient1 {
+      width: 200px;
+      height: 100px;
+      padding: 30px;
+      border: 1px solid black;
+      margin: 20px;
+      background: radial-gradient(circle, rgb(0, 255, 255) 10%, #1151b1 50%),
+        white 10%;
+      -webkit-background: radial-gradient(
+          circle,
+          rgb(0, 255, 255) 10%,
+          #1151b1 50%
+        ),
+        white 10%;
+      -moz-background: radial-gradient(
+          circle,
+          rgb(0, 255, 255) 10%,
+          #1151b1 50%
+        ),
+        white 10%;
+      -o-background: radial-gradient(circle, rgb(0, 255, 255) 10%, #1151b1 50%),
+        white 10%;
+    }
+    .gradient2 {
+      width: 200px;
+      height: 100px;
+      border: solid 1px black;
+      margin: 20px;
+      padding: 30px;
+      background: radial-gradient(
+        circle at 10px 10px,
+        rgb(195 221 221) 0%,
+        rgb(18 112 213) 5%
+      );
+      -o-background: radial-gradient(
+        circle at 10px 10px,
+        rgb(195 221 221) 0%,
+        rgb(18 112 213) 5% );
+        -moz-background: radial-gradient(
+        circle at 10px 10px,
+        rgb(195 221 221) 0%,
+        rgb(18 112 213) 5%
+      );
+      -webkit-background: radial-gradient(
+        circle at 10px 10px,
+        rgb(195 221 221) 0%,
+        rgb(18 112 213) 5%
+      );
+    }
+    .gradient3 {
+      width: 200px;
+      height: 100px;
+      border: solid 1px black;
+      margin: 20px;
+      padding: 30px;
+      background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7) 6%,
+        rgb(96, 96, 96, 0.9) 7%,
+        white -120%,
+        white 30%,
+        green 40%
+      );
+      -o-background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7) 6%,
+        rgb(96, 96, 96, 0.9) 7%,
+        white -120%,
+        white 30%,
+        green 40%
+      );
+      -moz-background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7) 6%,
+        rgb(96, 96, 96, 0.9) 7%,
+        white -120%,
+        white 30%,
+        green 40%
+      );
+      -webkit-background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7) 6%,
+        rgb(96, 96, 96, 0.9) 7%,
+        white -120%,
+        white 30%,
+        green 40%
+      );
+    }
+    .border1 {
+      width: 300px;
+      height: 300px;
+      border: 3px solid rgba(135 206 235);
+      margin: 20px;
+      padding: 30px;
+      background: linear-gradient(
+        to bottom,
+        rgb(190 230 230 / 90%) 0%,
+        rgb(70 198 221) 30%
+      );
+      -o-background: linear-gradient(
+        to bottom,
+        rgb(190 230 230 / 90%) 0%,
+        rgb(70 198 221) 30%
+      );
+      -moz-background: linear-gradient(
+        to bottom,
+        rgb(190 230 230 / 90%) 0%,
+        rgb(70 198 221) 30%
+      );
+      -webkit-background: linear-gradient(
+        to bottom,
+        rgb(190 230 230 / 90%) 0%,
+        rgb(70 198 221) 30%
+      );
+
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .triangle {
+      height: 0px;
+      width: 0px;
+      background: transparent;
+
+      border-left: 100px solid transparent;
+      -o-border-left: 100px solid transparent;
+      -moz-border-left: 100px solid transparent;
+      -webkit-border-left: 100px solid transparent;
+
+      border-right: 100px solid transparent;
+      -o- border-right: 100px solid transparent;
+      -moz-border-right: 100px solid transparent;
+      -webkit-border-right: 100px solid transparent;
+
+      border-bottom: 200px solid white;
+      -o-border-bottom: 200px solid white;
+      -moz-border-bottom: 200px solid white;
+      -webkit-border-bottom: 200px solid white;
+
+      margin: 0 auto;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      transform: rotate(180deg);
+    }
+  </style>
+  <body>
+    <div class="for page">
+      <div class="container">
+        <h1 class="text1">Текст с тенью.</h1>
+        <h1 class="text2">Текст с тенью + размытие.</h1>
+        <h1 class="text3">Текст с двумя тенями.</h1>
+        <h1 class="text4">Вдавленный текст.</h1>
+        <h1 class="text5">Обьемный текст.</h1>
+        <h1 class="text6">Контур.</h1>
+        <div class="box"></div>
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="gradient3"></div>
+        <div class="border1">
+          <div class="triangle"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

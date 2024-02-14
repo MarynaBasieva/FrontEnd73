@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW17
+    </title>
+</head>
+<style>
+    *{
+      padding: 0;
+      margin: 0;   
+    }
+    .first{
+        text-shadow: 17px 17px grey;
+        margin: 20px;
+    }
+    .second{
+        text-shadow: 17px 17px 3px grey;
+        margin: 20px; 
+    }
+    .third{
+        text-shadow: 10px 10px 3px red, -10px -10px 3px #000fff;
+        margin: 30px; 
+    }
+    .fifth{
+        color: #616161;
+
+text-shadow: #e0e0e0 1px 1px 0;
+color: #616161;
+
+        margin: 30px;
+    }
+        .fourth{
+color: transparent;
+background: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+margin: 30px;
+}
+.sixth{
+        color: #FFFFFF;
+background: #FFFFFF;
+text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+color: #FFFFFF;
+background: #FFFFFF;
+        margin: 30px;
+    }
+    .box{
+        margin-bottom: 30px;
+        width: 200px;
+        height: 100px;
+        border: solid 1px;
+        margin: 20px;
+        }
+    .box1{
+        box-shadow: inset 10px 10px 8px 0px blue, inset -10px -10px 8px  0px red   
+    }
+    
+
+    .box2{
+        background:radial-gradient(circle,white,blue);
+        
+    }
+    .box3{
+        background:radial-gradient(closest-side at 15% 30%, white,blue)
+       
+    }
+    .box4{
+       
+       background: radial-gradient(circle,black 5%,white 15%,green 25%)
+    }
+
+   .parent{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+   }
+   .square{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    color: #fff;
+   
+    }
+    .square1{
+        background:linear-gradient(white,blue);
+        border: solid 3px blue;
+        border-radius: 10px;
+    z-index: 1;
+    left: -30px;
+    top: -30px;
+   }
+   .trafal{ 
+    transform: rotate(180deg);
+       height: 0;
+       width: 0;
+       background: transparent;
+       border-left: 70px solid transparent;
+       border-right: 70px solid transparent;
+       border-bottom: 150px solid white;
+       z-index: 2;}
+</style>
+<body>
+    <div class="container">
+        <h2 class="first">Text with shadow</h2>
+        <h2 class="second">Text with shadow and blur</h2>
+        <h2 class="third">Text wit 2 color shadow and blur</h2>
+        <h2 class="fourth">Text shadow</h2>
+        <h2 class="fifth">Text shadow</h2>
+        <h2 class="sixth">Text shadow</h2>
+        
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+    </div>
+    <div class="parent">
+        <div class="square square1"></div>
+        <div class="square trafal"></div>
+        </div>
+</body>
+</html>
