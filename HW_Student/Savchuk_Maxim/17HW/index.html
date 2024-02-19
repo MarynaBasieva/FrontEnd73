@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1170px;
+    }
+
+    header{
+        padding-bottom: 100px;
+    }
+
+    footer{
+        padding-top: 100px;
+    }
+
+    .content-child1{
+        text-shadow: 10px 18px grey;
+    }
+
+    .content-child2{
+        margin-top: 25px;
+        text-shadow: 10px 18px 2px grey;
+        
+
+    }
+
+    .content-child3{
+        margin-top: 25px;
+        text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.8), -4px -4px 2px rgba(0, 26, 255, 0.8);
+    }
+
+    .content-child4{
+        margin-top: 25px;
+        text-shadow: #e0e0e0 1px 1px 0;
+        color: #616161;
+    }
+
+    .content-child5{
+        margin-top: 25px;
+        color: transparent;
+        background: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    }
+
+    .content-child6{
+        margin-top: 25px;
+        color: #FFFFFF;
+        background: #FFFFFF;
+        text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        color: #FFFFFF;
+        background: #FFFFFF;
+    }
+
+    .figure1{
+        margin-top: 100px;
+        height: 200px;
+        width: 400px;
+        box-shadow: inset 10px 10px 8px 0px blue, inset -10px -10px 8px  0px red   
+
+
+    }
+    .figure2{
+        margin-top: 100px;
+        height: 200px;
+        width: 400px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 1%, rgba(46,144,245,1) 40%);
+    }
+
+    .figure3{
+        margin-top: 100px;
+        height: 200px;
+        width: 400px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255), rgb(253, 253, 243) 2%, #1e90ff 10%);
+}
+
+    .figure4{
+        margin-top: 100px;
+        height: 200px;
+        width: 400px;
+        background: radial-gradient(circle, rgb(0, 0, 0) 1%,rgb(255, 255, 255) 20%,#02961a 5%);
+    }
+
+    .figure5{
+        position: relative;
+        margin-top: 100px;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgb(236, 236, 236) 18%, rgb(82, 169, 255) 61%);
+        background-repeat: no-repeat;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        border: solid 1px rgb(49, 125, 187);
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        
+    }
+
+    .figure5-child{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-top: 125px solid rgb(255, 255, 255);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+<body>
+    <div class="main-page">
+        <header>
+
+        </header>
+
+        <main>
+            <div class="main-content">
+                <div class="content-child1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div class="content-child2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div class="content-child3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div class="content-child4">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div class="content-child5">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div class="content-child6">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestias expedita,
+                    </p>
+                </div>
+                <div>
+                    <div class="figure1">
+
+                    </div>
+                    <div class="figure2">
+
+                    </div>
+                    <div class="figure3">
+
+                    </div>
+                    <div class="figure4">
+
+                    </div>
+                    <div class="figure5">
+                        <div class="figure5-child">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
