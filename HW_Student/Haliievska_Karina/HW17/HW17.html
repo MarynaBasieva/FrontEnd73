@@ -46,6 +46,108 @@
         text-shadow: 2px 2px 0 #6f829a, 2px -2px 0 #6f829a, -2px 2px 0 #6f829a,
           -2px -2px 0 #6f829a, 2px 0px 0 #6f829a, 0px 2px 0 #6f829a,
           -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        -webkit-text-shadow: 2px 2px 0 #6f829a, 2px -2px 0 #6f829a,
+          -2px 2px 0 #6f829a, -2px -2px 0 #6f829a, 2px 0px 0 #6f829a,
+          0px 2px 0 #6f829a, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        -o-text-shadow: 2px 2px 0 #6f829a, 2px -2px 0 #6f829a,
+          -2px 2px 0 #6f829a, -2px -2px 0 #6f829a, 2px 0px 0 #6f829a,
+          0px 2px 0 #6f829a, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        -moz-text-shadow: 2px 2px 0 #6f829a, 2px -2px 0 #6f829a,
+          -2px 2px 0 #6f829a, -2px -2px 0 #6f829a, 2px 0px 0 #6f829a,
+          0px 2px 0 #6f829a, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      }
+
+      /* Две внутренние тени */
+
+      .sw_box {
+        width: 300px;
+        height: 300px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        box-shadow: inset 12px 12px 15px 0px #b73f79,
+          inset -12px -12px 15px 0px #a8d816;
+        -moz-box-shadow: inset 12px 12px 15px 0px #b73f79,
+          inset -12px -12px 15px 0px #a8d816;
+        -o-box-shadow: inset 12px 12px 15px 0px #b73f79,
+          inset -12px -12px 15px 0px #a8d816;
+        -webkit-box-shadow: inset 12px 12px 15px 0px #b73f79,
+          inset -12px -12px 15px 0px #a8d816;
+      }
+
+      /* Две внутренние тени */
+
+      /* Градиент */
+      .sw_box1 {
+        width: 350px;
+        height: 270px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        background: radial-gradient(
+          ellipse at center,
+          rgb(211, 218, 218) 10%,
+          rgb(144, 243, 205) 20%,
+          rgb(44, 187, 132) 43%,
+          rgb(63, 194, 61) 100%
+        );
+      }
+
+      .sw_box2 {
+        width: 350px;
+        height: 270px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        background: radial-gradient(
+          ellipse at 40px 33px,
+          rgb(211, 218, 218) 2%,
+          rgb(242, 230, 73) 8%,
+          rgb(63, 194, 61) 18%
+        );
+      }
+
+      .sw_box3 {
+        width: 350px;
+        height: 270px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        background: radial-gradient(
+          ellipse at center,
+          rgb(0, 0, 0) 4%,
+          rgb(116, 107, 109) 7%,
+          rgb(245, 233, 235) 18%,
+          rgb(245, 233, 235) 23%,
+          rgb(169, 3, 42) 29%
+        );
+      }
+      /* Градиент */
+
+      .sw_trio {
+        width: 350px;
+        height: 300px;
+        font-size: 14px;
+        border: solid 3px rgb(143, 255, 253);
+        border-radius: 10px;
+        background: linear-gradient(
+          to top,
+          rgb(73, 182, 255) 10%,
+          rgb(255, 255, 255) 100%
+        );
+      }
+
+      .sw_trio_midle {
+        width: 0;
+        height: 0;
+        bottom: 30px;
+        left: 54px;
+        background: transparent;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 250px solid rgb(255, 255, 255);
+        position: absolute;
+        transform: rotate(180deg);
+        margin: 0 auto;
+      }
+      .cont {
+        position: relative;
       }
     </style>
   </head>
@@ -57,8 +159,16 @@
     <div class="text_sw4">Обьемный текст.</div>
     <div class="text_sw5">Контур.</div>
 
-    <div></div>
-    <div></div>
-    <div></div>
+    <section>
+      Градієнт
+      <div class="sw_box">Две внутренние тени</div>
+      <div class="sw_box1"></div>
+      <div class="sw_box2"></div>
+      <div class="sw_box3"></div>
+    </section>
+    <div class="cont">
+      <div class="sw_trio"></div>
+      <div class="sw_trio_midle"></div>
+    </div>
   </body>
 </html>
