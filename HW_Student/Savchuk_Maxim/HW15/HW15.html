@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <style>
+    /* General style*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    .for_page {
+      min-height: 100%;
+      position: relative;
+    }
+    .page {
+      padding-bottom: 218px;
+    }
+    .fl {
+      float: left;
+    }
+    .fr {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+    body {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: black;
+      font-size: 14px;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+    /* General style*/
+
+    /*Header*/
+    .header {
+      background-color: #000000;
+      padding-top: 20px;
+    }
+    .logo {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 0 10px;
+    }
+    .slogan {
+      width: 300px;
+      word-wrap: break-word;
+      white-space: normal;
+      font-size: 15px;
+      margin-left: 50px;
+      padding-top: 5px;
+      color: #ffffff;
+    }
+    .contact_header a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .contact_header a:hover {
+      cursor: pointer;
+      color: red;
+      text-decoration: underline;
+    }
+    /*Header*/
+
+    /*NAV*/
+    .nav {
+      max-width: 100%;
+      background-color: #000000;
+      text-align: center;
+    }
+    .nav ul.sub-menu{
+      padding: 0;
+    }
+
+    .nav ul.sub-menu li {
+      list-style-type: none;
+      display: inline-block;
+      position: relative;
+    }
+    .nav ul.sub-menu > li > a {
+      color: #ffffff;
+      font-size: 15px;
+      padding: 20px 30px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .nav ul.sub-menu > li > a:hover {
+      color: rgb(255, 0, 0);
+    }
+    .nav ul.sub-menu li ul.sub-menu {
+      width: auto;
+      background: #000000;
+      opacity: 0;
+      position: absolute;
+    }
+    .nav ul.sub-menu li ul.sub-menu li,
+    .nav ul.sub-menu li ul.sub-menu li a {
+      display: block;
+      border: 0.5px solid white;
+      background-color: #000000;
+      color: white;
+    }
+    .nav ul.sub-menu li:hover ul.sub-menu {
+      opacity: 1;
+      visibility: visible;
+    } /*NAV*/
+
+    .nav ul.sub-menu li ul.sub-menu li a:hover{
+      color: red;
+    }
+    /*Banner*/
+
+    .banner {
+      background: url(./img/baner1.jpg);
+      padding: 150px 0;
+      background-size: cover;
+      background-position: center center;
+    }
+    .banner_text {
+      color: #000000;
+      padding: 20px;
+      max-width: 600px;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 150px;
+      background: rgba(255, 255, 255, 0);
+    }
+    .box-tel {
+      padding: 30px;
+      max-width: 600px;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 150px;
+      color: rgb(255, 255, 255);
+      background-color: #000000;
+      text-align: center;
+      border-radius: 30px;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .box-tel:hover{
+      cursor: pointer;
+    }
+
+    .box-tel a{
+      text-decoration: none;
+      color: white;
+    }
+
+    .box-tel a:hover{
+      text-decoration: underline;
+    }
+    /*Banner*/
+
+    /*About*/
+    .about {
+      padding: 60px 0;
+    }
+    .text-about {
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .text-about p {
+      margin-top: 20px;
+    }
+    .text-about p:nth-child(5) {
+      padding-left: 400px;
+    }
+
+    /*Footer*/
+
+    .footer {
+      color: #ffffff;
+      padding: 100px 0;
+      width: 100%;
+      background: #000000;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  </style>
+  <body>
+    <div class="for_page">
+      <div class="page">
+        <header class="header">
+          <div class="container">
+            <a href="#" class="logo fl">
+              <img src="img/logo.jpg" alt="logo"/>
+            </a>
+
+            <div class="slogan fl">
+              "Доставка радості від Sushi Joy – твій шлях до смачного задоволення в місті Вінниця."
+            </div>
+
+            <div class="contact_header fr">
+              <a href="tel:+380681672261">(068)167 22 61</a>
+              <a href="mailto:sushi-joy@gmail.com">sushi-joy@gmail.com</a>
+              <a 
+                href="https://maps.app.goo.gl/FftSTSQhSuyHLsX47">
+                Як нас знайти ? (тицяй тут)
+             </a>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <nav class="nav">
+            <ul class="sub-menu">
+              <li class="item-menu">
+                <a href="#">Головна</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Сети</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Суші</a>
+                <ul class="sub-menu">
+                  <li class="item-menu">
+                    <a href="#">Філадельфія</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Каліфорнія</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Гункани</a>
+                  </li>
+
+                  <li class="item-menu">
+                    <a href="#">Макі</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Wok</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Піца</a>
+              </li>
+
+              <li class="item-menu">
+                <a href="#">Напої</a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Акції</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="banner" id="banner">
+          <div class="container">
+            <div class="banner_text">
+              <h1>Вас Вітає Sushi-Joy</h1>
+              <p>
+                забронювати столик у нас можливо за кнопкою нижче 
+              </p>
+              <p>(виключно з 11:00-21:40)</p>
+            </div>
+
+            <div class="box-tel"><a href="tel:+380681672261">+380681672261</a></div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="text-about">
+              <p>
+                Наша команда складається з досвідчених і талановитих 
+                шеф-кухарів, які знають, як приготувати справжню японську 
+                кухню. Крім того, наші співробітники завжди готові допомогти 
+                вам з вибором страв та напоїв.
+              </p>
+
+              <p>
+                Ми також пишаємося своїм затишним та стильним інтер’єром, що 
+                створює атмосферу, де ви можете насолоджуватися своїм обідом або 
+                вечерею в затишній обстановці.
+              </p>
+
+              <p>
+                Запрошуємо вас завітати до Sushi-Joy та насолодитися японською кухнею в найкращому виконанні!
+              </p>
+
+              <p>з любов'ю, команда Sushi-Joy</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">Footer</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лейбл в правом верхнем углу изображения</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1170px;
+        }
+        /* Общий стиль контейнера */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 100px;
+        }
+
+        /* Стиль для изображения */
+        .image-container img {
+            max-width: 300px;
+            height: 300px;
+        }
+
+        /* Стиль для лейбла */
+        .label {
+            position: absolute;
+            top: -5px;
+            right: 20px;
+            color: rgb(246, 244, 244);
+            background-color: rgba(219, 17, 17, 0.8);
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="img/photo_2023-03-21_19-06-13-300x300.jpg" alt="tepliy-roll" title="roll">
+        <div class="label">SALE</div>
+    </div>
+
+</body>
+</html>
