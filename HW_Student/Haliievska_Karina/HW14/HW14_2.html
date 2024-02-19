@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW14_2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        width: auto;
+      }
+
+      .conteiner {
+        width: 1170px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .poster {
+        margin-top: 20px;
+        width: 800px;
+        position: relative;
+      }
+      .poster::before {
+        content: "";
+        background-color: rgb(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3 ease;
+        opacity: 0;
+      }
+      .poster:hover::before {
+        opacity: 1;
+      }
+
+      .hover_border {
+        border: solid 3px rgb(165, 3, 3);
+        border-radius: 10px;
+        position: absolute;
+        background-color: rgba(224, 224, 16, 0.762);
+        padding: 40px;
+        margin: 320px;
+        top: -200px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .hover_text {
+        color: red;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <section class="conteiner">
+      <div class="poster">
+        <img src="img/pokupka.jpg" alt="Poster_sale" title="Sale" />
+      </div>
+      <div class="hover_border">
+        <div class="hover_text">
+          Тільки у Березні, знижка на усі квартири до 45%!
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation HW18</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .move-chemicl {
+        height: 134px;
+        width: 113px;
+        background: url(img/bunny-sprite.png) no-repeat;
+        margin: 0 auto;
+        -webkit-animation: bunny 2s steps(8) infinite;
+        -o-animation: bunny 2s steps(8) infinite;
+        -moz-animation: bunny 2s steps(8) infinite;
+        animation: bunny 2s steps(8) infinite;
+      }
+      /*bunny*/
+      @keyframes bunny {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      -o-@keyframes bunny {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      -moz-@keyframes bunny {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      -webkit-@keyframes bunny {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      /*bunny*/
+
+      /*chemicl*/
+      .chemicl {
+        height: 250px;
+        width: 150px;
+        margin: 0 auto;
+        background: url(img/chemicals.png) no-repeat;
+        -webkit-animation: chemicl 1s steps(5) infinite;
+        -o-animation: chemicl 1s steps(5) infinite;
+        -moz-animation: chemicl 1s steps(5) infinite;
+        animation: chemicl 1s steps(5) infinite;
+      }
+      @keyframes chemicl {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+
+      -o-@keyframes chemicl {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+
+      -moz-@keyframes chemicl {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      -webkit-@keyframes chemicl {
+        from {
+          background-position: 0;
+        }
+        to {
+          background-position: -750px;
+        }
+      }
+      /*chemicl*/
+    </style>
+  </head>
+
+  <body>
+    <div class="move-chemicl"></div>
+    <div class="chemicl"></div>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head> 
+<style> 
+    @font-face { 
+        font-family: 'Reey'; 
+        src: url(font/Reey-Regular-400.woff) format('woff'); /* Замените формат и путь на соответствующие вашему файлу */ 
+        /* Дополнительные свойства шрифта, если необходимо */ 
+    } 
+
+    *{ 
+        margin: 0 auto; 
+        padding: 0; 
+    } 
+
+    .opensans600{
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .opensansExtraBold{
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 800;
+    }
+
+    .opensansItalic{
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+ 
+    .fr{ 
+        float: right; 
+    } 
+
+    .fl{
+        float: left;
+    }
+ 
+    .cl{ 
+        clear: both; 
+    } 
+ 
+    body{ 
+        background-image: url(img/Header\ Background1.jpg); 
+        background-size: cover; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+ 
+    .main-page-header{ 
+        padding-bottom: 140px; 
+    } 
+ 
+    .header-nav{ 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    } 
+ 
+    .logo{ 
+        width: 100px; 
+        height: 100px; 
+    } 
+ 
+    .nav-child li { 
+        display: inline-block; 
+        margin-right: 60px; /* Добавим немного отступа между элементами */ 
+    } 
+ 
+    .nav-child a { 
+        text-decoration: none; 
+        color: white; /* Установим цвет текста, чтобы он был виден на фоне изображения */ 
+        font-size: 14px;
+        letter-spacing: 2px;
+    } 
+ 
+    /* searchbar */ 
+    .header-nav-ul input[type=text] { 
+        width: 95px; 
+        height: 30px; 
+        background-image: url(img/Search.png); 
+        background-position: right center;
+        background-repeat: no-repeat; 
+        background-size: 20px 20px; 
+        border: none; 
+        border-radius: 50px; 
+        font-size: 17px; 
+        padding: 5px; 
+    } 
+     
+    /* content */ 
+ 
+    .main-content{ 
+        display: block;
+        width: 100%; 
+        color: white; 
+        
+    } 
+ 
+    .main-content-child1 {
+        width: 50%; 
+        float: left;
+        display: block;
+        max-width: 550px;
+        margin-left: 15%;
+    }
+
+    .main-content-child2 {
+        width: 50%;
+        float: right;
+        display: block;
+    }
+
+    .content-discript p{ 
+        font-family: 'Reey';
+        font-size: 85px; 
+        white-space: normal; 
+    }
+
+    .content-discript1{
+        margin-top: 120px;
+        font-size: 22px;
+        letter-spacing: 4px;
+        font-style: italic;
+    }
+
+    .RMButton{
+        margin: 0 0;
+        margin-top: 60px;
+        background-color: white;
+        color: black;
+        width: 170px;
+        padding: 7px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .RMB-descript{
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }
+
+    .tarelka1{
+        position: absolute;
+        display: block;
+    }
+
+    .tarelka{
+        max-width: 876px;
+        max-height: 939px;
+        z-index: 1;
+    }
+
+    .main-content-child2{
+        padding-right: 110px;
+    }
+
+</style> 
+<body> 
+    <div class="main-page"> 
+        <header class="main-page-header"> 
+            <nav class="header-nav"> 
+                <a class="logo"> 
+                    <img src="img/Place Your Logo Here (Double Click to Edit)11.png" class="logo" title="" alt="" /> 
+                </a> 
+                <div class="header-nav-ul"> 
+                    <ul class="nav-child opensans600"> 
+                        <li><a href="/">HOME</a></li> 
+                        <li><a href="/">MENU</a></li> 
+                        <li><a href="/">OUR STORY</a></li> 
+                        <li><a href="/">CONTACT US</a></li> 
+                        <input type="text" maxlength="12" placeholder="Search"/> 
+                    </ul> 
+                </div> 
+            </nav> 
+        </header> 
+        <section class="main-content"> 
+            <div class="main-content-child1"> 
+                <div class="content-discript">
+                    <p>Italian Food</p>
+                </div>
+
+                <div class="opensans600 content-discript1">
+                    <p>
+                        LOREMIPSUM DOLOR
+                    </p>
+                </div>
+
+                <div class="opensansExtraBold RMButton ">
+                    <p>READ MORE</p>
+                </div>
+
+                <div class="RMB-descript opensansItalic">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipi- 
+                    </p>
+                    <p>sicing elit, sed do iusmod tempor incididunt ut</p>
+                    <p>labore et dolore magna.</p>
+                </div>
+            </div> 
+             
+            <div class="main-content-child2"> 
+                <div class="tarelka1">
+                    <img src="img/1.png" class="tarelka" /> 
+                </div>
+            </div> 
+            <div class="cl"></div> 
+        </section> 
+    </div> 
+</body> 
+</html>
