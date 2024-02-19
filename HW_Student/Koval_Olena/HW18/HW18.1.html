@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .boy {
+      height: 236px;
+      width: 112.5px;
+      background: url(img/boy.jpg) no-repeat;
+      margin: 0 auto;
+      animation: boy 1s steps(8) infinite;
+    }
+    @keyframes boy {
+      from {
+        background-position: 0;
+      }
+      to {
+        background-position: -900px;
+      }
+    }
+    .walking {
+      height: 410px;
+      width: 180px;
+      background: url(img/walking.jpg);
+      margin: 0 auto;
+      animation: walking 1s steps(5) infinite;
+    }
+    @keyframes walking {
+      from {
+        background-position: 0;
+      }
+      to {
+        background-position: -900px;
+      }
+    }
+    .color {
+      background: url(img/incendio-di-vignette-flash-d-arte-caldo-e-congelato-elementi-ui-per-videogiochi-gelo-fiamma-illustrazione-vettoriale-255524062.webp)
+        no-repeat;
+      width: 398px;
+      height: 532px;
+      background-position: -0px -0px;
+      transition: all 1s ease;
+    }
+    .color:hover {
+      width: -398px;
+      height: 532px;
+      background-position: -398px 0px;
+    }
+    .cat {
+      width: 157px;
+      height: 160px;
+      background: url(img/сat.png) no-repeat;
+      background-position: -0px -0px;
+      margin: 0 auto;
+    }
+
+    .cat:hover {
+      width: -157px;
+      height: 160px;
+      background-position: -157px 0px;
+    }
+  </style>
+  <body>
+    <div class="girl">
+      <div class="boy"></div>
+      <div class="walking"></div>
+      <div class="color"></div>
+      <div class="cat"></div>
+    </div>
+  </body>
+</html>
