@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    imd {
+      max-width: 100%;
+      width: auto;
+    }
+    .for_page {
+      min-height: 100%;
+      position: relative;
+    }
+    .page {
+      padding-bottom: 0px;
+    }
+    .fl {
+      float: left;
+    }
+    .fr {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+    .container {
+      max-width: 970px;
+      margin: 0 auto;
+    }
+    .header {
+      background: white;
+      padding: 20px;
+    }
+    .logo {
+      display: block;
+      width: 150px;
+      padding-left: 10px;
+      margin: 10px;
+      margin-left: 0px;
+      box-sizing: border-box;
+    }
+
+    .contact a {
+      text-decoration: none;
+      display: block;
+      box-sizing: border-box;
+      margin: 10px;
+      font-size: 17px;
+      color: #1f3851;
+      position: relative;
+    }
+    .contact a::before {
+      content: "";
+      background: url(./img/phone.png) no-repeat;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: -25px;
+    }
+    .contact a:hover {
+      color: blue;
+    }
+    .summary {
+      display: inline-block;
+      font-size: 17px;
+      padding: 10px;
+    }
+
+    .nav {
+      background: linear-gradient(
+        to bottom,
+        rgba(200, 200, 200, 1) 10%,
+        rgba(240, 240, 240, 0.8) 100%,
+        rgba(180, 180, 180) 20%
+      );
+    }
+    .nav ul.sub-menu li {
+      list-style: none;
+      display: inline-block;
+    }
+    .nav ul.sub-menu > li > a {
+      color: #1f3851;
+      font-size: 16px;
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px 20px;
+      font-weight: bold;
+    }
+    .nav ul.sub-menu > li > a:hover {
+      background: gray;
+    }
+    .wrap_page_title h1 {
+      padding-top: 48px;
+      margin: auto;
+      font-weight: 700;
+      font-size: 28px;
+      color: #006ea1;
+      text-transform: uppercase;
+    }
+    .blog {
+      width: 66.66666667%;
+      box-sizing: border-box;
+    }
+    .blog .post-13067,
+    .blog .post-13096,
+    .blog .post-13257,
+    .blog .post-13245,
+    .blog .post-13108 {
+      padding: 0 58px;
+      margin-top: 30px;
+      border: 1px solid #d8d8d8;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .post_thumbnail {
+      padding-bottom: 13px;
+    }
+    .post_thumbnail a {
+      display: block;
+      outline: none;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .post_thumbnail a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      z-index: 10;
+      background: linear-gradient(
+        to bottom left,
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 100%
+      );
+      opacity: 0;
+      transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    }
+    .post_thumbnail a:hover::after {
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    .post_thumbnail figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .post_thumbnail .post_title a h2 {
+      font-weight: 500px;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .post_title a {
+      text-decoration: none;
+      color: rgba(39, 50, 61, 1);
+      transition: ease all 3s;
+    }
+    .post_title a:hover {
+      color: rgba(40, 104, 168, 1);
+    }
+    .post_content {
+      padding-top: 25px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .wrap_post_more {
+      padding-top: 20px;
+      padding-bottom: 24px;
+    }
+    .post_more_btn {
+      width: 50%;
+      text-align: left;
+    }
+    .post_more_btn a {
+      outline: none;
+      text-decoration: none;
+      box-shadow: 0px 1px 2px rgba(235, 87, 87, 0.75);
+      font-size: 16px;
+      color: #fff;
+      background: linear-gradient(90deg, #eb8357 9.07%, #eb5757 87.84%);
+      padding: 9px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: all ease 3s;
+    }
+    .post_more_btn a:hover {
+      background: linear-gradient(90deg, #eb5757 10.77%, #eb8357 94.08%);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    .social_list li {
+      list-style: none;
+      display: inline-block;
+      padding-left: 26px;
+      position: relative;
+    }
+    .social_list li.social_item a img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(70%);
+      filter: grayscale(100%);
+      transition: 1s ease all;
+    }
+    .social_list li.social_item {
+      margin-right: 30px;
+    }
+
+    .social_list li.social_item a img:hover {
+      transform: scale(1.5);
+    }
+    .social_list li.social_item a:hover {
+      color: rgba(40, 104, 168, 1);
+    }
+    .wrap_meta {
+      margin-top: 30px;
+    }
+
+    .wrap_meta img,
+    .wrap_meta span {
+      width: 20px;
+      height: 20px;
+      color: gray;
+      filter: grayscale(80%);
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar_area {
+      float: right;
+      width: 33.33333333%;
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+      min-height: 1px;
+      box-sizing: border-box;
+    }
+    .sidebar_area_blog {
+      padding-left: 15px;
+      margin-top: 30px;
+    }
+    .sidebar_area_blog .text-3 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #006ea1;
+      line-height: 20px;
+    }
+    .textwidget img {
+      max-width: 100%;
+      height: auto;
+    }
+    .textwidget p {
+      margin: 0 0 10px 10px;
+      font-size: 16px;
+      color: #333;
+    }
+    .textwidget input {
+      outline: none;
+      box-sizing: border-box;
+      padding: 15px 7px;
+      width: 100%;
+      font-size: 12px;
+      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    div.proinput {
+      position: relative;
+    }
+
+    div.proinput .promagnifier .innericon {
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: inline-block;
+      position: absolute;
+      left: 110px;
+      top: 15px;
+    }
+
+    .sidebar_area_blog .widget {
+      margin-top: 48px;
+    }
+    .sidebar_area_blog .widget-title {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #006ea1;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    .sidebar_latest_item_img {
+      float: left;
+      width: 30%;
+      padding-bottom: 18px;
+      max-width: 30%;
+      border-bottom: 1px solid #ebe1e1;
+      margin-bottom: 22px;
+      position: relative;
+    }
+    .sidebar_latest_item_img figure {
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .sidebar_latest_item_img img {
+      width: 80px;
+      max-width: 100%;
+      height: auto;
+      transition: all 5s ease;
+    }
+    .sidebar_latest_item_img img:hover {
+      transform: scale(1.2);
+    }
+    .sidebar_latest_item_content {
+      float: left;
+      width: 70%;
+    }
+    .latest_meta_title {
+      padding-bottom: 12px;
+      display: block;
+      font-size: 14px;
+      color: #333;
+    }
+    .latest_meta_title a {
+      font-weight: 600;
+      font-size: 15px;
+      color: rgba(39, 50, 61, 1);
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .latest_meta_title a:hover {
+      text-decoration: underline;
+    }
+    .latest_meta_date {
+      font-size: 12px;
+      font-weight: 600;
+      color: #666;
+    }
+    .latest_meta_date span {
+      color: #3277c2;
+      font-weight: 600;
+    }
+    .latest_meta_author {
+      font-weight: 600;
+      color: #666;
+      font-size: 12px;
+    }
+    .latest_meta_author span {
+      color: #3277c2;
+    }
+    .widget.widget_tag_cloud .tagcloud a {
+      display: inline-block;
+      position: relative;
+      padding: 9px 21px 8px 20px;
+      margin-bottom: 5px;
+      margin-right: 1px;
+      font-weight: 600;
+      font-size: 12px;
+      border: 1px solid transparent;
+      box-shadow: 0px 1px 2px rgba(235, 87, 87, 0.75);
+      outline: none;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(90deg, #eb8357 9.07%, #eb5757 87.84%);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .widget.widget_tag_cloud .tagcloud a:hover {
+      color: #eb8357;
+      border: 1px solid #eb8357;
+      background: 0 0;
+      box-shadow: none;
+    }
+  </style>
+
+  <body>
+    <div class="for_page">
+      <div class="page">
+        <header class="header">
+          <div class="container">
+            <a href="#">
+              <img src="img/logo-main.png" alt="logo" />
+            </a>
+
+            <div class="summary fr">
+              <details>
+                <summary></summary>
+                <p>Замовити дзвінок</p>
+                <a href="tel:+380442258877"> +38(044) 225 88 88</a>
+              </details>
+            </div>
+            <div class="contact fr">
+              <a href="tel:+380442258877">+38 (044) 225 88 88</a>
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+          <nav class="nav">
+            <div class="container">
+              <ul class="sub-menu">
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/kursi/">Курси</a>
+                </li>
+
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/#upcomingEvents"
+                    >Розклад</a
+                  >
+                </li>
+
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/karyernij-servis/"
+                    >Кар'єра</a
+                  >
+                </li>
+
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/testi/">Тести</a>
+                </li>
+
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/franshiza-ua/">Франшиза</a>
+                </li>
+
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/blog-ua/">Блог</a>
+                </li>
+
+                <li class="item-menu">
+                  <a
+                    href="https://mainacademy.ua/ua/bezkoshtovne_navchannia_ua/"
+                    >Безкоштовне навчання</a
+                  >
+                </li>
+                <li class="item-menu">
+                  <a href="https://mainacademy.ua/ua/#map_home_contact"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="site-main">
+          <div class="wrap_page_title">
+            <div class="container">
+              <h1 class="page title">БЛОГ</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="blog">
+              <article class="post-13257">
+                <div class="post_content_area">
+                  <div class="post_thumbnail">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/navchann-pid-chas-vijni/"
+                    >
+                      <figure>
+                        <img
+                          width="700"
+                          height="368"
+                          src="img/blog_-navchann-pid-chas-viiny.jpg"
+                          alt="post-13257"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="post_title">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/navchann-pid-chas-vijni/"
+                    >
+                      <h2>НАВЧАННЯ ПІД ЧАС ВІЙНИ</h2>
+                    </a>
+                  </div>
+
+                  <div class="post_content">
+                    <p>
+                      Життя під час війни виявилось не таким як ми його
+                      уявляли😕 Ніхто не думав, що українці масово перейдуть в
+                      IT, а забезпечити гідну зарплатню можна буде лише
+                      прокачавши скіли🤷‍♂️ Багато хто розвиває свої навички...
+                    </p>
+                  </div>
+                  <div class="wrap_post_more">
+                    <div class="post_more_btn fl">
+                      <a
+                        href="https://mainacademy.ua/ua/blog-ua/navchann-pid-chas-vijni/"
+                        >ЧИТАТИ ДАЛІ</a
+                      >
+                    </div>
+                    <div class="post_social fr">
+                      <ul class="social_list">
+                        <li class="social_item">
+                          <a href="№">
+                            <img src="img/facebook.svg" alt="facebook"
+                          /></a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/twiter.svg" alt="twirer" />
+                          </a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/youtube.svg" alt="youtube" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="wrap_meta">
+                    <img src="img/date_range.svg" alt="data_range" />
+                    <span>21 January</span>
+                    <img src="img/face-3.svg" alt="face" />
+                    <span>Оля Паламарчук</span>
+                    <img src="img/chat_bubble_outline.svg" alt="chat" />
+                    <span> 0</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-13245">
+                <div class="post_content_area">
+                  <div class="post_thumbnail">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/z-novim-rokom-ta-rizdvom-hristovim/"
+                    >
+                      <figure>
+                        <img
+                          src="img/blog_ney-year.jpg"
+                          width="700"
+                          height="368"
+                          alt="blog_ney-year"
+                          title="blog_ney-year"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="post_title">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/z-novim-rokom-ta-rizdvom-hristovim/"
+                    >
+                      <h2>З НОВИМ РОКОМ ТА РІЗДВОМ ХРИСТОВИМ!</h2>
+                    </a>
+                  </div>
+
+                  <div class="post_content">
+                    <p>
+                      Вітаємо Вас з прийдешнім Новим роком та Різдвом Христовим!
+                      Хочемо побажати усім нам мирного неба над головою, міцного
+                      здоров’я та щастя!✨ Нехай це світле свято зими подарує
+                      щиру радість, гармонію та любов. Нехай в...
+                    </p>
+                  </div>
+                  <div class="wrap_post_more">
+                    <div class="post_more_btn fl">
+                      <a
+                        href="https://mainacademy.ua/ua/blog-ua/z-novim-rokom-ta-rizdvom-hristovim/"
+                        >ЧИТАТИ ДАЛІ</a
+                      >
+                    </div>
+                    <div class="post_social fr">
+                      <ul class="social_list">
+                        <li class="social_item">
+                          <a href="№">
+                            <img src="img/facebook.svg" alt="facebook"
+                          /></a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/twiter.svg" alt="twirer" />
+                          </a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/youtube.svg" alt="youtube" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="wrap_meta">
+                    <img src="img/date_range.svg" alt="data_range" />
+                    <span>09 January</span>
+                    <img src="img/face-3.svg" alt="face" />
+                    <span>Оля Паламарчук</span>
+                    <img src="img/chat_bubble_outline.svg" alt="chat" />
+                    <span> 0</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-13108">
+                <div class="post_content_area">
+                  <div class="post_thumbnail">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/korisni-resursi-dlya-novachkiv-v-php/"
+                    >
+                      <figure>
+                        <img
+                          src="img/blog_PHP.jpg"
+                          width="700"
+                          height="368"
+                          alt="PHP"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="post_title">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/korisni-resursi-dlya-novachkiv-v-php/"
+                    >
+                      <h2>КОРИСНІ РЕСУРСИ ДЛЯ НОВАЧКІВ В PHP</h2>
+                    </a>
+                  </div>
+                  <div class="post_content">
+                    <p>
+                      ⭐️ Позиція PHP-розробника — у топі HR-запитів. І, якщо ви
+                      зацікавлені у вивченні цієї мови, онлайн простір пропонує
+                      безліч можливостей для отримання нових знань і
+                      самовдосконалення. 👉 Ось корисні ресурси, які ми...
+                    </p>
+                  </div>
+                  <div class="wrap_post_more">
+                    <div class="post_more_btn fl">
+                      <a
+                        href="https://mainacademy.ua/ua/blog-ua/korisni-resursi-dlya-novachkiv-v-php/"
+                        >ЧИТАТИ ДАЛІ</a
+                      >
+                    </div>
+                    <div class="post_social fr">
+                      <ul class="social_list">
+                        <li class="social_item">
+                          <a href="№">
+                            <img src="img/facebook.svg" alt="facebook"
+                          /></a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/twiter.svg" alt="twirer" />
+                          </a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/youtube.svg" alt="youtube" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="wrap_meta">
+                    <img src="img/date_range.svg" alt="data_range" />
+                    <span>10 August</span>
+                    <img src="img/face-3.svg" alt="face" />
+                    <span>Оля Паламарчук</span>
+                    <img src="img/chat_bubble_outline.svg" alt="chat" />
+                    <span> 0</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-13096">
+                <div class="post_content_area">
+                  <div class="post_thumbnail">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/u-poshukah-kreativnih-i-aktivnih-treneriv/"
+                    >
+                      <figure>
+                        <img
+                          src="img/you-x-ventures-vbxyFxlgpjM-unsplash.jpg.webp"
+                          width="700"
+                          height="368"
+                          alt="PHP"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="post_title">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/u-poshukah-kreativnih-i-aktivnih-treneriv/"
+                    >
+                      <h2>У ПОШУКАХ КРЕАТИВНИХ І АКТИВНИХ ТРЕНЕРІВ!</h2>
+                    </a>
+                  </div>
+                  <div class="post_content">
+                    <p>
+                      Запрошуємо IT-фахівців взяти участь в освітніх проєктах
+                      Академії. Шукаємо IT-фахівців за напрямами: Front-end,
+                      Python, C#, PHP, QA Auto, DevOps, Data Science, QA manual,
+                      Java. Ми пропонуємо додаткову зайнятість, можливість
+                      співпраці в режимі off-line...
+                    </p>
+                  </div>
+                  <div class="wrap_post_more">
+                    <div class="post_more_btn fl">
+                      <a
+                        href="https://mainacademy.ua/ua/blog-ua/u-poshukah-kreativnih-i-aktivnih-treneriv/"
+                        >ЧИТАТИ ДАЛІ</a
+                      >
+                    </div>
+                    <div class="post_social fr">
+                      <ul class="social_list">
+                        <li class="social_item">
+                          <a href="№">
+                            <img src="img/facebook.svg" alt="facebook"
+                          /></a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/twiter.svg" alt="twirer" />
+                          </a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/youtube.svg" alt="youtube" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="wrap_meta">
+                    <img src="img/date_range.svg" alt="data_range" />
+                    <span>27 July</span>
+                    <img src="img/face-3.svg" alt="face" />
+                    <span>Оля Паламарчук</span>
+                    <img src="img/chat_bubble_outline.svg" alt="chat" />
+                    <span> 0</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-13067">
+                <div class="post_content_area">
+                  <div class="post_thumbnail">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/online-webinar-front-end-developer/"
+                    >
+                      <figure>
+                        <img
+                          src="img/blog_vebinar.jpg"
+                          width="700"
+                          height="368"
+                          alt="PHP"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="post_title">
+                    <a
+                      href="https://mainacademy.ua/ua/blog-ua/online-webinar-front-end-developer/"
+                    >
+                      <h2>ONLINE WEBINAR FRONT-END DEVELOPER</h2>
+                    </a>
+                  </div>
+                  <div class="post_content">
+                    <p>
+                      Запрошуємо тебе на безкоштовний вебінар з напряму: “Front
+                      End/React Розробник”, який відбудеться 14 червня о 19:00 в
+                      онлайн форматі. Чим буде корисне заняття? На занятті
+                      розглянемо такі практичні питання: архітектура...
+                    </p>
+                  </div>
+                  <div class="wrap_post_more">
+                    <div class="post_more_btn fl">
+                      <a
+                        href="https://mainacademy.ua/ua/blog-ua/online-webinar-front-end-developer/"
+                        >ЧИТАТИ ДАЛІ</a
+                      >
+                    </div>
+                    <div class="post_social fr">
+                      <ul class="social_list">
+                        <li class="social_item">
+                          <a href="№">
+                            <img src="img/facebook.svg" alt="facebook"
+                          /></a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/twiter.svg" alt="twirer" />
+                          </a>
+                        </li>
+                        <li class="social_item">
+                          <a href="#">
+                            <img src="img/youtube.svg" alt="youtube" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="wrap_meta">
+                    <img src="img/date_range.svg" alt="data_range" />
+                    <span> 2022-06-14</span>
+                    <img src="img/face-3.svg" alt="face" />
+                    <span>Оля Паламарчук</span>
+                    <img src="img/chat_bubble_outline.svg" alt="chat" />
+                    <span> 0</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <aside class="sidebar_area fr">
+              <div class="sidebar_area_blog">
+                <div class="sidebar_area_item">
+                  <div class="text-3">
+                    <p>ПРО НАШУ АКАДЕМІЮ</p>
+                  </div>
+                  <div class="textwidget">
+                    <p>
+                      <a href="#">
+                        <img
+                          src="img/about-us-1024x578.jpg.webp"
+                          width="640"
+                          height="361"
+                          alt="about"
+                        />
+                      </a>
+                    </p>
+                    <p>
+                      Ми даємо можливість не тільки поліпшити свої професійні
+                      навички, а й бути в курсі всіх новинок різних напрямків
+                      нашої сфери
+                    </p>
+                    <div class="proinput">
+                      <form>
+                        <input type="search" placeholder="Пошук..." />
+                      </form>
+                      <button class="promagnifier">
+                        <span class="innericon">
+                          <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 512 512"
+                            enable-background="new 0 0 512 512"
+                            xml:space="preserve"
+                          >
+                            <path
+                              d="M460.355,421.59L353.844,315.078c20.041-27.553,31.885-61.437,31.885-98.037
+                              C385.729,124.934,310.793,50,218.686,50C126.58,50,51.645,124.934,51.645,217.041c0,92.106,74.936,167.041,167.041,167.041
+                              c34.912,0,67.352-10.773,94.184-29.158L419.945,462L460.355,421.59z M100.631,217.041c0-65.096,52.959-118.056,118.055-118.056
+                              c65.098,0,118.057,52.959,118.057,118.056c0,65.096-52.959,118.056-118.057,118.056C153.59,335.097,100.631,282.137,100.631,217.041
+                              z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar_area_item widget latest_news_widget">
+                  <div class="widget-title">ОСТАННІ НОВИНИ</div>
+
+                  <div class="sidebar_latest_item">
+                    <div class="sidebar_latest_item_img fl">
+                      <a href="#">
+                        <figure>
+                          <img
+                            src="img/blog_-navchann-pid-chas-viiny-150x150.jpg"
+                            alt="blog"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="sidebar_latest_item_content fl">
+                      <div class="latest_meta_title">
+                        <a
+                          href="https://mainacademy.ua/ua/blog-ua/navchann-pid-chas-vijni/"
+                          >Навчання під час війни
+                        </a>
+                      </div>
+                      <div class="latest_meta_date">
+                        Опубліковано
+                        <span>21 January, 2023</span>
+                      </div>
+                      <div class="latest_meta_author">
+                        Автор:
+                        <span>Оля Паламарчук</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+
+                  <div class="sidebar_latest_item">
+                    <div class="sidebar_latest_item_img fl">
+                      <a href="#">
+                        <figure>
+                          <img
+                            src="img/blog_ney-year-150x150.jpg"
+                            alt="blog_ney-year"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="sidebar_latest_item_content fl">
+                      <div class="latest_meta_title">
+                        <a
+                          href="https://mainacademy.ua/ua/blog-ua/z-novim-rokom-ta-rizdvom-hristovim/"
+                          >З НОВИМ РОКОМ ТА РІЗДВОМ ХРИСТОВИМ!</a
+                        >
+                      </div>
+                      <div class="latest_meta_date">
+                        Опубліковано
+                        <span>09 January, 2023</span>
+                      </div>
+                      <div class="latest_meta_author">
+                        Автор:
+                        <span>Оля Паламарчук</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+
+                  <div class="sidebar_latest_item">
+                    <div class="sidebar_latest_item_img fl">
+                      <a href="#">
+                        <figure>
+                          <img src="img/blog_PHP-150x150.jpg" alt="blog_PHP" />
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="sidebar_latest_item_content fl">
+                      <div class="latest_meta_title">
+                        <a
+                          href="https://mainacademy.ua/ua/blog-ua/korisni-resursi-dlya-novachkiv-v-php/"
+                          >КОРИСНІ РЕСУРСИ ДЛЯ НОВАЧКІВ В PHP</a
+                        >
+                      </div>
+                      <div class="latest_meta_date">
+                        Опубліковано
+                        <span> 10 August, 2022</span>
+                      </div>
+                      <div class="latest_meta_author">
+                        Автор:
+                        <span>Оля Паламарчук</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+
+                  <div class="sidebar_latest_item">
+                    <div class="sidebar_latest_item_img fl">
+                      <a href="#">
+                        <figure>
+                          <img
+                            src="img/you-x-ventures-vbxyFxlgpjM-unsplash-150x150.jpg.webp"
+                            alt="blog_ventures"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="sidebar_latest_item_content fl">
+                      <div class="latest_meta_title">
+                        <a
+                          href="https://mainacademy.ua/ua/blog-ua/u-poshukah-kreativnih-i-aktivnih-treneriv/"
+                          >У ПОШУКАХ КРЕАТИВНИХ І АКТИВНИХ ТРЕНЕРІВ!</a
+                        >
+                      </div>
+                      <div class="latest_meta_date">
+                        Опубліковано
+                        <span> 27 July, 2022</span>
+                      </div>
+                      <div class="latest_meta_author">
+                        Автор:
+                        <span>Оля Паламарчук</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+
+                <div class="sidebar_area_item sidebar_widget_bottom">
+                  <div class="widget widget_tag_cloud">
+                    <div class="widget-title">
+                      <div class="tagcloud">
+                        <a
+                          href="https://mainacademy.ua/ua/tag/academy-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >Academy</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/android-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >ANDROID</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/c-sharp-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >C#</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/data-science-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >DATA SCIENCE</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/data-science-foundation-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >DATA SCIENCE FOUNDATION</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/devops-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >DEVOPS</a
+                        >
+                        <a
+                          href="https://mainacademy.ua/ua/tag/front-end-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >FRONT END</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/idea-is-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >IDEA IS
+                        </a>
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/it-ticket-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >IT TICKET
+                        </a>
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/java-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >JAVA
+                        </a>
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/javascript-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                          >JAVASCRIPT
+                        </a>
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/main-school-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                        >
+                          MAIN SCHOOL</a
+                        >
+
+                        <a
+                          href="https://mainacademy.ua/ua/tag/main-academy-ua/"
+                          class="tag-cloud-link tag-link-726 tag-link-position-1"
+                        >
+                          MAIN ACADEMY</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
