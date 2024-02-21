@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation sprite</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .parent_sprite{
+        position: relative;
+    }
+    .parent{
+        height: 540px;
+        background: url("img/doroga.jpeg") repeat-x;
+        background-position: bottom left;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        animation: parent 4s infinite linear;
+    }
+    .man{
+        height: 325px;
+        width: calc(1472px/8);
+        overflow: hidden;
+        background: url("img/capguy-walk.png") no-repeat;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+        top: -326px;
+        animation: man 1s steps(8) infinite;
+    }
+    .cat{
+        height: 134px;
+        width: 77px;
+        overflow: hidden;
+        background: url("img/cat.png") no-repeat;
+        margin: 0 auto;
+        position: relative;
+        animation: cat 1s steps(6) infinite;
+    }
+    @keyframes cat{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position:  -465px;
+        } 
+    }
+    @keyframes parent{
+        from{
+            background-position: 0 -100%;
+        }
+        to{
+            background-position:  -100%;
+        }
+    }
+
+    @keyframes man{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position:  -1472px;
+        } 
+    }
+</style>
+<body>
+    <div class="parent_sprite">
+        <div class="parent"></div>
+        <div class="man"></div>
+        <div class="cat"></div>
+    </div>
+</body>
+</html>
