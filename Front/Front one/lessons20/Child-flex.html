@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child flex</title>
+</head>
+<style>
+    /*
+        order
+        flex-grow
+        flex-basis
+        flex - являється скороченим для flex-grow, flex-shrink, flex-basis
+        align-self
+    */
+    .flex-order,
+    .flex-grow,
+    .flex-shrink,
+    .flex-basis,
+    .flex,
+    .flex-align-self{
+        background: #98994F;
+        margin-bottom: 20px;
+        width: 700px;
+        height: 200px;
+        display: flex;
+    }
+    .flex-order > div,
+    .flex-grow > div,
+    .flex-shrink > div,
+    .flex-basis > div,
+    .flex > div,
+    .flex-align-self > div{
+        background: #333;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 36px;
+    }
+    .flex-order div:nth-child(1){
+        order: 4;
+    }
+    .flex-order div:nth-child(2){
+        order: 3;
+    }
+    .flex-order div:nth-child(3){
+        order: 2;
+    }
+    .flex-order div:nth-child(4){
+        order: 1;
+    }
+
+
+    .flex-grow div:nth-child(1){
+        flex-grow: 1;
+    }
+    .flex-grow div:nth-child(2){
+        flex-grow: 1;
+    }
+    .flex-grow div:nth-child(3){
+        flex-grow: 8;
+    }
+    .flex-grow div:nth-child(4){
+        flex-grow: 1;
+    }
+
+    .flex-shrink div:nth-child(3){
+        flex-shrink: 0;
+    }
+
+    .flex-basis div:nth-child(3){
+        flex-basis: 200px;
+    }
+
+    .flex div:nth-child(1){
+        flex: 0 0 50%;
+    }
+
+    .flex-align-self div:nth-child(1){
+        align-self: stretch;
+        height: auto;
+    }
+    .flex-align-self div:nth-child(2){
+        align-self: center;
+    }
+</style>
+<body>
+     <!-- flex-order -->
+        <div class="flex-order">
+            <div>4</div>
+            <div>3</div>
+            <div>2</div>
+            <div>1</div>
+        </div>
+    <!-- flex-order -->
+
+     <!-- flex-grow -->
+        <div class="flex-grow">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex-grow -->
+
+    <!-- flex-shrink -->
+        <div class="flex-shrink container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    <!-- flex-shrink -->
+
+    <!-- flex-basis -->
+        <div class="flex-basis">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex-basis -->
+
+    <!-- flex -->
+        <div class="flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex -->
+
+    <!-- flex-align-self -->
+        <div class="flex-align-self">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex-align-self -->
+</body>
+</html>

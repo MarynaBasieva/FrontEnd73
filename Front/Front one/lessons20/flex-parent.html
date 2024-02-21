@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex parent</title>
+</head>
+<style>
+    /*
+     flex-derection
+     flex-wrap
+     flex-flow
+     justify-content
+     aligb-items
+     align-content
+    */
+
+    .container{
+        max-width: 700px;
+        background-color: #1FB1DE;
+        margin-bottom: 40px;
+        display: flex;;
+    }
+    .flex-derection > div,
+    .flex-derection-revers > div,
+    .flex-wrap > div,
+    .flex-justify-content > div,
+    .flex-align-items > div,
+    .flex-align-content > div,
+    .flex-flow > div{
+        background: #000;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        margin-right: 10px;
+        margin: 5px;
+        color: #fff;
+    }
+    .flex-derection{
+        flex-direction: column;/* column вертикаль, row горизонталь*/
+    }
+    .flex-derection-revers{
+        flex-direction: column-reverse; /*column-reverse  зверху вниз, column-row з права на ліво*/
+    }
+    .flex-wrap{
+        flex-wrap: wrap; /* wrap - перенос елементів якщо не входять в ширину контейнера, 
+        no-wrap -  по замовчуваню не переносить строку, wrap-reverse - переносить при кінці до початка*/
+    }
+    .flex-justify-content{
+        height: 600px;
+        justify-content: space-between; /*justify-content - використовується для горизонтального вирівнювання елементів*/
+    }
+    .flex-align-items{
+        height: 300px;
+        align-items: center; /*  align-items - використовується для вертикалі вирівнювання елементів*/
+    }
+    .flex-align-content{
+        align-content: center;
+        flex-wrap: wrap;
+        height: 600px;
+    }
+    .flex-flow{
+        flex-flow: row wrap; /*використовується для вирівнювання flex лінії */
+    }
+</style>
+<body>
+    <!-- flex-derection -->
+        <div class="flex-derection container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+     <!-- flex-derection -->
+
+
+     <!-- flex-derection-revers -->
+        <div class="flex-derection-revers container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+     <!-- flex-derection-revers -->
+
+
+    <!-- flex-wrap -->
+        <div class="flex-wrap container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+    <!-- flex-wrap -->
+
+    <!-- flex-justify-content -->
+        <div class="flex-justify-content container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex-justify-content -->
+        
+    <!-- flex-align-items -->
+        <div class="flex-align-items container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    <!-- flex-align-items -->
+
+
+     <!-- flex-align-content -->
+        <div class="flex-align-content container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    <!-- flex-align-content -->
+
+    <!-- flex-flow -->
+        <div class="flex-flow container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    <!-- flex-flow -->
+    
+</body>
+</html>
