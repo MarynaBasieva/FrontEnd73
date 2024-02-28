@@ -1,0 +1,73 @@
+.box{
+    padding: 300px 0;
+    margin-bottom: 50px;
+  }
+ .elem_parent_1{
+    width: 50%;
+    float: left;
+ }
+ .elem_parent_2{
+    width: 50%;
+    float: left;
+ }
+   .elem1{
+    color: blue;
+text-align: center;
+font-size: 70px;
+line-height: 5px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   } 
+   .elem2{
+    color:gray;
+text-align: center;
+   } 
+   .elem3{
+    color:gray;
+text-align: center;
+/*з великоі чи всі великі?*/
+text-transform: uppercase;
+font-size: 18px;
+   } 
+   @keyframes color-change {
+      0%{ color: #4b7509;}
+      50%{ color: red;}
+   100%{color: blue;}
+}
+.elem2{
+   animation: color-change 2s infinite alternate;
+}
+      
+   
+    
+   .btn{
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 20px;
+      text-align: center;
+      height: 40px;
+      color: #fff;
+      background: blue;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      width: 150px;
+      margin: 0 auto;
+      line-height: 1;
+      }
+
+      .btn:hover{
+         background: #4b7509;
+         transform: translateY(1px);
+         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+     }
+     .container{
+      display: flex;
+      align-items:center;/*по вертикали по центру*/
+      justify-content: center;/*по горизонтали по центру*/
+      height: 100vh;/* вісота контейнера равна вісоте броузера*/
+     }
+     
+     .elem_parent_1:first-child{
+      order: 2;
+     }
