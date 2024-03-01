@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/reey" rel="stylesheet" />
+
+    <title>HW16_food</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+        width: auto;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      .header{
+        min-height: 100%;
+        position: relative;
+      }
+      
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }
+      .navigation {
+        padding-top: 40px;
+        max-width: 1170 px;
+        width: auto;
+      }
+     
+     
+      .menu ul.sub-menu li {
+        list-style: none;
+        display: inline-block;
+      }
+      .menu ul.sub-menu > li > a {
+        color: white;
+        font-size: 13px;
+        padding: 20px 45px;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+      }
+      .menu ul.sub-menu > li > a:hover {
+        background-color: gray;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: url(pics/Header\ Background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      /*Baner*/
+      .logo {
+        display: block;
+        width: 150px;
+        margin-top: 200px;
+        margin-left: 120px;
+        margin-bottom: 50px;
+      }
+      .italian h1 {
+        font-family: "Reey", sans-serif;
+        font-weight: normal;
+        font-size: 92px;
+        color: white;
+        margin-left: 120px;
+      }
+      .loremipsum p {
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        font-family: "BoldItalik", sans-serif;
+        margin-top: 120px;
+        margin-left: 120px;
+      }
+      .read p {
+        width: 220px;
+        height: 50px;
+        color: black;
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 40px;
+        box-sizing: border-box;
+        font-family: "Extrabold", sans-serif;
+        font-weight: bold;
+        margin-top: 65px;
+        margin-left: 120px;
+      }
+      .lorem p {
+        font-size: 20px;
+        font-family: "Italic", sans-serif;
+        width: 500px;
+        color: white;
+        margin-left: 120px;
+        margin-top: 10px;
+      }
+
+      .foto {
+        position: absolute;
+        bottom: -50px;
+        right: 0px;
+        width: 750px;
+        height: 670px;
+      }
+
+      .foto img {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer {
+        color: black;
+        padding: 10px 0;
+        width: 100%;
+        background-color: red;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    
+      }
+      .read{
+         margin-top: 22px;
+        margin-left: 120px;
+      }
+      .link{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 25px;
+        background-color:white;
+        transition: background-color 0.3s,color 0.3s;
+       
+      }
+      .link:hover{
+        background-color: grey;
+      }
+      .form{
+      
+        position: relative;
+        display: inline-block;
+      }
+      .button{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      input{
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    
+        <header class="navigation">
+            <div class="menu">
+              <ul class="sub-menu fr">
+                <li class="item-menu">
+                  <a href="#">HOME</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#">MENU</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#">OUT STORY</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#">CONTACT US</a>
+                </li>
+               <div class="form">
+         <form action="/search" method="get">
+         <input type="text" name="q" placeholder="What are you looking">
+         <div class="button"><button type="submit"> <img src="pics/search.png"alt="search"></button>
+       </div>
+        </form>
+       </ul>
+       </div>
+            
+          <div class="clear"></div>
+        </header>
+
+        <div class="container">
+            <main>
+        <section class="baner">
+          <div class="container">
+            <div class="logo">
+              <a href="#">
+                <img src="pics/Place Your Logo Here (Double Click to Edit).png" alt="logo" />
+              </a>
+            </div>
+            <div class="italian food">
+              <h1>Italian food</h1>
+            </div>
+            <div class="loremipsum">
+              <p>LOREMIPSUM DOLOR</p>
+            </div>
+            <div class="read">
+             <a href="#" class="link">READ MORE</a>
+            </div>
+            <div class="lorem">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                iusmod tempor incididunt ut labore et dolore manga
+              </p>
+            </div>
+            <div class="foto">
+              <figure class="food-box">
+                <img src="pics/Plate.png" alt="foto" />
+              </figure>
+            </div>
+          </div>
+        </section>
+        </main>
+        </div>
+    </div>
+    </div>
+
+        <footer>
+          <div class="fotter">Footer</div>
+        </footer>
+      
+    
+  </body>
+</html>

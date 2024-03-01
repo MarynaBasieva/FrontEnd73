@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog abot travel</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    /*footer bottom*/
+        html,
+        body{
+            height: 100%;
+        }
+        .for_page{
+            position: relative;
+            min-height: 100%;
+        }
+        .page{
+            padding-bottom: 200px;
+        }
+        .header{
+            padding: 100px 0;
+            background: #ccc;
+            text-align: center;  
+        }
+        .footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: 100px 0;
+            background: #333;
+        }
+    .parent .box{
+       box-sizing: border-box;
+       background: #fff;
+       padding: 20px; 
+       width: 33.333%;
+    }
+    .box a{
+        display: block;
+    }
+    img{
+       max-width: 100%; 
+       width:auto;
+    }
+    .parent .box h2{
+        font-size: 23px;
+        padding: 15px 0;
+        max-height: 43px;
+        min-height: 43px;
+        overflow: hidden;
+        }
+    .parent .box .text{
+        font-size: 14px;
+        text-align: justify;
+        line-height: 21px;
+        margin-bottom: 20px;
+        min-height: 44px;
+        max-height: 44px;
+        overflow: hidden;
+    }
+    .btn_box{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        padding: 7px 0;
+        text-align: center;
+        height: 40px;
+        color: #fff;
+        background: #000;
+        line-height: 35px;
+        transition: all 0.4s ease;
+        position: relative;
+    }
+    .btn_box::before{
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle,rgba(255,255,255,0.8)0%, rgba(255,255,255,0)80%);
+        opacity: 0;
+        transition: opasity 0.3s ease;
+    }
+    .btn_box:hover:before{
+        opacity: 1;
+    }
+    .btn_box:hover{
+        background: #ccc;
+    }
+    .box:hover .btn_box{
+        background: #4b7509;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .clear{
+        clear: both;
+    }
+    .blog_post{
+        position: relative;
+    }
+    .image-container{
+        width: 300px;
+        overflow: hidden;
+    }
+    .image-container img{
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+    .image-container:hover img{
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+
+            <header class="header"><h1>Блог о путешествиях
+                
+                </h1>Привет, меня зовут Алеся, и я веду этот блог о путешествиях.
+                Для вас я стараюсь найти лучшие предложения, в статьях всегда есть все ссылки на туры, отели, маршруты. Следите за обновлением!</header>
+   
+                <section class="main">
+                    <div class="container">
+                        <div class="parent">
+                        
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/female-tourists-hand.jpg" alt="travel1" />
+                                </a>
+                                <h2>Что вы не знали о райских островах</h2>
+                                <div class="text">
+                                    Мальдивы – это не только белый песок, лазурное море и пальмы как с картинки. Эта удивительная страна хранит много секретов
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/front-view-young-woman-holding-tickets.jpg" alt="travel2" />
+                                </a>
+                                <h2>Отели Египта с аквапарком: Шарм-эль-Шейх</h2>
+                                <div class="text">
+                                    Климат и расположение курорта просто призывают отдыхать тут в любое время года — замерзнуть практически невозможно даже в январе.
+⠀
+Это один из главных критериев, почему Шарм пользуется популярностью среди туристов с детьми.⠀
+Ну, и как всегда – какой ребенок не любит водные развлечения?
+⠀
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/new-holiday-destination.avif" alt="travel3" />
+                                </a>
+                                <h2>Общие правила путешествия в современной реальности, которые лучше принимать
+                                </h2>
+                                <div class="text">
+                                    Любой страх рождается от недостатка информации. От слепых зон, неизвестности, невозможности что-либо уточнить. В современном мире нет проблем с доступом к ресурсам, позволяющим узнать всё и о правилах въезда в страну, и об эпидемиологической ситуации, и об ограничениях. 
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/full-shot-woman.jpg" alt="travel4" />
+                                </a>
+                                <h2>Доминиканская Республика: возобновление полетов</h2>
+                                <div class="text">
+                                    Широкие бесконечные песчаные пляжи и яркая буйная тропическая зелень, быстрые ритмы танца и размеренная повседневная жизнь местных жителей — все это теперь ждет нас, потому что мы летим в Доминикану!
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/full-shot-travel.avif" alt="travel5" />
+                                </a>
+                                <h2>Египет: самые популярные экскурсии
+                                </h2>
+                                <div class="text">
+                                    Отправляясь на отдых в Египет, обязательно воспользуйтесь возможностью посетить самые удивительные места этой страны.
+
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/travel-concept.jpg" alt="travel6" />
+                                </a>
+                                <h2>ПЯТИЗВЕЗДОЧНЫЕ ОТЕЛИ ТУРЦИИ: как премиум, но дешевле</h2>
+                                <div class="text">
+                                    Тут главное не пойти по «механическому» пути перебора цен - не всегда качество=стоимость, поэтому каждый конкретный вариант дополнительно обговаривается
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/travel.jpg" alt="travel7" />
+                                </a>
+                                <h2>Little panda</h2>
+                                <div class="text">
+                                    Lorem ipsum dolar ipsum dolar
+                                    Lorem ipsum dolar ipsum dolar
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/travel1.avif" alt="travel8" />
+                                </a>
+                                <h2>Концертные программы в отелях Турции
+                                </h2>
+                                <div class="text">
+                                    Мы собрали в одном месте концертные афиши любимых отелей в Турции:
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+
+                            <article class="box fl">
+                                <div class="image-container">
+                                <a href="#">
+                                    <img src="pics/view-travel-items.jpg" alt="travel9" />
+                                </a>
+                                <h2>Испания, Коста Дорада: проверенные семейные отели</h2>
+                                <div class="text">
+                                    Мы тут не о теории говорим или заметках популярных изданий. Я стараюсь делиться своим мнением и личным взглядом на отдых
+                                </div>
+                                <a href="#" class="btn_box">Читать больше</a></div>
+                            </article>
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </section>
+    </div>
+    <footer class="footer"></footer>
+</div>
+</body>
+</html>

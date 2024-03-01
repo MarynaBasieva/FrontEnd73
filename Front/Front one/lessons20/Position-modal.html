@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Position modal</title>
+  <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>	
+  <script type="text/javascript" src="js/customs.js"></script>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+	}
+	.btn_banner{
+		width: 200px;
+		height: 40px;
+		text-align: center;
+		padding: 10px 0;
+		background: #333;
+		color: #fff;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+	.btn_form:hover,
+	.btn_banner:hover{
+		background: #00207F;
+	}
+	.parent_modal{
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgb(0,0,0,0.7);
+		top:0;
+		left:0;
+		
+		
+	}
+	/*flex позиція яка заміняє absolute*/
+	.cont_flex{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+	.wrapp_modal{
+		width: 400px;
+/*		height: 400px;
+		margin-left: -200px;
+		margin-top: -200px;*/
+		background: #fff;
+		padding: 15px 20px;
+	/*	position: absolute;
+		transform: translate(-50%,-50%);
+		top:50%;
+		left:50%;*/
+	}
+	.wrapp_modal h2{
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+	.form .input{
+		color: #000;
+		width: 100%;
+		height: 40px;
+		display: block;
+		outline: none;
+		border:#000 solid 1px;
+		font-size: 15px;
+		margin-bottom:20px;
+		padding: 5px 10px;
+		box-sizing: border-box;
+	}
+	.textarea{
+		color: #000;
+		width: 100%;
+		height: 150px;
+		display: block;
+		outline: none;
+		border:#000 solid 1px;
+		font-size: 15px;
+		margin-bottom:20px;
+		padding: 5px 10px;
+		box-sizing: border-box;
+		resize: none;
+	}
+	.form .input::placeholder,
+	.form .textarea::placeholder{
+		color: #000;
+	}
+	.form .input:focus::placeholder,
+	.form .textarea:focus::placeholder{
+		color: #ccc;
+	}
+	.form .input:focus,
+	.form .textarea:focus{
+	   border:#ccc solid 1px;
+	}
+	.btn_form{
+		width: 200px;
+		height: 40px;
+		text-align: center;
+		padding: 10px 0;
+		background: #333;
+		color: #fff;
+		cursor: pointer;
+		outline: none;
+		 border: none;
+	}
+	.close{
+		position: absolute;
+		right: 20px;
+		top: 6px;
+		color: #0413B3;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.close:hover{
+		color: #333;
+	}
+</style>
+<body>
+	<section class="baners">
+		<img src="img/baner.webp" alt="development" />
+		<img src="img/baner.webp" alt="development" />
+		<div class="btn_banner">Зворотній зв'язок</div>
+	</section>
+	
+	<footer class="footer">
+		footer
+	</footer>
+	
+	<div class="parent_modal">
+	  <div class="cont_flex">
+		<div class="wrapp_modal">
+			<div class="close">x</div>
+			<div class="form_modal">
+				<h2>Heading form</h2>
+				<form class="form">
+					<input type="text" class="input" placeholder="First Name" />
+					<input type="text" class="input" placeholder="Last Name" />
+					<input type="tel" class="input" placeholder="Your Phone" />
+					<textarea class="textarea" placeholder="Your message"></textarea>
+					<button class="btn_form">Send</button>
+				</form>
+			</div>
+		</div>
+	   </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/*general style*/
+   html{
+    height: 100%;
+   }
+   html body{
+     font-family: 'Roboto';
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+   }
+   .for_page{
+    flex: 1 0 auto;
+   }
+   img{
+    width: auto;
+    max-width: 100%;
+   }
+   p{
+    margin-bottom: 20px;
+   }
+   button:focus{
+    box-shadow: none;
+   }
+   .for_page a{
+     text-decoration: none;
+     -moz-transition: all ease 0.4s;
+     -o-transition: all ease 0.4s;
+     -webkit-transition: all ease 0.4s;
+     -ms-transition: all ease 0.4s;
+     transition: all ease 0.4s;
+   }
+/*general style*/
+
+
+.header{
+    padding-top: 19px;
+}
+.nav ul li{
+  list-style: none; 
+}
+.nav ul li a{
+    
+}
+
