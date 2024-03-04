@@ -1,0 +1,345 @@
+/*general style*/
+html{
+    height: 100%;
+   }
+
+   html body{
+     font-family: 'Roboto';
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+   }
+
+   .for_page{
+    flex: 1 0 auto;
+   }
+
+   img{
+    width: auto;
+    max-width: 100%;
+   }
+
+   p{
+    margin-bottom: 20px;
+   }
+
+   button:focus{
+    box-shadow: none;
+   }
+
+   .for_page a{
+     text-decoration: none;
+     -moz-transition: all ease 0.4s;
+     -o-transition: all ease 0.4s;
+     -webkit-transition: all ease 0.4s;
+     -ms-transition: all ease 0.4s;
+     transition: all ease 0.4s;
+   }
+/*general style*/
+
+
+
+/* header styles */
+.header{
+    padding-top: 19px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li a{
+    display: block;
+    margin: 0 46px 0 0;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+}
+
+.nav ul li:last-child a {
+    margin: 0 0 0 0;
+}
+
+.card-head{
+    position: relative;
+    cursor: pointer;
+}
+
+.card-head svg{
+    transition: all ease 0.5s;
+}
+
+.card-head:hover svg{
+    transform: scale(1.2);
+}
+
+/* count */
+.card-head .card-count{
+    background: #fed097;
+    padding: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: center;
+    color: #031622;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    top:-12px;
+    left:21px;
+}
+/* count */
+
+/* header styles */
+
+
+
+/* baner styles */
+.baner{
+    padding-top: 391px;
+    padding-bottom: 50px;
+    background: url("../img/banner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: -71px;
+}
+
+.text_baner h1{
+    font-weight: 400;
+    font-size: 81px;
+    line-height: 100%;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.text_baner .baner-btn{
+    display: block;
+    background: #225b93;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.text_baner .baner-btn:hover{
+    color: white;
+    text-decoration: none;
+    background: #000;
+}
+/* baner styles */
+
+
+
+/* about-us */
+.about{
+    background: #08263f;
+    padding-top: 141px;
+    padding-bottom: 135px;
+}
+
+.about-us h2{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #fed097;
+    margin-bottom: 29px;
+}
+
+.about-us p{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: white;
+}
+/* about-us */
+
+
+
+/* promises */
+.promises{
+    background: #edf3f6;
+    padding-top: 71px;
+    padding-bottom: 92px;
+}
+
+.promises .sub-title{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+}
+
+.promises-box img{
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.promises-box .title-promises{
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    text-align: center;
+    color: #031622;
+}
+
+.promises-box .text-promises{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #031622;
+}
+/* promises */
+
+
+
+/* our-products */
+.our-product{
+    padding-top: 93px;
+    padding-bottom: 180px;
+}
+
+.our-product .boxs_sub_title h2{
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #225b93;
+}
+
+.our-product .boxs_sub_title h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+    margin-bottom: 50px;
+}
+
+/* first-product */
+.first-box-our-product{
+    background: url('../img/whitening.jpg') no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxing-child-first-title{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 111%;
+    text-align: center;
+    color: white;
+    margin: 56px 0 53px;
+}
+
+.boxing-child-first-btn{
+    display: block;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    background: #225b93;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 14px 0;
+}
+
+.boxing-child-second-btn:hover,
+.boxing-child-first-btn:hover{
+    background: #000;
+    text-decoration: none;
+    color: white;
+}
+
+.our-product .second-box-our-product{
+    background: rgba(158, 207, 230, 0.49);
+    height: 500px;
+    padding: 70px 40px 40px;
+}
+
+.boxing-child-second-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 115%;
+    color: #031622;
+    margin-bottom: 9px;
+}
+
+.boxing-child-second-price{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: rgba(8, 38, 63, 0.6);
+}
+
+.boxing-child-second img{
+    display: block;
+    margin: 0 auto;
+}
+
+.boxing-child-second-btn{
+    background: #0070DE;
+    border-radius: 27px;
+    width: 100%;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+    padding: 14px 0;
+    display: block;
+}
+/* first-product */
+
+
+/* second-product */
+.our-product-row{
+    margin-top: 80px;
+}
+
+.our-product .third-box-our-product{
+    background: #EDF3F6;
+    height: 500px;
+    padding: 70px 40px 40px 40px;
+}
+
+.four-box-our-product{
+    background: url('../img/Refills.png') no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.our-product-row a{
+    background-color: #225B93;
+}
+/* second-product */
+
+/* our-products */

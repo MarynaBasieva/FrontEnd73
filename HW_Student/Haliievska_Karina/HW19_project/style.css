@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body,
+html {
+  height: 100%;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+}
+
+.for_page {
+  position: relative;
+}
+
+.site {
+}
+
+/*Header*/
+.container {
+  margin: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo img {
+  display: block;
+  margin: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  color: #006ea1;
+}
+
+.phone {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  color: #006ea1;
+}
+
+.phone ::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: url(img/phone_icon.png) no-repeat;
+  background-position: center top;
+}
+
+h1 {
+  color: rgb(35, 35, 75);
+  padding-top: 48px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 28px;
+  color: #006ea1;
+  text-transform: uppercase;
+}
+
+.polylang {
+  clear: left;
+  margin-top: 40px;
+  width: 100%;
+
+  margin-left: 10px;
+}
+.header-top .logo_item {
+  order: 1;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.phone_call .text .phones a {
+  text-decoration: none;
+  font-size: 17px;
+  padding-left: 29px;
+  padding-top: 7px;
+  padding-right: 24px;
+}
+.tel {
+  margin: 25px;
+}
+div {
+  margin: 10px;
+}
+.header_item {
+  list-style-type: none;
+}
+/*Header*/
+
+/*Nav*/
+.nav {
+  background: #d1d1d1;
+  list-style: none;
+}
+.nav ul.nav-menu li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav ul.nav-menu > li > a {
+  color: rgb(244, 215, 178);
+  font-size: 20px;
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav ul.nav-menu > li > a:hover {
+  background: rgb(133, 147, 150);
+  color: #f3dee2;
+}
+
+.nav ul.nav-menu li ul.nav-menu {
+  width: 300px;
+  background: rgb(133, 147, 150);
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav ul.nav-menu li ul.nav-menu li,
+.nav ul.nav-menu li ul.nav-menu li a {
+  display: block;
+}
+.nav ul.nav-menu li:hover ul.nav-menu {
+  opacity: 1;
+  visibility: visible;
+  font-size: 18px;
+  padding: 25px;
+  color: black;
+}
+.nav-menu
+/*Nav*/
+
+/*Footer*/
+.footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 40px 0;
+  background: #de3636;
+}
+
+/*Footer*/

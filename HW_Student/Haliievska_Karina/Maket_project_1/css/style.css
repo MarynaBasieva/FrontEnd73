@@ -1,0 +1,331 @@
+
+/* general styles*/
+html{
+    height: 100%;
+}
+
+html body{
+    font-family: "robotoregular"; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.for_page{
+    flex: 1 0 auto;
+}
+
+img{
+    width: auto;
+   /*  max-width: 100%;*/
+}
+p{
+    margin-bottom: 20px;
+}
+button:focus{
+    box-shadow: none;
+}
+
+.for_page a {
+    text-decoration: none;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+
+/* general styles*/
+
+/* Header*/
+
+.header{
+    padding-top: 19px;
+    position: relative;
+    z-index: 2;
+}
+.nav ul{
+    list-style: none;
+    padding-top: 25px;
+  
+}
+.nav ul li a{
+    font-family: "robotolight_italic";
+    display: block;
+    text-decoration: none;
+    margin-right: 46px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;
+}
+.nav ul li:last-child a{
+    margin-right: 0;
+}
+.card-head{
+    position: relative;
+    cursor: pointer;
+}
+.card-head svg{
+    transition: all ease 0.5s;
+}
+.card-head svg:hover{
+    transform: scale(1.2);
+}
+.card-head .card_count{
+    background: #FED097;
+    width: 20px;
+    height: 21px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: center;
+    color: #031622;
+    padding: 3px;
+    position: absolute;
+    left: 19px;
+    top: -10px;
+    }
+/* Header*/
+
+
+/*banner*/
+
+.banner {
+    padding-top: 391px; /* Було 298, додали 93 */
+    padding-bottom: 50px;
+    background: url(../img/Banner.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: -93px;
+}
+.text_banner h1{
+    font-weight: 400;
+    font-size: 81px;
+    line-height: 100%;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.text_banner .banner_btn{
+    display: block;
+    background: #225b93;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    padding: 15px 31px;
+}
+.text_banner .banner_btn:hover{
+    background-color: rgb(58, 80, 80);
+    color: rgb(251, 239, 239);
+    text-decoration: none;
+}
+/*banner*/
+
+/* Section information*/
+.information{
+    background: #08263F;
+    padding-top: 141px;
+    padding-bottom: 135px;
+}
+.box_information p{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: #fff;
+}
+.box_information h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #fed097;
+}
+/* Section information*/
+
+/* Promises*/
+.promises{
+    background: #edf3f6;
+    padding-top: 71px ;
+    padding-bottom: 92px;
+    text-align: center;
+}
+.promises .sub-title{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622; 
+}
+.promises-box img{
+    display: block;
+    margin: 0 auto 18px;
+}
+.promises-box .title-promises{
+    margin-bottom: 33px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    text-align: center;
+    color: #031622;
+}
+.promises-box .text-promises{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #031622;
+    text-align: center;
+}
+/* Promises*/
+
+/* Our-Products*/
+
+.our-products{
+padding-top: 93px;
+padding-top: 180px;
+}
+.our-products .boxes_sub_title h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+    margin-bottom: 50px;
+}
+.our-products .boxes_sub_title h2{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #225b93;
+    margin-bottom: 47px;
+}
+.first_box_our_product{
+    background: url(../img/Pen.jpg) no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.boxing-child-first .boxing-child-first-title{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 111%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 53px;
+}
+.boxing-child-first .boxing-child-first-btn
+{
+    background: #225b93;
+    border-radius: 27px;
+    width: 100%;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    padding: 14px 0;
+    display: block;
+    }
+    
+
+.boxing-child-first .boxing-child-first-btn:hover{
+    background-color: rgb(58, 80, 80);
+    color: rgb(251, 239, 239);
+    text-decoration: none;
+}
+.second_box_our_product{
+    background: rgba(158, 207, 230, 0.49);
+    height: 500px;
+    padding: 70px 40px 40px 40px;
+}
+.boxing-child-second-title{
+    font-family: "robotomedium";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 115%;
+    color: #031622;
+    margin-bottom: 9px;
+}
+.boxing-child-second-price{
+    margin: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: rgba(8, 38, 63, 0.6);
+}
+.boxing-child-second img{
+  display: block;
+  margin: 0 auto;
+}
+.boxing-child-second-btn{
+    background: #225b93;
+    border-radius: 27px;
+    width: 100%;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    padding: 14px 0;
+    display: block;
+}
+
+.boxing-child-second-btn:hover{
+    background-color: rgb(58, 80, 80);
+    color: rgb(251, 239, 239);
+    
+}
+/* Our-Products*/
+
+/* Our-Products - 2*/
+.our-product-row{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.second_box_our_product-row{
+    background: #edf3f6;
+    height: 500px;
+    padding: 70px 40px 40px 40px;
+}
+
+    
+
+.first_box_our_product .row-bg{
+    background: url(../img/whitening_gel.jpg) no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+/* Our-Products - 2*/
+
+
+
+/*  font-family: "robotoblack";
+font-family: "robotoblack_italic";
+font-family: "robotobold";
+font-family: "robotobold_italic";
+ont-family: "robotoitalic";
+font-family: "robotolight";
+font-family: "robotolight_italic";
+font-family: "robotomedium";
+font-family: "robotomedium_italic";
+font-family: "robotoregular";
+font-family: "robotothin";
+font-family: "robotothin_italic";
+*/
