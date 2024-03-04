@@ -13,8 +13,8 @@ jQuery(document).ready(function () {
 		jQuery('.responsive_none').fadeOut('slow');
 	});
 	
-    jQuery(".fancybox").fancybox();
-	
+    
+	jQuery(".fancybox").fancybox();
 	
 	
 	let carousel = jQuery('#partner_carousel');	
@@ -25,10 +25,10 @@ jQuery(document).ready(function () {
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
-		loop: false,
+		loop: true,
 		nav: false,
 		navText: [''],
-		dots: false,
+		dots: true,
 		mouseDrag: true,
 		margin: 30,
 		stagePadding: 0,
@@ -66,7 +66,6 @@ jQuery(document).ready(function () {
 			},
 			1099:{
 				items: 4,
-				dots: false,
 				mouseDrag: true
 			}
 		}

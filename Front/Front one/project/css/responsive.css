@@ -3,3 +3,138 @@
         max-width: 1282px;;
     }
 }
+@media (max-width:1199px){
+    
+}
+@media (max-width:991px){
+    .responsive{
+        display: flex;
+    }
+    .responsive i{
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .card_none,
+    .responsive_none{
+        display: none;
+    }
+    .mob_call{
+        display: flex;
+        justify-content: space-between;
+    }
+    .close_menu{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        right: 19px;
+        top: 5px;
+    }
+    .responsive i:hover,
+    .close_menu:hover{
+        opacity: 0.7;
+    }
+    .banner{
+        padding-top: 200px;
+        margin-top: -70px;
+    }
+    .header .responsive_none{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+    }
+    .nav ul{
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-left: 0;
+    }
+    .nav ul li{
+        width: 100%;
+    }
+    .nav ul li a{
+        margin-right: 0;
+        font-size: 35px;
+        line-height: normal;
+        padding-bottom: 33px;
+        text-align: center;
+    }
+    .promises,
+    .information,
+    .our-product {
+        padding:60px 0;
+    }
+    .promises-box{
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width:767px){   
+    .text_baner h1 {
+        font-size: 50px;
+        padding-bottom: 25px;
+    }
+    .box-information p {
+        font-size: 25px;
+        line-height: normal;
+    }
+    .box-information h2 {
+        margin-bottom: 15px;    
+    }
+    .first-box-our-product {
+        background-size: cover;
+        background-position: center center;
+    }
+    .first-box-our-product{
+        order: 2;
+    }
+    .second-box-our-product{
+        order: 1;
+    }
+}
+@media (max-width:600px){
+    
+}
+@media (max-width:550px){
+    .banner {
+        padding-top: 110px;
+        margin-top: -70px;
+    }
+    .text_baner h1 {
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    .text_baner .banner_btn {
+        width: 149px;
+        height: 44px;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    .information, .our-product, .promises {
+        padding: 40px 0;
+    }
+    .box-information p {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .promises .sub-title {
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    #partner_carousel.owl-carousel .owl-item .item {
+        margin: 0 auto;
+    }
+}
+@media (max-width:480px){
+    
+}
+@media (max-width:400px){
+    
+}
+@media (max-width:350px){
+    
+}
