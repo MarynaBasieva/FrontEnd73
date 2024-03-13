@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<script>
+    //6*3 (по окремості оператор числа) *-операнд (2 оператора це називається аргумент)
+    //операнд числа називається(операнд чи аргумент)
+    //оператор може бути бінарним
+    console.log('===Бінарний===');
+    let y = 5;
+    y = -y;
+    console.log(y); //міняє на протилежний -5
+
+    //бінарний коли використовуєтся для двух операндів або аргумертів
+    let a =3, b=2;
+    console.log(a-b);//коли використовується мінус на два числа то він стає бінарним, а число операндом
+    
+    console.log(5%2);//обчислення  залишка 1
+    //степінь
+    console.log(5**2);//25
+    console.log(2**3);//8 (2*2*2, 3 рази)
+
+    //складання строк + (бінарний +)
+    console.log('===Бінарний===');
+    let name = 'Miss',
+        lastName = 'Kayte';
+        let str = name + " cat" + ' is my friends' + " " + lastName + " Your name Kitty";
+        console.log(str);
+
+        console.log("1" + 2);//12
+        console.log(Number("1") + 2);//3
+        console.log(2 + "21");//221
+        console.log(2+3 + "1");//2+3=5  + string 1 = 51
+        console.log("2"+2+2);//222
+
+    //унарний +
+    console.log("===унарний + ====");
+    let x = 2;
+    console.log(+x);//2
+    console.log(+ "");//0
+
+    let x2 = "2";
+    console.log(+x2);
+
+    let cats = "5";
+    let dogs = "3";
+    console.log(cats+dogs);//53
+    console.log(+cats + +dogs);//8
+
+    let num = 2*2+2;
+    console.log(num);//6
+
+    //Присвоєння (коли присвоєння використовується арифметично)
+    let numNew = 4;
+        numNew += 2;
+        numNew += 4;
+        console.log(numNew);//10
+
+        let numNew1 = "cat ";
+            numNew1 += "mouse ";
+            numNew1 += "dog ";
+            console.log(numNew1);//cat mouse dog 
+
+</script>
+<body>
+    
+</body>
+</html>
