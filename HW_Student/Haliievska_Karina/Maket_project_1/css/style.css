@@ -314,7 +314,135 @@ padding-top: 180px;
 
 /* Our-Products - 2*/
 
+/* Info-2*/
+.second-information{
+    padding-top: 131px;
+    padding-bottom: 236px;
+    background: #edf3f6;
+   
+}
+.second_box_information p{
+    background: #edf3f6;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622; 
+    box-sizing: border-box;  
+}
+.second_box_information img{
+    padding-bottom: 29px;
+    margin: 0 auto;
+    display: block;
+}
+/* Info-2*/
 
+/* Proven */
+.proven{
+    margin-top: 85px;
+    margin-bottom: 95px;
+    position: relative;
+    
+}
+.proven_box{
+    background: #edf3f6;
+    width: 418px;
+    height: 480px;
+    padding: 93px 58px 20px 50px;
+    top: 17%;
+    left: 107%;
+    position: absolute;
+}
+
+.proven_information img{
+    margin: 0 auto;
+    display: block;
+    
+}
+.proven_box h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    color: #031622;
+    padding-bottom: 53px;
+}
+.proven_box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+    padding-bottom: 122px;
+}
+.proven_box .proven_btn{
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+    border: 1px solid #031622;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 35px;
+    }
+/* Proven */
+
+/* guarantee */
+.guarantee{
+    margin-bottom: 80px;
+    position: relative;
+}
+.guarantee_information .guarantee_box{
+
+}
+.guarantee_information img{
+    display: block;
+    right: -168px;
+    right: 35%;
+    left: 40%;
+
+}
+.guarantee_box{
+    background: #fbeed7;
+    width: 418px;
+    height: 480px;
+    padding: 93px 58px 20px 50px;
+    top: 25%;
+    left: 18%;
+    position: absolute; 
+}
+.guarantee_box h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    color: #031622;
+    padding-bottom: 53px;
+}
+
+.guarantee_box p{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #031622;
+padding-bottom: 98px;
+}
+
+.guarantee_box .guarantee_btn{
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+    border: 1px solid #031622;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 35px;
+    }
 
 /*  font-family: "robotoblack";
 font-family: "robotoblack_italic";
