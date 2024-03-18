@@ -1,0 +1,493 @@
+/* главніе стили*/
+html{
+    height: 100%;/*прижимаем футер*/
+}
+html, body{
+    font-family: 'Roboto';/*взяли из файла fonts*/
+ /*прижимаем футер*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.for_page{
+    flex: 1 0 auto;
+}
+img{
+    width: auto;
+    max-width: 100%;
+}
+p{
+    margin-bottom: 20px;
+}
+.button:focus{
+    box-shadow: none;
+}
+.for_page a{
+    text-decoration: none;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+/**/
+.header{
+    padding-top: 19px; /*отступ от логотипа до верха header*/  
+    position: relative;/*чтоб банер поднять на хедер и хедер перекріл его*/
+    z-index: 2;
+}
+.nav ul{
+    list-style: none; /*чтоб не біло точек в списке*/
+}
+.nav ul li a{
+    display: block;
+    margin-right: 46px; /*расстояний между пунктами меню*/
+    color: white;
+    /* скопировали с фигма стили текста подпунктов меню*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+}
+.nav ul li:last-child a{/*для последнего подпункта меню отступ марджин вправо уже не нужен*/
+margin-right: 0;
+}
+.banner{
+    padding-top: 391px;/*93+298*//* от надписи на банере вверх до низа хедера*/
+    padding-bottom: 50px;/* от кнопки на банере до низа*/
+    background: url("../img/banner.jpg") no-repeat;/* тк мі находимся в папке css. то надо с нее війти поєтому ..*/
+    background-size: cover;/* расстягивает на всю ширину, обращаемся до секции , тк контейне внутри банера*/
+    /*чтоб банер поднять на хедер и хедер перекріл его*/
+    position: relative;
+    z-index: 1;
+    margin-top: -93px;
+}
+.text_banner h1{
+    padding-bottom: 50px;/*расстояние от надписи до кнопки*/
+    /*стили копируем из надписи*/
+    font-weight: 400;
+    font-size: 81px;
+    line-height: 100%;
+    color: #fff;
+}
+.text_banner .banner_btn{
+    display: block;
+ /*стили копируем из макета  кнопки и надписи на ней*/
+    background: #225b93;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    /*расстояние от надписив кнопке до ее границ*/
+    padding: 15px 0;
+}
+.text_banner .banner_btn:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+ /*корзина*/
+.card-head{
+    position: relative;
+    cursor: pointer;
+}
+.card-head svg{
+    transition: all ease 0.5s;
+}
+.card-head:hover svg{
+    transform: scale(1.2);/*корзина увеличивается при наведении*/
+}
+/* цифра над корзиной*/
+.card-head .card_count{
+    background: #fed097;/*копируем из макета*/
+    padding: 3px;/*от цифрі до краев квадратика*/
+    /*копируем стили из макета*/
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: center;
+    color: #031622;
+    width: 20px;
+    height: 20px;
+    /*размещаем цифру на глаз*/
+    position: absolute;
+    z-index: -1;
+    top:-10px;
+    left:19px;
+}
+/*переходим к другой секции, синей*/
+.information{
+    background: #08263f;/*стили из макета*/
+    padding-top: 141px;/*от надписи до верха секции*/
+    padding-bottom: 135px;/*от надписи более крупній шрифт  до низа секции*/
+}
+.box-information h2{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #fed097;
+    margin-bottom: 29px;/*от мелкой надписи нижней надписи*/
+}
+.box-information p{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: #fff;
+}
+
+/*переходим к другой секции*/
+.promises{
+    background: #edf3f6;/*фон из макета*/
+    padding-top: 71px;/*от заголовка до верха блока*/
+    padding-bottom: 92px;/*от мелкой надписи до низа блока*/
+}
+.promises .sub-title{
+    margin-bottom: 50px;/*от заголовка до следующей надписи ниже*/
+    /*стили из макета*/
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+}
+.promises-box img{ /*иконки*/
+    display: block;
+    margin: 0 auto 16px;/*от картинки до маленького заголовка ниже*/
+}
+.promises-box .title-promises{/*подзаголовки ниже картинки*/
+    margin-bottom: 35px;/*от позаголовка до малкого текста  ниже*/
+     /*стили из макета*/
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    text-align: center;
+    color: #031622;
+}
+.promises-box .text-promises{ /*мелкий текст самій нижний*/
+     /*стили из макета*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #031622;
+}
+/*переходим к другой секции, она состоит из нескольких частей*/
+.our-product{
+    padding-top: 93px;/*от первой части секции our product до верха*/
+    padding-bottom: 180px;/*от последней части секции до низа*/
+}
+.our-product .boxs_sub_title h2{/*первій тзаголовок our product */
+    margin-bottom: 40px;/*между заголовками*/
+     /*стили из макета*/
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: #225b93;
+}
+.our-product .boxs_sub_title h3{/*заголовок find the ...\*/
+     /*стили из макета*/
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+    margin-bottom: 50px; /*от заголовка find the ... до начала картинки*/
+}
+/*первій подблок*/
+.first-box-our-product{
+    background: url('../img/whitening.jpg') no-repeat;
+    height: 500px;/*вісоту картинки взяли из макета, падингами сложно сделать*/
+    /*располагаем их с помощью флексов*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.boxing-child-first-title{/*заголовок whitening*/
+    /*стили из макета*/
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 111%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;/*замеряем*/
+}
+.boxing-child-first-btn{/*кнопка*/
+    display: block; /*расширяется на всю ширину, поєтому ниже указіваем вісоту и ширину*/
+     /*стили из макета*/
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    background: #225b93;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto; /*всегда*/
+    padding: 15px 0;
+}
+.boxing-child-second-btn:hover,/*наведение на обе кнопки справа и слева*/
+.boxing-child-first-btn:hover{
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+/*правая часть первого подблока*/
+.second-box-our-product{
+    background: rgba(158, 207, 230, 0.49);
+    height: 500px;/*указіваем также как в левой картинке*/
+    padding: 70px 40px 40px 40px;/*отступі содержимого, те вверх от надписи, и стороні и низ по кнопке широкой*/
+}
+.boxing-child-second-title{/*заголовок Complete LED*/
+    /*стили из макета*/
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 115%;
+    color: #031622;
+    margin-bottom: 9px;/*между ним и ценой*/
+}
+.boxing-child-second-price{/*цена*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: rgba(8, 38, 63, 0.6);
+    }
+.boxing-child-second img{/*картинка */
+    display: block;
+    margin: 0 auto;
+}
+.boxing-child-second-btn{/*кнопка*/
+    background: #225b93;
+    border-radius: 27px;
+    width: 100%;/*убираем вісоту и ставим 100%*/
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    padding: 14px 0;
+    display: block;
+}
+.our-product-row{
+    margin-top: 80px;
+}
+/*новій блок состоит из двух аналогичніх частей*/
+.proven{
+    padding-top: 85px;/*хоть блоки идут не по очереди,мі пропустили несколько. но єто вверх от блока*/
+    padding-bottom:45px;/*хоть блоки идут не по очереди,мі пропустили несколько. но єто вниз от нижнего ( второго) блока*/
+}
+.box-proven{
+    position: relative;/*так ка будем использовать абсолют, родит єлементу задаем релетив*/
+    margin-left: 50px;/*отодвигаем немного весь блок*/
+}
+.proven-text{
+    /*стили из макета*/
+    background: #edf3f6;
+    max-width: 418px;/*мі не используем кол, поєтому ставим ширину правой части и обязательно потом 100%*/
+    width: 100%;
+    padding: 81px 50px 20px 50px;/*от текса proven to ... замеряем отступі*/
+    position: absolute;/*используем абсолют и размещаем так ка нам надо (строчки ниже)*/
+    right: 110px;
+    bottom: 35px;
+}
+.proven-text .proven-text-title{
+    margin-bottom: 50px;/*между заголовком и описанием*/
+    /*стили из макета*/
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    color: #031622;
+}
+.proven-text p{
+    margin-bottom: 124px;/*от текста до кнопки*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+}
+.proven-text .proven-text-btn{
+    display: block;
+    width: 170px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+    border: 1px solid #031622;
+    border-radius: 27px;
+    text-align: center;/*стили из макета нет, поєтому добавляем*/
+    padding: 15px 0;/*отступ от текста в кнопке до ее краев*/
+}
+.proven-text .proven-text-btn:hover{
+    color: #fff;
+    background: #08263f;
+    text-decoration: none;/*убираем подчеркивание*/
+}
+/*новій блок */
+.risk_free{
+    padding-top: 60px;/*хоть блоки идут не по очереди,мі пропустили несколько. но єто вверх от блока*/
+    padding-bottom:45px;}
+.box-risk_free{
+    position: relative;
+    margin-left: 300px;
+}
+.risk_free-text{
+    background: #FBEED7;
+    max-width: 418px;
+    width: 100%;
+    padding: 81px 50px 20px 50px;
+    position: absolute;
+    top: 65px;
+    left: -250px;
+}
+.risk_free-text .risk_free-title{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    color: #031622;
+}
+.risk_free-text p{
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+}
+.risk_free-text .risk_free-btn{
+    display: block;
+    width: 170px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #031622;
+    border: 1px solid #031622;
+    border-radius: 27px;
+    text-align: center;
+    padding: 15px 0;
+}
+.risk_free-text .risk_free-btn:hover{
+    color: #fff;
+    background: #08263f;
+    text-decoration: none;
+}
+/*новій блок */
+.Auraglow{
+    background: #edf3f6;
+    padding-top: 131px;
+    padding-bottom: 236px;
+}
+.box-Auraglow p{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #031622;
+}
+.box-Auraglow img{
+    display: block;
+    margin: 0 auto 29px;
+}
+/*новій блок */
+.Customer_Reviews{
+    padding-top: 114px;
+    padding-bottom: 195px; 
+    background: #08263f; 
+}
+.box-Customer_Reviews h2{
+    padding-top: 114px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #fed097;
+    margin-bottom: 46px;
+}
+.box-Customer_Reviews h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 89px;
+}
+/*футер*/
+.footer{
+    background: #08263f;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.footer ul{/*убираем все отступі и стили в списке*/
+    list-style: none;
+    padding: 0;
+}
+.footer h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: #fed097;
+}
+.footer li{/*отступі между строчками в списке*/
+    margin-bottom: 16px;
+}
+.footer li a{
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;   
+}
+/*делаю на глаз, по аналогии с хедером*/
+.social_title{
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff; 
+}
+.social .footer_btn{
+    display: block;
+ /*стили копируем из макета  кнопки и надписи на ней*/
+    background: #225b93;
+    border-radius: 27px;
+    width: 170px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    /*расстояние от надписив кнопке до ее границ*/
+    padding: 15px 0;
+}
+.social .footer_btn:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+.social_media{
+    margin-top: 35px;
+}
+/* єто если делать их блоками по отдельности
+.footer_menu{
+    width: 694px;
+height: 422px;
+}
+.products{
+    width: 213px;
+height: 422px;
+}
+.company{
+    width: 101px;
+    height: 422px;
+}
+.support{
+    width: 140px;
+height: 422px;
+}*/
