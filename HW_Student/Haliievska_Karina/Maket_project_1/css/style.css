@@ -182,7 +182,7 @@ button:focus{
     line-height: 150%;
     text-align: center;
     color: #031622;
-    text-align: center;
+    
 }
 /* Promises*/
 
@@ -315,6 +315,7 @@ padding-top: 180px;
 /* Our-Products - 2*/
 
 /* Info-2*/
+
 .second-information{
     padding-top: 131px;
     padding-bottom: 236px;
@@ -336,6 +337,36 @@ padding-top: 180px;
     display: block;
 }
 /* Info-2*/
+
+/* Customer_reviews */
+.customer_reviews{
+    margin-bottom: 195px;
+    background: #08263f;
+    display: flex;
+}
+.box_sub_title h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #fed097;
+    margin-bottom: 46px;
+    margin-top: 114px;
+}
+.box_sub_title h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 96px;
+}
+.box_sub_title img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 195px;
+}
+/* Customer_reviews */
 
 /* Proven */
 .proven{
@@ -394,14 +425,13 @@ padding-top: 180px;
     margin-bottom: 80px;
     position: relative;
 }
-.guarantee_information .guarantee_box{
 
-}
 .guarantee_information img{
     display: block;
-    right: -168px;
-    right: 35%;
-    left: 40%;
+    margin-right: 20px;
+    padding:  0 auto;
+    align-self: flex-start;
+    margin: 0 auto;
 
 }
 .guarantee_box{
@@ -409,8 +439,8 @@ padding-top: 180px;
     width: 418px;
     height: 480px;
     padding: 93px 58px 20px 50px;
-    top: 25%;
-    left: 18%;
+    top: 70px;
+    left: 24%;
     position: absolute; 
 }
 .guarantee_box h2{
@@ -443,6 +473,94 @@ padding-bottom: 98px;
     text-decoration: none;
     padding: 15px 35px;
     }
+
+/* Footer */
+
+.auraglow_bottom{
+    background: #08263f;
+    font-family: "robotoregular";
+}
+
+.auraglow_bottom_information{
+    display: flex;
+    flex-direction: column;
+}
+.all_information{
+    box-sizing: border-box;
+}
+
+
+.bottom_inform {
+    display: flex;
+    
+}
+.bottom_inform img {
+    padding-top: 100px;
+    padding-left: 70px;
+    align-self: stretch;
+}
+.list_menu label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: #fed097;
+    margin-bottom:38px ;
+}
+.auraglow{
+    padding-bottom: 60px;
+    margin-left: 70px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;
+}
+.bottom_inform .all_information ul{
+    list-style: none;
+}
+.bottom_inform .all_information li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;
+    margin-bottom: 79px;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+.sign_up h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;
+}
+.sign_up hr{
+    background-color: #fff;
+}
+ 
+.bottom_inform .btn_bottom {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    width: 171px;
+    height: 54px;   
+    margin-top: 29px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 48px;
+
+}
+.auraglow_logo{
+    margin-left: 10px;
+}
+
+
+
+/* Footer */
+
 
 /*  font-family: "robotoblack";
 font-family: "robotoblack_italic";
