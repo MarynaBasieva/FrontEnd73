@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Operators</title>
+</head>
+<script>
+     // || або якщо хоча б одне значення  true то буде завжди true, а якщо 
+     //буде два false то буде false
+
+     console.log(true || true);//true
+     console.log(false || true);//true
+     console.log(true || false);//true
+     console.log(false || false);//false
+     console.log(1 || 0);//true (1)
+     console.log(123 || '123');//true 123
+
+     /* if(years < 15 || years > 18 || yearsFull){
+        alert('тобі більше 18 років');
+     }*/
+     //&&  І якщо значення два істині то буде true, 
+     // а якщо хоча б одне значення не істене то буде false
+     console.log(1 && 0);//0 false
+     console.log(1 && 6);//6 false
+     console.log(3 && -3);//-3 false
+     console.log(3 && 3);// 3 true
+
+     console.log(5 || 3 && 0);// 3 && 0  5 || 0 = true
+     //! НЕ
+     console.log(!true);//false
+     console.log(!false);//true
+</script>
+<body>
+    
+</body>
+</html>
