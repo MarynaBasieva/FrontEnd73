@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Number</title>
+</head>
+<script>
+    //Method toString - вертає число як строку 
+    let num = 123;
+    num.toString();
+    (123).toString();
+    console.log((100+23).toString);
+
+    //Method toExponential() - вертає строку з округленням  числа
+    let x =8.656;
+    x.toExponential(2);//8.66 e+0
+    x.toExponential(4);//8.6560 e+0
+    x.toExponential(6);//8.656000 e+0
+    console.log(x.toExponential(6));
+
+
+    //Method toFixed()
+    let fix = 8.656;
+    //let result = fix.toFixed(0);// округлення 9
+    let result = fix.toFixed(2);//отримаємо два знака після запятої 8.66
+    console.log(result);
+
+    //Method valuOf - вертає число як число
+    let ofVal = 123;
+    let resultOfVal = ofVal.valueOf();
+    console.log(resultOfVal);
+
+    //Method Number(), ParseInt(), parseFloat()
+
+    //Method Number
+    console.log('===Number===');
+    console.log(Number(true));//1
+    console.log(Number("5"));//5
+    console.log(Number("10.23"));//10.23
+    console.log(Number("10 20"));//NaN
+    console.log(Number(" 10"));//10
+    console.log(Number("text 10"));//NaN
+
+    //Method ParseInt()
+    console.log('===ParseInt===');
+    console.log(parseInt("10"));//10
+    console.log(parseInt("10.23"));//10
+    console.log(parseInt("10 20 30"));//10
+    console.log(parseInt("10 text"));//10
+    console.log(parseInt("text 10"));//NaN
+
+    //Method parseFloat()
+    console.log('===parseFloat===');
+    console.log(parseFloat("10"));//10
+    console.log(parseFloat("10.23"));//10.23
+    console.log(parseFloat("10 20 30"));//10
+    console.log(parseFloat("10 text"));//10
+    console.log(parseFloat("text 10"));//NaN
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive types</title>
+</head>
+<script>
+    //Number
+    console.log("====Number===");
+    let n = 123;
+    let n2 = 12.45;
+    console.log('Не число' * 2);//NaN
+
+    //String
+    console.log("====String===");
+    let str = "Helllo my dear pets";
+    let str2 = 'hello hello';
+    console.log(str, str2);
+
+    //Booleon
+    console.log("====Booleon===");
+    let check = true;
+    let check2 = false;
+
+    //Null
+    console.log("====Null===");
+    let age = null;
+    console.log(age);
+
+    let person = {
+        firstName: 'Maya',
+        lastName: 'Petrova',
+        age:50
+    }
+    person = null;
+    console.log(person);
+
+    //Undefined
+    console.log("====Undefined===");
+    let x;
+    console.log(x);
+
+    //Symbol
+    let id = Symbol('id');
+    console.log(id);
+
+    //typeof
+    console.log("====typeof===");
+    //typeof x
+    //typeof(x)
+    console.log(typeof("text"));
+    typeof 0; //number
+    typeof true; //booleon
+    typeof "text"; //string
+    typeof null; //object
+    typeof {};//object
+    typeof function(){};//function
+    typeof Symbol(); //symbol
+    
+</script>
+<body>
+    
+</body>
+</html>
