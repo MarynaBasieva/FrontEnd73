@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByClass</title>
+</head>
+<body>
+    <div class="oneClass"></div>
+    <div class="twoClass"></div>
+
+    <button onclick="changeColorBlue('blue')">Натисни і отримай колір правпора</button>
+    <button onclick="changeColorYellow('yellow')">Натисни і отримай колір правпора</button>
+    
+    
+</body>
+<script>
+    function changeColorBlue(newColorBlue){
+        let oneClass = document.getElementsByClassName("oneClass");
+
+        oneClass[0].style.background = newColorBlue;
+        oneClass[0].style.width = 200 + "px";
+        oneClass[0].style.height = 50 + "px";
+    }
+
+    function changeColorYellow(newColorYellow){
+        let twoClass = document.getElementsByClassName("twoClass");
+
+        twoClass[0].style.background = newColorYellow;
+        twoClass[0].style.width = 200 + "px";
+        twoClass[0].style.height = 50 + "px";
+    }
+</script>
+</html>

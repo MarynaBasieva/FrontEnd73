@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <div id="test">Text1</div> 
+    <div class="test2">Text2</div> 
+    <div class="parent">Text3</div>   
+</body>
+<script>
+  let test = document.getElementById("test");
+  test.innerHTML = "You win";
+
+  let test2 = document.querySelector('.test2');
+  test2.innerHTML += "<div class='name'>I am new tags</div>";
+
+  let parent = document.querySelector('.parent');
+  parent.innerHTML = "<div><b>Hello</b><br/><b>Hello</b></div>";
+
+</script>
+</html>
