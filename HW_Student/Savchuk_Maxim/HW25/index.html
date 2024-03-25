@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- HW25
+1) Отримати більше число з (80,23,56,-10,39,23,-5)
+2) Отримати менше число з (80,23,56,-10,39,23,-5)
+3) Отримати ціле число з (2.4)
+4) Отримати ціле число з (-5.6) -->
+<script>
+
+    // 1) Отримати більше число з (80,23,56,-10,39,23,-5)
+    const numbers = [80, 23, 56, -10, 39, 23, -5];
+    const maxNumber = Math.max(...numbers);
+    console.log("Max number", maxNumber);
+
+
+    // 2) Отримати менше число з (80,23,56,-10,39,23,-5)
+    const minNumber = Math.min(...numbers);
+    console.log("Min number", minNumber);
+
+
+    // 3) Отримати ціле число з (2.4)
+    const NiceNumber = 2.4;
+    const integ = Math.floor(NiceNumber);
+    console.log("Nicenumber", integ)
+
+
+    // 4) Отримати ціле число з (-5.6)
+    const NiceNumber1 = -5.6;
+    const integ1 = Math.ceil(NiceNumber1);
+    console.log("Nicenumber", integ1)
+</script>
+<body>
+    
+</body>
+</html>

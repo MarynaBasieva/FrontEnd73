@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 1) Зробити прапор за дпомогою звертання ID і поставити по центру екрана. Стилі всі через js
+2) innerHTML 
+Ім’я:
+Вік: 
+Місце Роботи:
+Через JS додати після значень вище які мають знаходитись вже в html документі . Зробити шрифт до кожного доданого жирним -->
+<body>
+    <div id="info">
+        <div>Ім’я: Max</div>
+        <div>Вік: 22</div>
+        <div>Місце Роботи: Lux. </div>
+    </div>
+</body>
+<script>
+let flag = document.createElement("div");
+
+    flag.id = "flag";
+
+    flag.style.width = "300px"; 
+    flag.style.height = "200px"; 
+    flag.style.position = "relative";
+    flag.style.margin = "0 auto";
+    flag.style.marginTop = "100px";
+
+    let gradient = "linear-gradient(180deg, #0057B8 50%, #FFD700 55%)";
+
+    flag.style.background = gradient;
+
+    document.body.appendChild(flag);
+
+let nameElement = document.getElementById('info');
+    info.style.fontWeight = 'bold';
+</script>
+</html>
