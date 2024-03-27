@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part</title>
+</head>
+<style>
+    button{
+        padding: 10px 15px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        transition: all ease 0.7s;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    button:hover{
+        background: #0f117c;
+    }
+    .parent_img,
+    .parent{
+       width: 500px;
+       overflow: hidden;
+       margin: 0 auto; 
+    }
+    img{
+        width: auto;
+        max-width: 100%;
+    }
+</style>
+<body>
+    <p>
+        <input class="btn" onclick="inputText(this)" value="натисни на мене" />
+    </p>
+    <p>
+        <input type="text" class="input" value="111" />
+        <button onclick="buttonClick()">Натисни</button>
+    </p>
+
+    <p class="parent_img">
+        <img src="img/cat.jpeg" alt="animal cat" title="animal cat" class="childImg" />
+        <button onclick="go()">Натисни і зміниться зображення</button>
+    </p>
+
+    <p class="parent" onclick="to()">
+        <img src="img/cats.jpeg" alt="cat" title="cat" class="child" />
+    </p>
+</body>
+<script>
+    function inputText(elem){
+        elem.value = "Новий текст";
+    }
+ 
+    function buttonClick(){
+        let input = document.querySelector('.input');
+        //input = Number(input);
+        input.value = '222';
+    }
+
+    function go(){
+        let elemImg = document.querySelector('.childImg');
+        elemImg.src="img/cat_hover.jpeg";
+        elemImg.title="new cat";
+        elemImg.alt="new cat";
+    }
+
+    function to(){
+        let elemImg = document.querySelector('.child');
+        elemImg.src="img/cat_neew.jpeg";
+        elemImg.title="new two cat";
+        elemImg.alt="new two cat";
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else</title>
+</head>
+<script>
+   /* if(параметр, умова){
+        умова буде завжди true
+    }*/
+    let number = 5,
+        number2 = 2;
+    if(number > number2){
+        console.log('yes');
+    }
+
+    /*let year = prompt("В якому ти році народився", "");
+    if(year == 1999){
+        alert("Yes");
+    }*/
+
+    /*let year = prompt("В якому ти році народився", ""); 
+    if(year == 1999){
+        alert("yes");
+    }else{
+        alert("NO"); 
+    }*/
+
+    /*let year = prompt("Тобі вже є 18 років", ""); 
+    if(year < 18){
+        alert("Тобі рано тому, що немає 18 років");
+    }else if(year >= 60){
+        alert("Підходить але ви за старі");
+    }else{
+        alert("Тобі є 18 років заходь"); 
+    }*/
+//  let result = умова ? значення 1 : значення 2;
+
+let dayNumber = new Date().getDay();
+
+let day = (dayNumber  ===  0) ? 'Неділя':
+          (dayNumber  ===  1) ? 'Понеділок':
+          (dayNumber  ===  2) ? 'Вівторок':
+          (dayNumber  ===  3) ? 'Середа':
+          (dayNumber  ===  4) ? 'Четверг':
+          (dayNumber  ===  5) ? 'П`ятниця':
+          (dayNumber  ===  6) ? 'Субота': "Такого значення не існує";
+  console.log('Сьогодні' + ":" + day + ".")  ;    
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

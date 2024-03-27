@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<script>
+    /* === - виконує тільки цю умову
+    switch(n){
+        case 1: "Name";
+        break;
+        case 2: "Name 2";
+        break;
+        case 3: "Name 3";
+        break;
+
+        default: "Якщо щось пішло не так";
+    }
+    */
+
+   let a = 4;
+   let str;
+
+   switch(a){ //a === 3
+    case 3:
+        str="Мило";
+        console.log("Мило");
+    break;
+    case 4:
+       console.log("===Case4===");
+    break;
+    case 6:
+       console.log("===За багато===");
+    break;
+    default:
+       console.log("Твких значень немає");
+   }
+
+   let b = 2+5;
+   switch(b){ 
+    case 5:
+        console.log(" 5 Не підходить");
+    break;
+    case 6:
+    console.log("6 Не підходить");
+    break;
+    case 7:
+       console.log("===Case 7===");
+       console.log("Це правильна відповідь");
+       console.log("Це сама правильна відповідь");
+    break;
+    case 2:
+       console.log("===Це багато===");
+    break;
+    default:
+       console.log("Таких значень немає");
+   }
+
+   let age = prompt("Ведіть число", "");
+
+   switch(age){ 
+    case "0":
+    case "1":
+        console.log("Один і нуль");
+    break;
+    case "2":
+    console.log("Цифра 2");
+    break;
+    case "3":
+       console.log("Цифра 3");
+    break;
+    case "4":
+       console.log("Цифра 4");
+    break;
+    case "5":
+       console.log("Цифра 5");
+    break;
+    default:
+       console.log("Таких значень немає");
+   }
+
+</script>
+<body>
+    
+</body>
+</html>

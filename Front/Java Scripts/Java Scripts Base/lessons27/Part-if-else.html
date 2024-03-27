@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part if else</title>
+</head>
+<style>
+    .parent{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .parent h2{
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 20px;
+        font-family: "sans-serif";
+    }
+    label{
+       font-size: 14px;
+       font-weight: bold;
+       padding-bottom: 5px;
+       display: block;
+    }
+    input{
+        max-width: 300px;
+        width: 100%;
+        padding: 5px;
+        border: solid 1px #6c6c6c;
+        display: block;
+        font-size: 14px;
+        outline: none;
+    }
+    #buttonForm{
+        padding: 10px 0;
+        background: #00108a;
+        color: #fff;
+        text-align: center;
+        display: block;
+        border: none;
+        cursor: pointer;
+        transition: all ease 0.7s;
+        margin-top: 15px;
+        width: 120px;
+        border-radius: 5px;
+    }
+    #buttonForm:hover{
+        background: #333;
+    }
+    .resault{
+        margin-top: 40px;
+        font-weight: bold;
+        color: red;
+    }
+</style>
+<body>
+    <div class="parent">
+        <h2>Дізнатися число</h2>
+
+        <label>Ведіть число:</label>
+        <input type="text" id="inputName" value="10" />
+        <button id="buttonForm">Дізнатися</button>
+        <div class="resault"></div>
+    </div>
+</body>
+<script>
+    function funcRes(){
+        let inputName = document.getElementById('inputName').value;
+        let resault = document.querySelector('.resault');
+        inputName = Number(inputName);
+
+        if(inputName == 10){
+            resault.innerHTML = "Число рівняється 10";
+        }else if(inputName < 10){
+            resault.innerHTML = "Число меньше 10";
+        }else{
+            resault.innerHTML = "Число більше 10"; 
+        }
+    }
+    let buttonForm = document.getElementById('buttonForm');
+    buttonForm.addEventListener('click',funcRes);
+
+    
+</script>
+</html>
