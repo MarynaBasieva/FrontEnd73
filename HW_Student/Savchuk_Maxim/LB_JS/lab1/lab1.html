@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="for_page">
+        <h1>Links and Span Tags</h1>
+
+        <a href="https://www.example.com">Example Link 1</a><br>
+        <a href="https://www.google.com">Google Link</a><br>
+        <a href="https://www.github.com">GitHub Link</a><br>
+
+        <span id="span1">Span 1</span><br>
+        <span id="span2">Span 2</span><br>
+        <span id="span3">Span 3</span><br>
+    </div>
+</body>
+<script>
+    // List all links
+    const links = document.querySelectorAll('a');
+    console.log("List of links:");
+    links.forEach(link => {
+    console.log(link.href);
+    });
+
+    //getElementsByTagName() method
+    const spans = document.getElementsByTagName('span');
+    console.log("List of span tags and their attributes:");
+    for (let i = 0; i < spans.length; i++) {
+    console.log("Span " + (i + 1) + ":");
+    console.log("  ID:", spans[i].id);
+    console.log("  Text Content:", spans[i].textContent);
+    }
+</script>
+</html>

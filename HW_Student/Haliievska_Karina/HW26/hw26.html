@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div id="part1"></div> 
+        <div id="part2"></div> 
+    </div>
+
+    <div class="name">Ім'я:</div>
+    <div class="age">Вік:</div>
+    <div class="work">Місце роботи:</div>
+    
+
+    
+</body>
+<script>
+         let part1 = document.getElementById("part1");
+             part1.style.background="blue";
+             part1.style.width="300px";
+             part1.style.height="100px";
+             part1.style.border = "solid 4px #e9e9e9";
+             part1.style.position="fixed";
+             part1.style.top="36%";
+             part1.style.left="50%";
+             part1.style.transform="translate(-50%, -50%)";
+             part1.style.position="absolut";
+
+        let part2 = document.getElementById("part2");
+            part2.style.background="#fde910";
+            part2.style.width="300px";
+            part2.style.height="100px";
+            part2.style.border="solid 4px #e9e9e9";
+            part2.style.position="fixed";
+            part2.style.top="50%";
+            part2.style.left="50%";
+            part2.style.transform="translate(-50%, -50%)";
+            part2.style.position="absolut";
+
+
+            let name = document.querySelector('.name');
+            name.innerHTML +="<div class='name'><b>Олег</b></div>";
+    
+            let age = document.querySelector('.age');
+            age.innerHTML +="<div class='age'><b>36</b></div>"; 
+
+            let work = document.querySelector('.work');
+            work.innerHTML +="<div class='work'><b>Бар</b></div>";
+    </script>
+</html>
