@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in of</title>
+</head>
+<script>
+    console.log("==for==");
+
+    for (let i = 0; i<=5; i++) {
+       if(i==3){
+            //continue;
+            break;
+       }
+       console.log(i);
+    }
+
+    const data = ['first','second','third'];
+    const user = [
+        {name:"Marya", age:30, work:true},
+        {name:"Oleg", age:35, work:false},
+        {name:"Vova", age:40, work:true}
+    ];
+
+    //Перебор масива Array & Object
+    //для перебору масива використовуввуати не рекомендується
+    console.log("==for in==");
+    for(let i in data[0]){
+        //console.log(i);
+        //console.log(data[i]);
+        console.log(user[i]);
+    }
+
+     //Перебор масива ітерації Array, Map, Set
+    //Не підходить для обєктів
+    console.log("==for of==");
+    for(let i of data){
+        console.log(i);
+    }
+    
+</script>
+<body>
+    
+</body>
+</html>
