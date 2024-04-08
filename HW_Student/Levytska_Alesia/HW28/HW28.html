@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw28</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+   // 1) Створити масив з 3 елемента після додати 4,5 індекса елемента. Видалити 4 індекс з елементом масива і видалить останій елемент масива
+//2) Додати новий елемент масива в початок і кінець
+//3) Вивести масив в документ через цикл
+   let array = [10,20,30];
+   array[4] = 40;
+   array[5] = 50;
+delete array[4];
+array.pop();
+array.unshift(-10);
+array.push(60);
+for(let i = 0; i< array.length; i++){
+ document.write(array[i] + '<br/>');
+}
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 2) По натисканю на зображення вивести інше зображення -->
+
+<body>
+    <img id="mainImage" src="img/yvA5SpUH-IMG-Worlds-1200x800.jpg" onclick="changeImage()">
+</body>
+<script>
+function changeImage() {
+    var mainImage = document.getElementById("mainImage");
+    if (mainImage.src.endsWith("img/yvA5SpUH-IMG-Worlds-1200x800.jpg")) {
+        mainImage.src = "img/images.jpg";
+    } else {
+        mainImage.src = "img/yvA5SpUH-IMG-Worlds-1200x800.jpg";
+    } 
+}
+</script>
+</html>

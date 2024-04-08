@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- HW28
+1) Створити масив з 3 елемента після додати 4,5 індекса елемента. Видалити 4 індекс з елементом масива і видалить останій елемент масива
+2) Додати новий елемент масива в початок і кінець
+3) Вивести масив в документ через цикл -->
+<body>
+    <div id="output"></div>
+</body>
+<script>
+let myArray = ['элемент1', 'элемент2', 'элемент3'];
+
+myArray[4] = 'элемент4';
+myArray[5] = 'элемент5';
+
+delete myArray[4];
+
+myArray.pop();
+
+myArray.unshift('новый элемент в начало');
+myArray.push('новый элемент в конец');
+
+let output = "<ul>";
+for (let i = 0; i < myArray.length; i++) {
+    output += "<li>" + myArray[i] + "</li>";
+}
+output += "</ul>";
+
+document.getElementById('output').innerHTML = output;
+</script>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    *{
+    margin: 0 auto;
+    padding: 0;
+    }
+
+body{
+    background-image: url(img/Header\ Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    width: auto;
+}
+
+.for_page{
+    max-width: 1170 px;
+    width: auto;
+}
+
+.site_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+.menu_nav {
+    display: f''lex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 40px; 
+}
+
+.menu_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu_nav ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.menu_nav li{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+.menu_nav a{
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    margin-left: 40px;
+}
+
+.search .search_btn{
+    width: 175px;
+    height: 40px;
+    position: relative;
+    border: none;
+    border-radius: 40px;
+    padding: 5px 10px;
+    margin-right: 100px;
+}
+.search  .image input{
+    position: absolute;
+}
+.italian{
+    margin-top: 45px;
+}
+.main_page{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.plates{
+    box-sizing: border-box;
+    margin-right: 25px;
+}
+.read_more .btn_read_more{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #f1f2f4;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    border-radius: 40px;
+    width: 170px;
+    height: 54px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+.infomation h2{
+    color: #f1f2f4;
+}
+.infomation h3{
+    color: #f1f2f4;
+}
+
+.fr{ 
+    float: right; 
+} 
+
+.fl{
+    float: left;
+}
+
+.cl{ 
+    clear: both; 
+} 
+
+    </style>
+</head>
+    <body>
+        <div class="for_page"> 
+            <header class="site_header" >
+                <nav class="menu_nav">
+
+                    <div class="logo">
+                        <img src="img/Logo.png" alt="logo" title="logo">
+                    </div>
+                    <div class="fr"></div>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="#">MENU</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="#">OUR STORY</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="fl"></div>
+                    <form action="/search" method="get" class="search">
+                        <input type="text" name="query" placeholder="Поиск..." class="search_btn">
+                        <input  class="image" type="image" src="img/Search.png">
+                    </form>
+                </nav>
+                <div class="cl"></div>
+            </header>           
+        
+        
+             <main>
+                <section class="main_page">
+                    <div class="infomation">
+                        <div class="main_infomation">
+                            <img src="img/Title.png" alt="Title" class="italian">
+                            <h2>Lorem ipsum dolor</h2>
+                         </div>
+
+                         <div class="read_more">
+                            <button type="button" class="btn_read_more"> READ MORE</button>
+                            <h3>  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do iusmod tempor incididunt ut 
+                                labore et dolore magna. 
+                            </h3>
+                         </div>
+                        <div class="plates">
+                            <img src="img/Plates.png" alt="Plates" title="Plates" class="plates">
+                        </div>
+                    </div> 
+                         
+                </section>
+            </main>
+                
+            <div class="cl"></div> 
+            <footer></footer>
+        
+         </div>   
+    </body>
+</html>
