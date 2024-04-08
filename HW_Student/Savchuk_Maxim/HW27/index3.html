@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 3) По натисканю на намальований квадрат за допомгою css має з’явитися трикутник також за допомогою css. Появлення за допомогою js -->
+
+<style>
+#square {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid transparent;
+    background-color: blue;
+    transition: height 0.5s ease-out;
+    rotate: 180deg;
+}
+
+#square.triangle {
+    border-bottom: 0;
+    height: 0;
+    border-top: 100px solid red;
+}
+
+
+</style>
+<body>
+    <div id="square" onclick="showTriangle()"></div>
+</body>
+<script>
+    function showTriangle() {
+    var square = document.getElementById('square');
+    square.classList.toggle('triangle');
+}
+
+</script>
+</html>

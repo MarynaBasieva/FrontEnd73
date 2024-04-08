@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 1)  В інпут коли вводимо день неділі під інпутом в документі виводимо день неділі якщо не правильний пишемо не правильно такий день неділі -->
+<body>
+    <label for="dayInput">Впишіть день неділі:</label>
+    <input type="text" id="dayInput">
+    <button onclick="checkDay()">Перевірити</button>
+    <p id="result"></p>
+</body>
+<script>
+    
+
+function checkDay() {
+    const daysOfWeek = ['неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'пятниця', 'субота'];
+    const userInput = document.getElementById('dayInput').value.toLowerCase();
+    
+    const todayIndex = new Date().getDay();
+    const today = daysOfWeek[todayIndex];
+
+    if (userInput === today) {
+        document.getElementById('result').innerText = `Вірно, сьогодні ${today}.`;
+    } else {
+        document.getElementById('result').innerText = `Сьогодні ${today}, а не ${userInput}.`;
+    }
+}
+</script>
+</html>
