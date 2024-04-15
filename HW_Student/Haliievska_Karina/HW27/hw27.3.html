@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+width: 100px;
+height:100px;
+background-color: rgb(180, 180, 180);
+
+}
+.second{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent; 
+  border-bottom: 100px solid rgb(75, 197, 91); 
+
+}
+    </style>
+</head>
+    <body>
+        <div class="first" id="first"></div>
+       
+</body>
+<script>
+    //4) По натисканю на намальований квадрат за допомгою css має
+    // з’явитися трикутник також за допомогою css. 
+    //Появлення за допомогою js
+
+    const first = document.getElementById("first");
+
+    first.addEventListener("click", function() {
+    first.classList.add("second");
+    });
+    
+</script>
+</html>

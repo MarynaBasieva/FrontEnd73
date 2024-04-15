@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: yellowgreen;
+            border: 3px solid grey;
+            border-radius: 5px;
+            color: brown;
+            
+        }
+        .btn:hover{
+            background-color: burlywood;
+            border: 2px solid grey;
+            border-radius: 5px;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <label for="weekdayInput">Введіть день тижня: </label>
+    <input type="text" id="weekdayInput" oninput="checkInput()">
+    <button class="btn" onclick="dayOfWeek()">Дізнатись</button>
+    <div id="output"></div>
+</body>
+<script>
+    //1) Зробити через if else тернарний оператор і вивести в документ день тижня
+    //2)  В інпут коли вводимо день неділі під інпутом в документі виводимо день неділі якщо не правильний пишемо не правильно такий день неділі
+
+    function dayOfWeek() {
+        const weekDays = ['неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'п`ятниця', 'субота'];
+        const day = document.getElementById("weekdayInput").value.trim().toLowerCase();
+
+        let inputDay = new Date().getDay();
+        const thisDay = weekDays[inputDay];
+
+        if (day === thisDay) {
+            document.getElementById('output').innerText = `Дійсно, сьогодні ${thisDay}!`;
+        } else{
+            document.getElementById('output').innerText = `Ні, сьогодні не ${day}, a ${thisDay}!`;
+        }
+
+    }
+
+</script>
+</html>

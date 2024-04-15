@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 4) let array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",
+        ["Snake","Hipoo","Crocodaile"]]]
+    вивести в одне вложення і потім вивести значення 
+    масива всі в документ (flat, flatMap)
+    5) Передати масив в другу змінну масива array2 
+    let array2 =["San","Dad","Mam","Dote"]
+    Після вивести в коносль або в документ -->
+</body>
+<script>
+    //flat
+const array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]].flat(Infinity);
+console.log(array);
+
+//flatMap
+const arrayF = x => [x,x];
+const flatMap = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]].flatMap(arrayF);
+console.log(flatMap);
+
+
+let array1 = ["San", "Dad", "Mam", "Dote"];
+let array2 = array1.slice();
+
+console.log(array2);
+
+</script>
+</html>
