@@ -16,7 +16,17 @@
 let d = a + b + c;
 console.log(d);
 
-let number = document.querySelector('.test2');
- number.innerHTML += "<div class='name'>I am new tags</div>";
+//let number = document.querySelector('.test2');
+ //number.innerHTML += "<div class='name'>I am new tags</div>";
+
+ let userName =  prompt("Please enter your name:");
+
+if (userName === null || userName === ""){
+    alert("You didn't wrote your name :(")
+} else{
+    alert("Your name is " +userName);
+}
+
+
 </script>
 </html>

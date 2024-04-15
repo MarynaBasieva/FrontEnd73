@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HW30
+1) Створити обєкт
+- Ім’я
+- Прізвище
+- Вік
+вивести в консоль
+2) Передати нове значення за допомогою іншої змінної
+(Ім’я тваринки)
+3) Створити три масива обєднати іх і вивести в консоль
+4) Створити 5 вложенних масивів і вивестийого на один рівень 
+і передати в масив з 3 завдання і знову вивести в консоль
+-->
+
+</body>
+<script>
+    //1-2
+let person = {
+    name: 'Михайло',
+    lastName: 'Омич',
+    age: 37
+};
+console.log(person);
+
+person.nameCat = "Сіма";
+//3
+let array1 = ['Cобака', 'Кіт', 'Крокодил'];
+let array2 = ['carrot', 'potato', 'broccoli'];
+let array3 = ['Олег', 'Аня', 'Микола'];
+
+let combinedArray = array1.concat(array2, array3);
+
+console.log(combinedArray);
+
+//4
+let arrays5 = [
+    [34, 78],
+    [39, 64, 5],
+    [61, 7, 85, 9],
+    [18, 1, 12, 3, 14],
+    [15, 16, 17, 10, 19, 20]
+];
+
+let marge = arrays5.flat();
+console.log(marge);
+
+
+
+let combiArr = array1.concat(marge);
+console.log(combiArr);
+
+
+
+let arrAll = combinedArray.concat(marge);
+console.log(arrAll);
+
+
+</script>
+</html>
