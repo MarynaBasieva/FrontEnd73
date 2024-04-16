@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Task 1: Create 5 string arrays
+const arr1 = ['apple', 'banana', 'cherry'];
+const arr2 = ['dog', 'cat', 'fish'];
+const arr3 = ['red', 'green', 'blue'];
+const arr4 = ['sun', 'moon', 'stars'];
+const arr5 = ['one', 'two', 'three'];
+
+// Task 2: Get all arrays values using for...of
+for (const arr of [arr1, arr2, arr3, arr4, arr5]) {
+    console.log(arr);
+}
+
+// Task 3: Create 7 string arrays
+const arr6 = ['car', 'bike', 'truck'];
+const arr7 = ['chair', 'table', 'bed'];
+const arr8 = ['summer', 'winter', 'spring'];
+const arr9 = ['coffee', 'tea', 'juice'];
+const arr10 = ['shirt', 'pants', 'shoes'];
+const arr11 = ['pen', 'pencil', 'eraser'];
+const arr12 = ['apple', 'orange', 'pear'];
+
+// Get value and index of all arrays using for...in
+for (const arr of [arr6, arr7, arr8, arr9, arr10, arr11, arr12]) {
+    for (const index in arr) {
+        console.log(`Index: ${index}, Value: ${arr[index]}`);
+    }
+}
+
+// Task 4: Create 5 string arrays
+const arr13 = ['elephant', 'lion', 'tiger'];
+const arr14 = ['mango', 'pineapple', 'watermelon'];
+const arr15 = ['house', 'apartment', 'villa'];
+const arr16 = ['football', 'basketball', 'tennis'];
+const arr17 = ['Monday', 'Tuesday', 'Wednesday'];
+
+// Get array length using for loop
+for (let i = 0; i < 5; i++) {
+    const arr = eval(`arr${i + 13}`);
+    console.log(`Array ${i + 13}: Length - ${arr.length}`);
+}
+</script>
+</html>
