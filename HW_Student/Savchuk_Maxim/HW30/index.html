@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- HW30
+1) Створити обєкт
+- Ім’я
+- Прізвище
+- Вік
+вивести в консоль
+3) Передати нове значення за допомогою іншої змінної
+(Ім’я тваринки)
+4) Створити три масива обєднати іх і вивести в консоль
+5) Створити 5 вложенних масивів і вивестийого на один рівень і передати в масив з 3 завдання і знову вивести в консоль -->
+<body>
+    
+</body>
+<script>
+// Task 1: Create an object with Name, Surname, Age and log to console
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30
+};
+console.log(person);
+
+// Task 3: Update the value using another variable (Pet's name)
+let petName = 'Buddy';
+person.petName = petName;
+
+// Task 4: Create three arrays, combine them, and log to console
+const array1 = [1, 2, 3];
+const array2 = ['a', 'b', 'c'];
+const array3 = [true, false];
+const combinedArray = [...array1, ...array2, ...array3];
+console.log(combinedArray);
+
+// Task 5: Create 5 nested arrays, flatten them to one level, pass it into the array from Task 3 and log to console
+const nestedArrays = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]];
+const flattenedNestedArrays = nestedArrays.flat();
+combinedArray.push(...flattenedNestedArrays);
+console.log(combinedArray);
+</script>
+</html>
