@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- HW29
+1) Створити масив з обєктами 10 студентів (Ім’я, вік, степендія, назва курсу)
+2) Вивести людей кому більше 20 років в консоль або (* документ)
+3) Вивести студентів з однаковим курсом і вивести степендію більше 2800грн 
+вивести параметр map(nameInfo, ageInfo, grandInfo) -->
+</body>
+<script>
+    let students = [
+    { name: 'Alex', age: 20, scholarship: 2500, course: 'Programming' },
+    { name: 'Irina', age: 17, scholarship: 1800, course: 'Law' },
+    { name: 'Andrew', age: 21, scholarship: 1600, course: 'Psychology' },
+    { name: 'Sophia', age: 19, scholarship: 1400, course: 'Economics' },
+    { name: 'Maria', age: 20, scholarship: 2700, course: 'History' },
+    { name: 'Peter', age: 21, scholarship: 4600, course: 'Psychology' },
+    { name: 'Julia', age: 22, scholarship: 2900, course: 'Law' },
+    { name: 'Elena', age: 19, scholarship: 1500, course: 'Chemistry' },
+    { name: 'Vasyl', age: 18, scholarship: 3800, course: 'Psychology' },
+    { name: 'Natalia', age: 21, scholarship: 1700, course: 'Biology' }
+    ];
+     
+    const older = [];
+    for(let i = 0; i < students.length; i++){
+        if (students[i].age >= 20 ){
+            older.push(students[i])
+        }
+    }
+    console.log(older);
+
+
+    const sameCorse = [];
+    for(let i = 0; i < students.length; i++){
+        if (students[i].course === 'Psychology' ){
+            sameCorse.push(students[i])
+        }
+    }
+    console.log(sameCorse);
+
+    const tooCorse = [];
+    for(let i = 0; i < students.length; i++){
+        if (students[i].course === 'Law' ){
+            tooCorse.push(students[i])
+        }
+    }
+    console.log(tooCorse);
+
+    const sameScholarship = [];
+    for(let i = 0; i < students.length; i++){
+        if (students[i].scholarship > 2800 ){
+            sameScholarship.push(students[i])
+        }
+    }
+    console.log(sameScholarship);
+
+    //Map
+    let nameInfo = students.map(function(person,index,pArr){
+        return person.name;
+    });
+    console.log(nameInfo);
+
+    let ageInfo = students.map(function(person,index,pArr){
+        return person.age;
+    });
+    console.log(ageInfo);
+
+    let grandInfo = students.map(function(person,index,pArr){
+        return person.scholarship;
+    });
+    console.log(grandInfo);
+
+   /* for(let i=0; i<students.length; i++){
+        console.log(students[i]);
+    students.forEach(function(person,index,pArr){
+    });*/
+
+
+</script>
+</html>

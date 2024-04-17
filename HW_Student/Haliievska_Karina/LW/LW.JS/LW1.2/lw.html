@@ -6,17 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div id ="number"></div>
+    <div id="result"></div>
 </body>
 
 <script>
+//1
    let a = 10,
     b = 2,
     c = 5;
 let d = a + b + c;
 console.log(d);
 
-let number = document.querySelector('.test2');
- number.innerHTML += "<div class='name'>I am new tags</div>";
+let result = document.getElementById('result');
+
+result.textContent = d;
+//2
+
+ let name =  prompt("Як Вас звати?");
+
+if (name === " " || name === null){
+    alert("Ви не ввели ім'я")
+} else{
+    alert("Вітаю " + name);
+}
+
+
 </script>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- HW29
+1) Створити масив з обєктами 10 студентів (Ім’я, вік, степендія, назва курсу)
+2) Вивести людей кому більше 20 років в консоль або (* документ)
+3) Вивести студентів з однаковим курсом і вивести степендію більше 2800грн вивести параметр map(nameInfo, ageInfo, grandInfo)
+4) let array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]]
+вивести в одне вложення і потім вивести значення масива всі в документ (flat, flatMap)
+5) Передати масив в другу змінну масива array2 
+let array2 =["San","Dad","Mam","Dote"]
+Після вивести в коносль або в документ -->
+<body>
+    
+</body>
+<script>
+
+// Task 1: Create an array of student objects
+const students = [
+    { name: "Alice", age: 22, scholarship: 3000, course: "Math" },
+    { name: "Bob", age: 19, scholarship: 2500, course: "Physics" },
+    { name: "Carol", age: 25, scholarship: 2800, course: "Math" },
+    { name: "David", age: 20, scholarship: 2900, course: "Chemistry" },
+    { name: "Eve", age: 21, scholarship: 2700, course: "Physics" },
+    { name: "Frank", age: 23, scholarship: 3200, course: "Biology" },
+    { name: "Grace", age: 18, scholarship: 2600, course: "Math" },
+    { name: "Hannah", age: 24, scholarship: 3100, course: "Chemistry" },
+    { name: "Ian", age: 26, scholarship: 2900, course: "Math" },
+    { name: "Julia", age: 27, scholarship: 2800, course: "Biology" }
+];
+
+// Task 2: Print students older than 20
+const studentsOver20 = students.filter(student => student.age > 20);
+console.log(studentsOver20);
+
+// Task 3: Find students with the same course and scholarship greater than 2800 and extract information
+const filteredStudents = students.filter((student, index, self) =>
+  index === self.findIndex(s => s.course === student.course && s.scholarship > 2800)
+);
+const result = filteredStudents.map(student => {
+  return {
+    nameInfo: student.name,
+    ageInfo: student.age,
+    grandInfo: student.scholarship
+  };
+});
+console.log(result);
+
+// Task 4: Flatten the nested array
+let array = ["Cat", "Dog", ["Horse", "Mouse", "Birds", "Pig", ["Snake", "Hippo", "Crocodile"]]];
+const flatArray = array.flat(2);
+console.log(flatArray);
+
+// Task 5: Copy an array to another variable and display
+let array2 = ["San", "Dad", "Mam", "Dote"];
+const copiedArray = array2.slice();
+console.log(copiedArray);
+</script>
+</html>

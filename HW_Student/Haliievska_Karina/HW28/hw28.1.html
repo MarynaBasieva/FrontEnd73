@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="output"></div>
+</body>
+<script>
+    //    1) Створити масив з 3 елемента після додати 4,5 індекса елемента. 
+    //       Видалити 4 індекс з елементом масива і видалить останій елемент масива
+    //    2) Додати новий елемент масива в початок і кінець
+    //    3) Вивести масив в документ через цикл
+
+
+    let arr1 = ["Розы1", "Гвоздики2", "Хризантема3"];
+arr1[4] = "Пионы4";
+arr1[5] = "Азалия5";
+
+arr1.splice(4,1);
+arr1.pop();
+
+arr1.unshift("Крокус6");
+arr1.push("Ромашки7");
+
+let outputElement = document.getElementById("output");
+
+let list = document.createElement("ul");
+
+arr1.forEach(function(item) {
+    let listArr1 = document.createElement("li");
+    listArr1.textContent = item;
+    list.appendChild(listArr1);
+});
+
+outputElement.appendChild(list);
+
+</script> 
+</html>

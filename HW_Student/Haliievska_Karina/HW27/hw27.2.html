@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: auto;
+            max-width: 100%;
+        }
+        .photo{
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="photo" onclick="to()">
+        <img src="img/cat_and_dog.jpg" alt="cat_and_dog" title="cat_and_dog" class="photo_change">
+    </p>
+
+</body>
+<script>
+    
+    //3) По натисканю на зображення вивести інше зображення
+    
+    function to(){
+        let photo = document.querySelector('.photo_change');
+        photo.src ="img/cat.jpg";
+        photo.title ="new photo";
+        photo.alt ="new photo";
+    }
+
+</script>
+</html>
