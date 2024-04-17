@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw30</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+/*HW30
+1) Створити обєкт
+- Ім’я
+- Прізвище
+- Вік
+вивести в консоль
+3) Передати нове значення за допомогою іншої змінної
+(Ім’я тваринки)
+4) Створити три масива обєднати іх і вивести в консоль
+5) Створити 5 вложенних масивів і вивестийого на один рівень і передати в масив
+ з 3 завдання і знову вивести в консоль*/
+ var people = {
+    Name: 'Ivan',
+    Surname: 'Ivanov',
+    Age: 25
+ };
+ console.log(people);
+
+//3) Передати нове значення за допомогою іншої змінної
+//(Ім’я тваринки)
+ let nameAnimal = 'Murka';
+ people.Name = nameAnimal;
+ console.log(people);
+
+//4) Створити три масива обєднати іх і вивести в консоль
+let array1 = [ 'one', 'two', 'three'];
+let array2 = [10, 20, 30];
+let array3 = ['cat', 'dog', 'hamster'];
+let array = [...array1,...array2,...array3];
+console.log(array);
+//5) Створити 5 вложенних масивів і вивестийого на один рівень і передати в масив
+ //з 3 завдання і знову вивести в консоль*/
+let array4 = [[1,2], [10,20], [100,200], [1000,2000], [10000,20000]];
+let NewArray = array4.flat();
+console.log (NewArray);
+let resultArray=[people, NewArray];
+let finalArray = resultArray.flat();
+console.log(finalArray);
+    </script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW29</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+
+
+/*HW29
+1) Створити масив з обєктами 10 студентів (Ім’я, вік, степендія, назва курсу)
+2) Вивести людей кому більше 20 років в консоль або (* документ)
+3) Вивести студентів з однаковим курсом і вивести степендію більше 2800грн вивести параметр map(nameInfo, ageInfo, grandInfo)
+4) let array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]]
+вивести в одне вложення і потім вивести значення масива всі в документ (flat, flatMap)
+5) Передати масив в другу змінну масива array2 
+let array2 =["San","Dad","Mam","Dote"]
+Після вивести в коносль або в документ*/
+
+//  1) Створити масив з обєктами 10 студентів (Ім’я, вік, степендія, назва курсу)
+let students = [
+    { name: 'Іван', age: 22, salary: 3000, course: 'Математика' },
+    { name: 'Марія', age: 19, salary: 2500, course: 'Фізика' },
+    { name: 'Петро', age: 21, salary: 2800, course: 'Хімія' },
+    { name: 'Олена', age: 23, salary: 2900, course: 'Біологія' },
+    { name: 'Анна', age: 20, salary: 2600, course: 'Інформатика' },
+    { name: 'Максим', age: 18, salary: 2700, course: 'Фізика' },
+    { name: 'Юлія', age: 24, salary: 3200, course: 'Хімія' },
+    { name: 'Олександр', age: 22, salary: 3100, course: 'Біологія' },
+    { name: 'Тетяна', age: 19, salary: 2550, course: 'Математика' },
+    { name: 'Артем', age: 20, ssalary: 2850, course: 'Інформатика' }
+];
+
+// 2) Вивести людей кому більше 20 років в консоль або (* документ)
+for (let i = 0; i < students.length; i++)
+{
+    if (students[i].age>20)
+    {console.log(students[i]);
+    }
+}
+
+// 3) Вивести студентів з однаковим курсом і вивести степендію більше 2800грн вивести параметр map(nameInfo, ageInfo, grandInfo)
+
+
+
+/*4) let array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]]
+вивести в одне вложення і потім вивести значення масива всі в документ (flat, flatMap)*/
+
+let array = ["Cat","Dog",["Hourse","Mouse","Birds","Pig",["Snake","Hipoo","Crocodaile"]]];
+let newArray = array.flat(Infinity);
+document.write(newArray);
+
+/*5) Передати масив в другу змінну масива array2 
+let array2 =["San","Dad","Mam","Dote"]
+Після вивести в коносль або в документ*/
+let array2 =["San","Dad","Mam","Dote"];
+array2 = array;
+console.log(array2);
+
+
+    </script>
+</html>
