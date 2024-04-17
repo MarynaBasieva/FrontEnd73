@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flatMap flat</title>
+</head>
+<script>
+    //flat
+    const arr = [10,23,[2,3,4,5,[6,7,90]]].flat(Infinity);
+    console.log(arr);
+
+    for(let i of arr){
+        console.log(i);
+    }
+
+    //flatMap
+    let duplicat = x => [x,x];
+    let resultMap = [2,3,4].map(duplicat);
+    let result = [2,3,4].map(duplicat).flat();
+    console.log(resultMap);
+    console.log(result);
+
+    let flatMap = [2,3,4].flatMap(duplicat);
+    console.log(flatMap);
+</script>
+<body>
+    
+</body>
+</html>

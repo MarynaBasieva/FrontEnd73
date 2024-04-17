@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterator Methods for Arrays</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let people = [
+        {name:"Поліна", age:30, salery: 10000},
+        {name:"Микола", age:17, salery: 2000},
+        {name:"Антон", age:40, salery: 50000},
+        {name:"Юлія", age:51, salery: 20000},
+        {name:"Петро", age:15, salery: 3000},
+        {name:"Олексій", age:28, salery: 15000}
+    ];
+
+    /*for(let i=0; i<people.length; i++){
+        console.log(people[i]);
+    }*/
+    /*for(let person of people){
+        console.log(person);
+    }*/
+
+    //ForEach
+    /*people.forEach(function(person,index, pArr){
+        console.log(person);
+        console.log(index);
+        console.log(pArr);
+    });*/
+    //people.forEach(person =>  console.log(person));
+
+    //Map
+    /*let newPeople = people.map(function(person,index, pArr){
+        //return person.name;
+        return `${person.name} (${person.age})`;
+    });
+    console.log(newPeople); */
+
+    /*let newPeople = people.map(person => `${person.name} (${person.age})`);
+    console.log(newPeople);*/
+
+    /*let newPeople = people.map(person => person.age * 2);
+    console.log(newPeople);*/
+
+    //Filter
+    /*const adults = [];
+    for(let i = 0; i < people.length; i++){
+        if(people[i].age >= 18){
+            adults.push(people[i])
+        }
+    }
+    console.log(adults);*/
+
+    /*let adults = people.filter(person => {
+        if(person.age >= 18){
+            return true
+        }
+    });
+    console.log(adults); */
+
+    //Reduce
+    /*let amount = 0;
+    for(let i = 0; i< people.length; i++){
+        amount += people[i].salery;
+    }
+    console.log(amount);*/
+
+    /*let amount = people.reduce((total,person) =>{
+        return total + person.salery;
+    }, 0);
+    console.log(amount); */
+
+    //Find
+    /*let polina = people.find(person => person.name === "Поліна");
+    console.log(polina);*/
+
+    //FindIndex
+    /*let polinaIndex = people.findIndex(person => person.name === "Поліна");
+    console.log(polinaIndex);*/
+
+    let newPeople = people
+        .filter(person => person.salery > 5000)
+        .map(person =>{
+            return{
+                info: `${person.name} (${person.age})`,
+                salery: person.salery
+            }
+        })
+    console.log(newPeople);
+
+    //every
+    function bigNumber(element, index, array){
+        return element >=10;
+    }
+    let result = [30,5,7,40,12].every(bigNumber);
+    console.log(result);//false
+
+    let result2 = [30,50,18,40,12].every(bigNumber);
+    console.log(result2);//true
+
+    //some
+    function someNumber(element, index, array){
+        return element >=10;
+    }
+
+    let someOne = [3,5,6,7,8,1].some(someNumber);
+    console.log(someOne);//false
+
+    let someOne2 = [5,7,8,1,12].some(someNumber);
+    console.log(someOne2);//true
+
+</script>
+</html>

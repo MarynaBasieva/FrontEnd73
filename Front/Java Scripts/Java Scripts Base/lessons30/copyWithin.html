@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copyWithin fill</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    //fill
+    let canvasNew = document.getElementById('canvas');
+    let resualt = canvasNew.getContext('2d');
+
+    resualt.beginPath();
+    resualt.rect(10,10,300,200);
+    resualt.fillStyle = "blue";
+    resualt.fill();
+
+    resualt.beginPath();
+    resualt.rect(10,80,300,200);
+    resualt.fillStyle = "yellow";
+    resualt.fill();
+
+    //slice
+    //arr.slice(startIndex, endIndex)
+
+    let array = [1,2,3, "text", 5.12, true];
+    let newArray = array.slice(0,4);
+    console.log(array);
+    console.log(newArray);
+
+    //copyWithin
+
+    let colors =["Green", "Red", "Blue", "Pink"];
+    colors.copyWithin(2,0);
+    console.log(colors);
+</script>
+</html>

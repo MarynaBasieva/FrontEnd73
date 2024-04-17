@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array from of</title>
+</head>
+<script>
+    //Array.of(element[,elemet1[...[, elementN]]])
+
+    let people = Array.of("Oleg", "Stepan","Petro");
+    console.log(people);
+
+    let a =[];//ініціалізація пустого масива
+    let b = [1,2,3]; // ініціалізація  масива 1,2,3
+    console.log(a);
+    console.log(b);
+    let c = Array.of(1,2,3);//аналогічна ініціалізація 1,2,3
+    console.log(c);
+
+    //Array.from - створює масив з масивоподібного обєкту
+    //Array.from(arrayLike[,mapFN0,[thisArg]])
+    //Array.from(obj).map(mapFN,thisArg)
+
+    //перетворення масивоподібного обєкта  (argument) в масив (Array)
+    function foo(){
+        return Array.from(arguments);
+    }
+    console.log(foo(2,2,2));
+
+    //String
+    let mess = Array.from('mess');
+    console.log(mess);
+</script>
+<body>
+    
+</body>
+</html>

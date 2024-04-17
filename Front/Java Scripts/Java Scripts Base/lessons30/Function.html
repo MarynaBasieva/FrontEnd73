@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<script>
+   /* function name(param1,param2){
+        tilo function
+    }
+    name();*/
+
+    function myFunction(p1,p2){
+        return p1*p2;
+    }
+    let res = myFunction(5,2);
+    console.log(res);
+
+    console.log("===name Func===");
+
+    function nameFunc(){
+        console.log("Hello");
+    }
+    nameFunc();
+    nameFunc();
+
+    console.log("===variable===");
+
+    let user = "Maryna";
+
+    function nameUser(){
+        user = "Olga";
+        let mess = "Hello " + user;
+        console.log(mess);
+    }
+    console.log(user);//Maryna
+    nameUser();
+    console.log(user);//Olga
+
+    console.log("===Params Function");
+    //param function
+
+    function nameParams(name, text){
+        console.log(name + ":" + text);
+    }
+    nameParams("Artur","Hello");
+    nameParams("Dima","How are you?");
+
+
+  /* function nameParams(name, text){
+        return name + ":" + text;
+    }
+   let artur = nameParams("Artur","Hello");
+   let dima = nameParams("Dima","How are you?");
+    console.log(artur);
+    console.log(dima);
+    */
+   function sumReasult(a,b){
+    return a+b;
+   }
+   let result = sumReasult(1,2);//3
+   console.log(result);
+
+   function ageFunc(age){
+     if(age>18){
+        return alert("Yes");
+     }else{
+        return confirm('stop');
+     }
+   }
+   let conf = ageFunc(19);
+</script>
+<body>
+    
+</body>
+</html>
