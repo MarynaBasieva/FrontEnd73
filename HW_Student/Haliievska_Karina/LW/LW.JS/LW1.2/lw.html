@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id ="number"></div>
+    <div id="result"></div>
 </body>
 
 <script>
@@ -17,6 +17,9 @@
 let d = a + b + c;
 console.log(d);
 
+let result = document.getElementById('result');
+
+result.textContent = d;
 //2
 
  let name =  prompt("Як Вас звати?");
