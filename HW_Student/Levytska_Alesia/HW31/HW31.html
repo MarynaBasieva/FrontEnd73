@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW31</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+/*
+HW31
+1) Створити обєкт з трьома ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+2) Після створити функцію в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк як на уроці з проізвольним текстом
+3) Обнулить зміну і з копіювати її в інший обєкт і визвати функцію з новим обєктом
+4) Створити обєкт з 5-ти ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+5) Після створити функцію і стоворити ще одну функцію і в цій функції в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк як на уроці з проізвольним текстом
+6) створити конструктор функції з параметром ( name, lastName, age, city) трьох людей вивести в консоль*/
+
+//1) Створити обєкт з трьома ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+let object = {
+    name: 'Mira',
+    surname: 'Numirova',
+    age: 30,
+    adress: {
+        city: 'Odessa',
+        street: 'Mikolaivska',
+        house: 27
+    },
+
+//console.log(object);
+//2) Після створити функцію в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк як на уроці з проізвольним текстом
+showInto() {
+    console.log (`Мене зовуть ${this.name} ${this.surname}. Мені  ${this.age} років. Я проживаю за адресою ${this.adress.city}, вулиця ${this.adress.street}, будинок ${this.adress.house}`);
+}};
+object.showInto();
+
+//3) Обнулить зміну і з копіювати її в інший обєкт і визвати функцію з новим обєктом
+let object1 = object; 
+object1.name = '';
+object1.showInto();
+
+//4) Створити обєкт з 5-ти ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+let school = {
+    name: 'Narnia',
+    director: 'Ivanova',
+    status: 'private',
+    rate: 'good',
+    specialisation: 'math',
+
+    adress1: {
+        city1: 'Odessa',
+        street1: 'Mikolaivska',
+        house1: 27
+    },
+ //5) Після створити функцію і стоворити ще одну функцію і в цій функції в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк як на уроці з проізвольним текстом   
+   fun(){
+   function fun1(){
+        console.log (`Назва школи ${this.name} , директор ${this.director}. Статус школи - ${this.status}. Рейтінг - ${this.rate}. Специализация - ${this.specialisation}. Знаходиться за адресою ${this.adress1.city1}, вулиця ${this.adress1.street1}, будинок ${this.adress1.house1}`);    
+   fun1();
+   }
+}
+};
+school.fun();
+
+//6) створити конструктор функції з параметром ( name, lastName, age, city) трьох людей вивести в консоль*/
+function Person (name, lastName, age, city){
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+    this.city = city;
+}
+let person1 = new Person( 'Аля', 'Усатова', 30, 'Одеса');
+let person2 = new Person( 'Оля', 'Курова', 18, 'Дніпро');
+let person3 = new Person( 'Аня', 'Мусенко', 38, 'Херсон');
+console.log(person1);
+console.log(person2);
+console.log(person3);
+ </script>
+</html>
