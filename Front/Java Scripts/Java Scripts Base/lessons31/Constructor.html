@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<script>
+    function User(name){
+        //this - значення пустого обєкта (неявне)
+        this.name = name;
+        this.age = 30;
+        //return this; //вертає обєкт (неявно)
+    }
+    console.log(new User('Olga'));
+    console.log(new User('Petro'));
+
+    function Person(name,age,city){
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+    let person1 = new Person("Alina", 30, "Kiev");
+    let person2 = new Person("Oleg", 20, "Harkiv");
+    let person3 = new Person("Polina", 40, "Poltava");
+    console.log(person1);
+    console.log(person2);
+    console.log(person3);
+</script>
+<body>
+    
+</body>
+</html>

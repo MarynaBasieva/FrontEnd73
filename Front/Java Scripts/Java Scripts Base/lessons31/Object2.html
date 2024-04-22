@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 2</title>
+
+</head>
+<script>
+    //Дублювання обєкта (Object.assign)
+    //Синтаксис
+   // Object.arguments(куди(обєкт), що(значення #1), що(значення #2),... );
+   /*let user = {
+     name:"Olga",
+     age:30
+   }
+   let userFull = Object.assign({},user);
+   userFull.age =18;
+
+   console.log(user);
+   console.log(userFull); */
+
+   /*let user = {
+     name:"Olga",
+     age:30
+   }
+   Object.assign(user, {['like JS']: "text", city:"Kiev"});
+   console.log(user);*/
+
+   //Перевірка значень
+   /*let user = {
+     name:"Olga",
+     //age:30
+   }
+   console.log(user.age);
+   
+   if(user.age){//true false
+    console.log(user.age);
+   }*/
+//Опціональна цепочка
+   /*let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     }
+   }
+   //console.log(user.adress.city);
+
+   console.log(user?.adress?.city);*/
+//Оператор in
+   /*let user = {
+     //name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     }
+   }
+   if("name" in user){
+    console.log(user.name);
+   }*/
+
+
+   //Оператор in
+   //
+   /*let user = {
+    name: undefined,
+   }*/
+
+   /*if(user.name){
+    console.log(user.name);
+   }*/
+
+   /*if("name" in user){
+    console.log(user.name);
+   }*/
+
+   //Цикл for in
+
+   /*let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     }
+   }
+
+   for(let key in user){
+    //key
+    console.log(key);//name,age,adress
+    //значення ключа
+    console.log(user[key]);//Olga,30, object
+   }
+
+   for(let key in user.adress){
+    //key
+    console.log(key);//city,street
+    //значення ключа
+    console.log(user.adress[key]);//Kiev,Kievska
+   }*/
+
+   //Методи обєкта 
+/*
+   let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     },
+     //showinfo: function(){
+       // console.log(`${user.name}, ${user.age} років. Адреса проживання м. ${user.adress.city}, вул. ${user.adress.street}`);
+     //}
+     showinfo(){
+        console.log(`${user.name}, ${user.age} років. Адреса проживання м. ${user.adress.city}, вул. ${user.adress.street}`); 
+     }
+   }
+   user.showinfo();*/
+
+   /*let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     },
+     showinfo(){
+       //console.log(`${user.name}, ${user.age} років. Адреса проживання м. ${user.adress.city}, вул. ${user.adress.street}`); 
+        console.log(`${this.name}, ${this.age} років. Адреса проживання м. ${this.adress.city}, вул. ${this.adress.street}`); 
+     }
+   }
+   user.showinfo();
+   */
+/*
+   let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     },
+     showinfo(){
+        function show(){
+           //console.log(`${user.name}, ${user.age} років. Адреса проживання м. ${user.adress.city}, вул. ${user.adress.street}`); 
+           console.log(`${this.name}, ${this.age} років. Адреса проживання м. ${this.adress.city}, вул. ${this.adress.street}`); 
+        }
+        show();
+     }
+   }
+   user.showinfo();
+*/
+
+let user = {
+     name:"Olga",
+     age:30,
+     adress:{
+        city:"Kiev",
+        street:"Kievska"
+     },
+     showinfo(){
+       //console.log(`${user.name}, ${user.age} років. Адреса проживання м. ${user.adress.city}, вул. ${user.adress.street}`); 
+       console.log(`${this.name}, ${this.age} років. Адреса проживання м. ${this.adress.city}, вул. ${this.adress.street}`); 
+
+     }
+   }
+   user.showinfo();
+
+   let userNew = user;
+   user = null;
+   userNew.showinfo()
+
+</script>
+<body>
+    
+</body>
+</html>
