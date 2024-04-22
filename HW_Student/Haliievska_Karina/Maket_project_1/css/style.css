@@ -216,6 +216,14 @@ padding-top: 180px;
     align-items:center;
     flex-wrap: wrap;
 }
+.fr_box_our_product{
+    background: url(../img/whitening_gel.jpg) no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
 .boxing-child-first .boxing-child-first-title{
     font-weight: 400;
     font-size: 45px;
@@ -286,6 +294,7 @@ padding-top: 180px;
 .boxing-child-second-btn:hover{
     background-color: rgb(58, 80, 80);
     color: rgb(251, 239, 239);
+    text-decoration: none;
     
 }
 /* Our-Products*/
@@ -429,18 +438,15 @@ padding-top: 180px;
 .guarantee_information img{
     display: block;
     margin-right: 20px;
-    padding:  0 auto;
-    align-self: flex-start;
-    margin: 0 auto;
-
 }
+
 .guarantee_box{
     background: #fbeed7;
     width: 418px;
     height: 480px;
     padding: 93px 58px 20px 50px;
     top: 70px;
-    left: 24%;
+    left: -32%;
     position: absolute; 
 }
 .guarantee_box h2{
@@ -477,8 +483,16 @@ padding-bottom: 98px;
 /* Footer */
 
 .auraglow_bottom{
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: nowrap;
     background: #08263f;
+    margin-right: -15px;
+    margin-left: -15px;
     font-family: "robotoregular";
+    padding-top: 100px;
+    padding-bottom: 25px;
+
 }
 
 .auraglow_bottom_information{
@@ -489,22 +503,32 @@ padding-bottom: 98px;
     box-sizing: border-box;
 }
 
-
 .bottom_inform {
     display: flex;
-    
+
 }
 .bottom_inform img {
-    padding-top: 100px;
-    padding-left: 70px;
-    align-self: stretch;
+    padding-top: 95px;
 }
 .list_menu label{
     font-weight: 400;
     font-size: 18px;
     line-height: 167%;
     color: #fed097;
-    margin-bottom:38px ;
+    margin-bottom:30px ;
+}
+.list_menu li {
+    margin-bottom: 10px; 
+    text-decoration: none;
+}
+.list_menu a {
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff; 
+}
+.list_menu a:hover{
+    color: #fdefae; 
+    text-decoration: none;
 }
 .auraglow{
     padding-bottom: 60px;
@@ -513,11 +537,14 @@ padding-bottom: 98px;
     font-size: 16px;
     line-height: 115%;
     color: #fff;
+    margin-top: 370px;
+    left: 25px;
 }
-.bottom_inform .all_information ul{
+.auraglow_bottom_information ul{
     list-style: none;
+    text-decoration: none;
 }
-.bottom_inform .all_information li a{
+.bottom_inform  li a{
     font-weight: 400;
     font-size: 16px;
     line-height: 115%;
@@ -527,20 +554,27 @@ padding-bottom: 98px;
     padding-bottom: 16px;
 }
 .sign_up h3{
+    margin-top: 95px;
     font-weight: 400;
     font-size: 16px;
     line-height: 115%;
     color: #fff;
+
+}
+.sign{
+    margin-bottom: 224px;
+
 }
 .sign_up hr{
     background-color: #fff;
+    margin-top: 10px;
 }
  
-.bottom_inform .btn_bottom {
+.btn_bottom {
     display: block;
     border: 1px solid #fff;
     border-radius: 27px;
-    width: 171px;
+    width: 175px;
     height: 54px;   
     margin-top: 29px;
     margin-bottom: 50px;
@@ -551,13 +585,111 @@ padding-bottom: 98px;
     color: #fff;
     text-decoration: none;
     padding: 15px 48px;
-
+    cursor: pointer;
+}
+.btn_bottom:hover{
+    color: #fdefae; 
+    text-decoration: none;
 }
 .auraglow_logo{
     margin-left: 10px;
 }
+.label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: #fed097;
+    margin-bottom: 60px;
+    margin-top: 90px;
+}
+.sign_up{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    color: #fff;
+    margin-bottom: 60px;
+    text-decoration: none;
+}
 
+.sign .icons{
+    left: 24px;
+    margin-top: 35px;
+    margin-bottom: 226px;
+}
 
+.parent_modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+    .wrapp_modal{
+    width: 300px;
+    background: linear-gradient(90deg, rgba(248,255,247,1) 0%, rgba(215,240,255,1) 45%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding: 15px 20px;
+    transform: translate(-50%,-50%);
+    border: solid 2px #e1cdcd99;
+    border-radius: 15px;
+}
+.form_modal h2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    color: #211a4d;
+}
+.form_modal .in_put{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border:#0d0b53 solid 1px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none;
+}
+.exit{
+    cursor: pointer;
+    right: 13px;
+    top: 8px;
+    font-size: 20px;
+    position: absolute;
+    color: #000000;
+}
+
+.btn_form{
+    background-color: #ffedd6;
+    border: solid 2px #d2d2d2;
+    border-radius: 15px;
+    color: rgb(19, 3, 85);
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.btn_form:hover{
+    background-color: #a1a1a1;
+    border: solid 2px #a1a1a1;
+    color: #121010;
+    
+}
+.wrapp_modal hr{
+    margin: 15px;
+    border: solid 1px rgb(24, 203, 0) 0%, rgb(6, 82, 130) 45%;
+    background: linear-gradient(90deg, rgba(248,255,247,1) 0%, rgba(215,240,255,1) 45%);
+    
+}
 
 /* Footer */
 
