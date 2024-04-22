@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab114</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+ //Create 5 string arrays
+ let arrayString1 = ['i','you','we'];
+ let arrayString2 = ['mother','father','sister','brother'];
+ let arrayString3 = ['daughter','son','uncle'];
+ let arrayString4 = ['wife','husband','maridge'];
+ let arrayString5 = ['dinner','breakfast','lunch'];
+
+ //Get all arrays values using for...of
+ 
+ for (let array of [arrayString1, arrayString2, arrayString3, arrayString4, arrayString5]) {
+    console.log(array);
+}
+
+//Create 7 string arrays
+let array1= ['i','you','we'];
+ let array2 = ['mother','father','sister','brother'];
+ let array3 = ['daughter','son','uncle'];
+ let array4 = ['wife','husband','maridge'];
+ let array5 = ['dinner','breakfast','lunch'];
+ let array6 = ['Vila','Olia','Marina'];
+ let array7 = ['Oleg','Vova','Gregor'];
+
+ //Get value and index of all arrays using for...in
+
+ for (let arrayNew of [array1, array2, array3, array4, array5, array6, array7]) {
+    for (let index in arrayNew) {
+        console.log(`Index: ${index}, Value: ${arrayNew[index]}`);
+    }
+}
+
+//Create 5 string arrays
+ let arrayN1= ['pear','grape','banana','oranges','limon'];
+ let arrayN2 = ['spring','winter','summer','autem'];
+ let arrayN3 = ['North','South','West','East'];
+ let arrayN4 = ['wife','husband','maridge'];
+ let arrayN5 = ['dinner','breakfast','lunch'];
+ 
+ //Get array length using for 
+ let arrayN =[arrayN1, arrayN2, arrayN3, arrayN4, arrayN5];
+ for (let i =0; i < arrayN.length; i++)
+ {
+    console.log((i + 1), arrayN[i].length);
+ }
+ // output the entrie task to the console or by clicking on the buttom to the document or just to the document
+ </script>
+</html>
