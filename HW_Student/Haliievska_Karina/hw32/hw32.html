@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+        background-color: white; 
+    }
+    </style>
 </head>
 <!-- > HW32
 1) файл Callback.html 
@@ -19,31 +24,26 @@
     <div class="box">Element 3</div>
 </body>
 <script>
-    function changeBg(){
-           setTimeout(function(){
-               console.log("Що я тобі передзвоню")
-           },2000);
-       }
-   
-       function answerPhone(){
-           console.log('Залиште своє повідомлення');
-       }
-       call(),
-       answerPhone();
-   
-       function callTo(name, callback){
-           console.log(`Привіт ${name}`);
-           callback();
-       }
-       callTo('Oleg', function(){
-           console.log('після сигналу');
-       });
+    function changeBg(color, delay, callback) {
+        setTimeout(function() {
+            document.body.style.backgroundColor = color;
+            if (callback) {
+                callback(); 
+            }
+        }, delay);
+    }
+
+    function changeToGreen() {
+        changeBg('green', 2000); 
+    }
+
+    changeBg('#EEE8AA', 2000, changeToGreen);
    
         let box = document.querySelectorAll('.box');
         box.forEach(function(item,count,arr){
-         item.style.background='pink';
+         item.style.background='yellow';
          item.style.marginBottom='30px';
-         item.style.padding='20px';
+         item.style.padding='50px';
         });
         console.log(box);
    
