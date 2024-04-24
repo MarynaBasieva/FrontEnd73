@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- > 
+HW31
+1) Створити обєкт з трьома ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+2) Після створити функцію в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк 
+як на уроці з проізвольним текстом
+3) Обнулить зміну і з копіювати її в інший обєкт і визвати функцію з новим обєктом
+Hw31
+4) Створити обєкт з 5-ти ключами і значеннями і ще одне вложення обєкта адреса в ньому є три значення і ключа
+5) Після створити функцію і стоворити ще одну функцію і в цій функції в обєкті вивести всі значення  в консоль 
+з контекстом this шаблоних строк як на уроці з проізвольним текстом
+6) створити конструктор функції з параметром ( name, lastName, age, city) трьох людей вивести в консоль -->
+
+</body>
+<script>
+//1
+let person = {
+    name: "Христина",
+    age: 38,
+    occupation: "Лінгвіст",
+    address: {
+        street: "123 Main St",
+        city: "Boston",
+        country: "USA",
+        index: 2166
+    },
+
+//2
+objectFun() {
+    console.log (`Ім'я замовника ${this.name} , вік ${this.age} років. За професією  ${this.occupation}. Замовлення надіслати у  ${this.address.city}, за адресою ${this.address.street}, індекс ${this.address.index}`);
+}};
+person.objectFun ();
+
+
+//3
+
+const obj = person; 
+obj.name = 'Олена';
+obj.age = 23;
+obj.occupation = 'Маркетолог';
+obj.objectFun();
+
+//4
+
+const company = {
+  name: 'FlowerDecor',
+  foundation: 2018,
+  occupation: 'декору',
+  email: 'decor@example.com',
+  founder: "Ірина Хвильова",
+
+  address: {
+    city: 'Київ',
+    street: 'Курчатова 46',
+    code: 1051
+  },
+
+//5
+newFun() {
+    console.log (`У ${this.foundation} була заснована компанія під назвою ${this.name}.
+     Засновником була ${this.founder}, яка працювала у сфері ${this.occupation}. 
+    Офіс компанії знаходится за адресою ${this.address.city}, ${this.address.city}, індекс ${this.address.code}.
+    Відгуки та пропозиції надсилайте, будь ласка на цю пошту ${this.email}.`); 
+}};
+
+company.newFun ();
+
+//6
+
+function Person(name, lastName, age, city) {
+  this.name = name;
+  this.lastName = lastName;
+  this.age = age;
+  this.city = city;
+}
+
+
+const person1 = new Person('Петро', 'Коваль', 25, 'Одеса');
+const person2 = new Person('Анна', 'Шевченко', 30, 'Дніпро');
+const person3 = new Person('Василь', 'Петров', 35, 'Львів');
+
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
+</script>
+</html>

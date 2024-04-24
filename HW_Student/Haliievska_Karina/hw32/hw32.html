@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- > HW32
+1) файл Callback.html 
+2) Зробити так щоб фоновий колір з’явився через 2 секунди
+3) І через 4 секунди колір використовува callBack змінив колір на 
+зелений
+
+1)Вам дзвонить людина(функція ставите її на утримання , 
+друга функція берете слухавку через 5 секунд) -->
+<body>
+     <div class="box">Element 1</div>
+    <div class="box">Element 2</div>
+    <div class="box">Element 3</div>
+</body>
+<script>
+    function changeBg(){
+           setTimeout(function(){
+               console.log("Що я тобі передзвоню")
+           },2000);
+       }
+   
+       function answerPhone(){
+           console.log('Залиште своє повідомлення');
+       }
+       call(),
+       answerPhone();
+   
+       function callTo(name, callback){
+           console.log(`Привіт ${name}`);
+           callback();
+       }
+       callTo('Oleg', function(){
+           console.log('після сигналу');
+       });
+   
+        let box = document.querySelectorAll('.box');
+        box.forEach(function(item,count,arr){
+         item.style.background='pink';
+         item.style.marginBottom='30px';
+         item.style.padding='20px';
+        });
+        console.log(box);
+   
+   </script>
+</html>
