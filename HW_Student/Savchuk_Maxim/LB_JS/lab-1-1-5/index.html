@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let myObject = {
+  firstName: 'Maya',
+  lastname: 'dogs',
+  language: '',
+  name: '',
+  nameDog: 'Profi',
+  
+  // Method to add properties
+  addProperties: function(nameCat, lang) {
+    this.name = nameCat;
+    this.language = lang;
+  }
+};
+
+// Adding properties using the method
+myObject.addProperties('Fluffy', 'English');
+
+// Printing the updated object
+console.log(myObject);
+
+</script>
+</html>

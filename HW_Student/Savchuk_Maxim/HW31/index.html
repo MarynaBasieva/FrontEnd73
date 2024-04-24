@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Task 1
+const obj1 = {
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+  address: {
+    street: '123 Main St',
+    city: 'City Name',
+    zipcode: '12345'
+  },
+  logValues: function() {
+    console.log(`Key 1: ${this.key1}, Key 2: ${this.key2}, Key 3: ${this.key3}, Address: ${this.address.street}, ${this.address.city}, ${this.address.zipcode}`);
+  }
+};
+
+obj1.logValues(); // Log values using the function
+
+// Task 2
+let obj2 = {};
+Object.assign(obj2, obj1); // Copy obj1 to obj2
+obj2.logValues(); // Log values using the function with obj2
+
+// Task 3
+const obj3 = {
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+  key4: 'value4',
+  key5: 'value5',
+  address: {
+    street: '456 Elm St',
+    city: 'Another City',
+    zipcode: '54321'
+  },
+  logAllValues: function() {
+    let second = () => {
+      console.log(`Key 1: ${this.key1}, Key 2: ${this.key2}, Key 3: ${this.key3}, Key 4: ${this.key4}, Key 5: ${this.key5}, Address: ${this.address.street}, ${this.address.city}, ${this.address.zipcode}`);
+    };
+    second();
+  }
+};
+
+obj3.logAllValues(); // Log all values using the function within the object
+
+// Task 4
+function Person(name, lastName, age, city) {
+  this.name = name;
+  this.lastName = lastName;
+  this.age = age;
+  this.city = city;
+}
+
+// Create instances of the Person constructor
+const person1 = new Person('John', 'Doe', 30, 'New York');
+const person2 = new Person('Alice', 'Smith', 25, 'Los Angeles');
+const person3 = new Person('Mike', 'Johnson', 35, 'Chicago');
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
+</script>
+</html>

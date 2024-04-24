@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Element 1</div>
+    <div class="box">Element 2</div>
+    <div class="box">Element 3</div>
+
+<script>
+    function changeColor() {
+        setTimeout(function() {
+            document.querySelectorAll('.box').forEach(function(item) {
+                item.style.backgroundColor = 'yellow';
+            });
+
+            setTimeout(function() {
+                document.querySelectorAll('.box').forEach(function(item) {
+                    item.style.backgroundColor = 'green';
+                });
+            }, 2000);
+
+        }, 4000);
+     }
+
+    changeColor();
+
+
+    function onHold() {
+        console.log("The person is on hold...");
+    }
+    function pickUpCall() {
+        console.log("Picking up the call after 5 seconds");
+    }
+
+onHold();
+
+setTimeout(pickUpCall, 5000);
+    </script>
+</body>
+</html>
