@@ -57,12 +57,12 @@ let school = {
     },
  //5) Після створити функцію і стоворити ще одну функцію і в цій функції в обєкті вивести всі значення  в консоль з контекстом this шаблоних строк як на уроці з проізвольним текстом   
    fun(){
-   function fun1(){
-        console.log (`Назва школи ${this.name} , директор ${this.director}. Статус школи - ${this.status}. Рейтінг - ${this.rate}. Специализация - ${this.specialisation}. Знаходиться за адресою ${this.adress1.city1}, вулиця ${this.adress1.street1}, будинок ${this.adress1.house1}`);    
-   fun1();
+    let fun1 = () =>{
+    console.log (`Назва школи ${this.name} , директор ${this.director}. Статус школи - ${this.status}. Рейтінг - ${this.rate}. Специализация - ${this.specialisation}. Знаходиться за адресою ${this.adress1.city1}, вулиця ${this.adress1.street1}, будинок ${this.adress1.house1}`);        
    }
+   fun1();
 }
-};
+}
 school.fun();
 
 //6) створити конструктор функції з параметром ( name, lastName, age, city) трьох людей вивести в консоль*/

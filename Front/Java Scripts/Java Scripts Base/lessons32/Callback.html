@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+<script>
+    //ПРиготовлення суші. Це буде довгий процес
+    //let newSushi = makeSushi('Filadelfia');
+
+    //Читаємо книгу поки готують суші
+    //readBook();
+
+    //Ми зїдаємо суші
+    //eatSushi(newSushi);
+
+    /*let foo = function(){
+        return "Hello";
+    }
+    //console.log(foo());
+    //console.log(foo);
+
+    let runIt = function(fn){
+        return fn(); //визов функції передана в якості параметра визова функції
+    }
+    console.log(runIt(foo));
+
+    ////////////////////////////////////////////////////////////////////////////////
+   let sushiMaster = function(title,sh){
+    console.log(`Замовлення на приготування суші ${title} одержана. Починаємо готувати`);
+    setTimeout(sh,3000);
+   }
+
+   let reedBook = function(){
+    console.log('Читаємо книгу по JS');
+   }
+
+   let eatSushi = function(){
+    console.log('Ура! Суші готові пора поїсти');
+   }
+
+   sushiMaster('Filadelfiya', eatSushi);
+   reedBook();*/
+//////////////////////////////////////////////////////////////////////////////////////
+
+    function call(){
+        setTimeout(function(){
+            console.log("Що я тобі передзвоню")
+        },2000);
+    }
+
+    function answerPhone(){
+        console.log('Залиште своє повідомлення');
+    }
+    call();
+    answerPhone();
+
+    function callTo(name, callback){
+        console.log(`Привіт ${name}`);
+        callback();
+    }
+    callTo('Oleg', function(){
+        console.log('після сигналу');
+    });
+</script>
+<body>
+    <div class="box">Element 1</div>
+    <div class="box">Element 2</div>
+    <div class="box">Element 3</div>
+   </body>
+    <script>
+     let box = document.querySelectorAll('.box');
+     box.forEach(function(item,count,arr){
+      item.style.background='pink';
+      item.style.marginBottom='30px';
+      item.style.padding='20px';
+     });
+     console.log(box);
+    </script>
+</html>

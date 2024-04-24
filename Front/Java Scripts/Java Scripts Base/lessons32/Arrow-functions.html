@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<script>
+   // (argname1, [..., argnameN])=>{function code}
+//функція стрілкова
+   let foo = ()=> 15;
+//функція анонімна
+   let foo2 = function(){ return 15;}
+   console.log(foo());
+   console.log(foo2());
+
+//звичайна функція
+   function foo6(){
+    return 20;
+   }
+   let foores = foo6();
+   console.log(foores);
+
+  
+
+   let foo3 = x => x+1
+
+   let foo4 = function(x){return x+1}
+
+   console.log(foo3(1));
+   console.log(foo4(1));
+
+   let sum = (x,y) => x+y;
+   console.log(sum(3,2));
+
+   let animals = [
+    'Cat',
+    'Dog',
+    'Horse',
+    'Snike'
+   ];
+   console.log(animals.map(anim => anim.length));
+
+   
+   
+
+
+</script>
+<body>
+    <div class="test"></div>
+ 
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 3</div>
+
+        
+</body>
+<script>
+         let box = document.querySelectorAll('.box');
+         box.forEach((item,count,arr) =>{
+          item.style.background='pink';
+          item.style.marginBottom='30px';
+          item.style.padding='20px';
+         });
+         console.log(box);
+</script>
+<script>
+   
+    /*function foo5(a,b){
+        return a*b;
+    }
+    let x = foo5(4,3);
+    document.querySelector('.test').innerHTML = x;*/
+    
+    summ = (a,b)=> a*b;
+    let test = summ(4,3);
+    document.querySelector('.test').innerHTML = test;
+    
+
+
+
+
+  
+</script>
+</html>
