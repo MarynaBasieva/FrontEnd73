@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw32</title>
+    <style>
+        .box{
+            display: inline-block;
+            background-color: yellow;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box">background</div>
+    
+<script>
+function newBackground(){
+    setTimeout(function(){
+        document.getElementById('box').style.background = 'blue'; anotherColor();}, 2000);}
+
+        function anotherColor(){
+    setTimeout(function(){
+        document.getElementById('box').style.background = 'green'; }, 4000);}   
+
+   newBackground();
+
+
+   function waitCall(){
+   console.log ('звонят. ожидание');
+   setTimeout(function(){
+    takeCall();},5000);}
+    function takeCall(){
+        console.log ('берем трубку через 5 сек');
+    }
+ waitCall();
+    </script>
+</html>
