@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- • Create 5 string arrays get all arrays value with for of
+• Create 7 string arrays get value and index of all arrays
+for in 
+• Create 5 string arrays get array length using for in
+   -->
+<script>
+//1
+const daysOfWeek = ["Friday", "Saturday", "Sunday"];
+const planets = ["Mercury", "Venus", "Earth"];
+const programmingLanguages = ["Python", "Java", "JavaScript"];
+const rainbowColors = ["Red", "Yellow", "Green"];
+const fruits = ["Apple", "Banana", "Orange"];
+
+for (const arr of [daysOfWeek, planets, programmingLanguages, rainbowColors, fruits]) {
+    console.log(arr);
+}
+//2
+array1 = ["яблуко", "банан", "апельсин"]
+array2 = ["кіт", "пес", "кролик"]
+array3 = ["червоний", "зелений", "синій"]
+array4 = ["понеділок", "вівторок", "середа"]
+array5 = ["авто", "автобус", "велосипед"]
+array6 = ["сонце", "місяць", "зірка"]
+array7 = ["один", "два", "три"]
+
+for (const allArr of [array1, array2, array3, array4, array5, array6, array7]) {
+    for (const ind in allArr) {
+        console.log(`Index: ${ind}, Value: ${allArr[ind]}`);
+    }
+}
+//3
+
+arr1 = ["apple", "banana", "orange"]
+arr2 = ["cat", "dog", "rabbit", "hamster"]
+arr3 = ["red", "green", "blue", "yellow", "purple"]
+arr4 = ["Monday", "Tuesday", "Wednesday", "Thursday"]
+arr5 = ["car", "bus", "bike", "train"]
+
+
+arrays = [arr1, arr2, arr3, arr4, arr5];
+
+for (let i =0; i < arrays.length; i++)
+ {
+    console.log((i + 6), arrays[i].length);
+ }
+
+
+</script>
+<body>
+    
+</body>
+</html>

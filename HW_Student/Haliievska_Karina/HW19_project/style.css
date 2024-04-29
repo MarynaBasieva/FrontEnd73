@@ -19,7 +19,6 @@ html {
 
 /*Header*/
 .container {
-  margin: 25px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
