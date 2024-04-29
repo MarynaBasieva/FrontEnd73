@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Hamburger menu button styles */
+.hamburger {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.hamburger span:last-child {
+  margin-bottom: 0;
+}
+
+/* Menu styles */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.menu a.red {
+  color: #ff0000;
+}
+
+/* Show menu on hamburger click */
+.menu.show {
+  display: block;
+}
+</style>
+<body>
+  <!-- Hamburger menu button -->
+<button class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Menu -->
+<nav class="menu" id="menu">
+  <ul>
+    <li><a href="#">Menu item 1</a></li>
+    <li><a href="#">Menu item 2</a></li>
+    <li><a href="#" class="disabled">Menu item 3 (disabled)</a></li>
+  </ul>
+</nav>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const disabledLink = document.querySelector('.disabled');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  disabledLink.classList.toggle('red');
+  disabledLink.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+});
+</script>
+</html>

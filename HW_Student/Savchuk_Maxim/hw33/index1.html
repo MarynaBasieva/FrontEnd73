@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const user = {
+  name: '',
+  surname: '',
+  address: '',
+  pet: {
+    name: ''
+  },
+  displayInfo: function() {
+    console.log(`My name is ${this.name} ${this.surname}, I live at ${this.address} and I have a pet named ${this.pet.name}`);
+  }
+};
+
+// Create an object with all parameters
+const userData = {
+  name: 'John',
+  surname: 'Doe',
+  address: '123 Main St',
+  pet: {
+    name: 'Buddy'
+  }
+};
+
+// Use call() to display user information
+user.displayInfo.call(userData);
+
+// Output:
+// My name is John Doe, I live at 123 Main St and I have a pet named Buddy
+
+// Use apply() to display user information
+user.displayInfo.apply(userData);
+
+// Output:
+// My name is John Doe, I live at 123 Main St and I have a pet named Buddy
+</script>
+</html>
