@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event target</title>
+</head>
+<style>
+   *{
+    padding: 0;
+    margin: 0;
+   } 
+   body{
+    background: #661f77;
+   }
+   .wrapper{
+    margin-top: 100px;
+   }
+   .container{
+     width: 1170px;
+     margin: 0 auto;
+   }
+   .parent_btn{
+     display: flex;
+     justify-content: center;
+   }
+   .btn{
+    background: #000;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    border: none;
+    transition: all 0.4s ease;
+    margin-right: 5px;
+    display: block;
+    width: 150px;
+    cursor: pointer;
+   }
+   .btn:hover{
+     background: #05535a;
+   }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="contaner">
+            <div class="parent_btn">
+                <button class="btn">click 1</button>
+                <button class="btn">click 2</button>
+                <button class="btn">click 3</button>
+                <button class="btn">click 4</button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

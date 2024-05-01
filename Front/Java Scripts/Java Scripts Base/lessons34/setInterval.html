@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInreval</title>
+</head>
+<body onload="start()">
+    <div id="timeStart">тут буде час</div>
+    <button class="btnStop">Stop</button>
+</body>
+<script>
+     let btnStop = document.querySelector('.btnStop');
+
+     function time(){
+        let data = new Date();
+        let hours = data.getHours();
+        let minutes = data.getMinutes();
+        let seconds = data.getSeconds();
+        let times = hours + ":" + minutes + ":" + seconds;
+        document.getElementById('timeStart').innerHTML = times;
+     }
+
+     function start(){
+        id=setInterval('time()', 1000);
+     }
+     function stop(){
+        clearInterval(id)
+    }
+    btnStop.addEventListener('click',stop);
+</script>
+</html>
