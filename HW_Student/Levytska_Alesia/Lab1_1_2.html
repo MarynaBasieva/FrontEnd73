@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+</body>
+
+<script>
+    /*lab work 1.1.2
+Створіть змінні a=10, b=2 і c=5. Підсумуйте їх і
+документ вивести їх у html
+Запитайте ім'я користувача за допомогою методів підказки.
+Використовуйте сповіщення, щоб відобразити повідомлення "Ваше ім'я %name%".*/
+
+   let a = 10,
+    b = 2,
+    c = 5;
+let sum = a + b + c;
+
+
+document.write(sum);
+
+
+ let name =  prompt("Введіть ім'я?");
+
+if (name === " " || name === null){
+    alert("Ви не ввели ім'я")
+} else{
+    alert("Вітаю " + name);
+}
+
+
+</script>
+</html>
